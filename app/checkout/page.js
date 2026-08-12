@@ -1,2 +1,0 @@
-import ConstructionBlock from '@/components/ConstructionBlock';
-export default function CheckoutPage() { return <ConstructionBlock titleBg="Поръчка" titleEn="Checkout" bodyBg="Тук ще бъдат данните за клиента, изборът на офис или адрес на Еконт и изпращането на поръчката по имейл. Активираме го след уточняване на финалния процес." bodyEn="This will contain customer details, Econt office/address selection and email order submission. It will be enabled once the final process is confirmed." />; }
