@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, TruckIcon } from '@/components/Icons';
 import ProductGrid from '@/components/ProductGrid';
-import { products, categoryLabels } from '@/data/products';
+import { products, categoryLabels, getDiscountPercent } from '@/data/products';
 import { useLanguage } from '@/components/LanguageProvider';
 
 const categoryTiles = [
@@ -18,6 +18,10 @@ const categoryTiles = [
 
 export default function HomePage() {
   const { language, t } = useLanguage();
+  const heroProduct = products[0];
+  const sideProduct = products[5];
+  const heroDiscount = getDiscountPercent(heroProduct.originalPrice, heroProduct.price);
+  const sideDiscount = getDiscountPercent(sideProduct.originalPrice, sideProduct.price);
   return (
     <main>
       <section className="home-hero page-width">
@@ -33,11 +37,11 @@ export default function HomePage() {
         </div>
         <Link href="/product/zelena-midi-roklya" className="hero-panel hero-image-main">
           <Image src="/images/products/IMG-20260809-WA0000.jpg" alt="Green midi dress" fill priority sizes="(max-width: 760px) 100vw, 40vw" />
-          <span className="hero-image-caption"><b>GERPINA Selection</b><i>€10.00</i></span>
+          <span className="hero-image-caption"><b>{heroProduct.brand || 'GERPINA Selection'} · -{heroDiscount}%</b><i><s>€{heroProduct.originalPrice.toFixed(2)}</s> €10.00</i></span>
         </Link>
         <Link href="/product/rozov-suitshart-s-polutsip" className="hero-panel hero-image-side">
           <Image src="/images/products/IMG-20260809-WA0005.jpg" alt="Pink sweatshirt" fill priority sizes="(max-width: 760px) 50vw, 23vw" />
-          <span className="hero-image-caption compact"><b>{language === 'bg' ? 'НОВО' : 'NEW'}</b><i>€10.00</i></span>
+          <span className="hero-image-caption compact"><b>-{sideDiscount}%</b><i><s>€{sideProduct.originalPrice.toFixed(2)}</s> €10.00</i></span>
         </Link>
       </section>
 
@@ -61,8 +65,8 @@ export default function HomePage() {
           <Link href="/shop" className="campaign-link">{language === 'bg' ? 'Разгледай селекцията' : 'Explore the selection'}<ArrowRight /></Link>
         </div>
         <div className="campaign-price">
-          <small>{language === 'bg' ? 'Пример след добавяне на реалната цена' : 'Example after real tag price is added'}</small>
-          <div><s>€320</s><strong>€80</strong><b>-75%</b></div>
+          <small>{language === 'bg' ? 'Демо пример — временни цени до реалния инвентар' : 'Demo example — temporary prices until the real inventory'}</small>
+          <div><s>€59.99</s><strong>€10</strong><b>-83%</b></div>
         </div>
       </section>
 

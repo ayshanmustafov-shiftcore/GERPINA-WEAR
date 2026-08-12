@@ -34,7 +34,7 @@ export function StoreProvider({ children }) {
       setCart((current) => {
         const existing = current.find((item) => item.id === product.id);
         if (existing) return current.map((item) => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item);
-        return [...current, { id: product.id, slug: product.slug, name: product.name, image: product.image, price: product.price, quantity: 1 }];
+        return [...current, { id: product.id, slug: product.slug, name: product.name, brand: product.brand, image: product.image, price: product.price, originalPrice: product.originalPrice, quantity: 1 }];
       });
     },
     updateQuantity(id, quantity) {

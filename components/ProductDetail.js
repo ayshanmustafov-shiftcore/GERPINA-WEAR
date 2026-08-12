@@ -29,7 +29,7 @@ export default function ProductDetail({ product }) {
           <div className="product-main-image"><Image src={product.image} alt={product.name[language]} fill priority sizes="(max-width: 850px) 100vw, 58vw" /></div>
         </div>
         <aside className="product-info">
-          <span className="product-info-brand">GERPINA Selection</span>
+          <span className="product-info-brand">{product.brand || 'GERPINA Selection'}</span>
           <h1>{product.name[language]}</h1>
           <p className="product-description">{product.description[language]}</p>
           <div className="detail-price">
@@ -37,7 +37,7 @@ export default function ProductDetail({ product }) {
             <strong>€{product.price.toFixed(2)}</strong>
             {discount && <b>-{discount}%</b>}
           </div>
-          <span className="vat-note">{language === 'bg' ? 'Временна цена за демо каталога' : 'Temporary demo catalogue price'}</span>
+          <span className="vat-note">{language === 'bg' ? 'Демо цена и отстъпка — ще бъдат заменени с реалните данни' : 'Demo price and discount — will be replaced with real inventory data'}</span>
 
           <div className="detail-divider" />
           <div className="colour-line"><span>{language === 'bg' ? 'Цвят' : 'Colour'}</span><b>{product.colour[language]}</b></div>
