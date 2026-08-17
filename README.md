@@ -10,7 +10,7 @@ This version can connect to GERPINA's real e-Econt account, but it is intentiona
 
 - authenticate to Econt server-side with Vercel Environment Variables;
 - load the authenticated Econt client profile through `ProfileService.getClientProfiles`;
-- use the account's registered sender profile/address for price calculation and validation;
+- use the GERPINA company profile together with the configured dispatch address at ул. Полтава №3Ж for price calculation and validation;
 - load real Bulgarian cities and Econt offices;
 - use the account's existing COD payout configuration returned by Econt;
 - calculate a real delivery price with `mode: calculate`;
@@ -35,6 +35,12 @@ ECONT_ENV=production
 ECONT_USERNAME=YOUR_E_ECONT_USERNAME
 ECONT_PASSWORD=YOUR_E_ECONT_PASSWORD
 ECONT_CD_AGREEMENT=CD270387
+
+ECONT_SENDER_CITY=Велико Търново
+ECONT_SENDER_QUARTER=Кольо Фичето
+ECONT_SENDER_STREET=Полтава
+ECONT_SENDER_STREET_NUM=3Ж
+ECONT_SENDER_AGENT_NAME=Петър Станиславов Петров
 ```
 
 Do not commit the username/password to GitHub.
@@ -48,9 +54,12 @@ ECONT_CD_PAY_TEMPLATE=
 # Only if the login later returns more than one Econt client profile:
 ECONT_PROFILE_CLIENT_NUMBER=
 
-# Use this only if GERPINA always hands parcels in at one specific sender office.
-# If blank, the build uses the first registered sender address returned by the Econt profile.
+# Use this only if GERPINA later hands parcels in at one fixed Econt office.
+# Leave blank while parcels are dispatched from the street address above.
 ECONT_SENDER_OFFICE_CODE=
+
+# Optional if you want to pin the sender city by postcode as well.
+ECONT_SENDER_POSTCODE=
 ```
 
 ### COD agreement note
@@ -66,9 +75,9 @@ Before enabling real waybill creation in a later build, verify the exact COD tem
 3. The badge should read **ECONT · LIVE SAFE**.
 4. Enter customer name and phone.
 5. Search a Bulgarian city and select an Econt office/address.
-6. Click **Calculate Econt delivery**.
+6. Wait for the delivery price to appear automatically.
 7. Click **Validate order with Econt**.
-8. A successful result confirms the real account/profile/COD setup without creating a shipment.
+8. A successful result confirms the real account/profile/COD/sender-address setup without creating a shipment.
 
 If the live account is not ready, the final validation button stays disabled and the checkout displays the server-side configuration error without exposing credentials or bank details.
 
@@ -84,3 +93,22 @@ Open `http://localhost:3000`.
 ## Inventory
 
 The current catalogue is generated from `source-material/GERPINA WEAR Stock list 2.xlsx`. Product data is in `data/products.js`. Missing product photos use a GERPINA placeholder until the corresponding image is supplied.
+
+## Latest Econt safe-mode behaviour
+
+- Delivery price calculation is automatic after the required customer and Econt destination fields are complete.
+- There is no manual "calculate delivery" button.
+- Production company profiles send `senderAgent` server-side. GERPINA can override the authorised-person name through `ECONT_SENDER_AGENT_NAME`; the checkout also shows the sender/company/contact details because GERPINA requested them to be customer-visible.
+- The COD agreement remains server-side in `ECONT_CD_AGREEMENT` and is used to identify the correct company/COD profile.
+- This build still contains only Econt `calculate` and `validate` calls. It has no `mode: create` shipment call and no courier-request route.
+
+
+## GERPINA dispatch identity
+
+Customer-facing checkout details:
+
+- **Company:** ГЕРПИНА УЕЪР ЕООД
+- **On behalf of:** Петър Станиславов Петров
+- **Dispatch address:** гр. Велико Търново, кв. Кольо Фичето, ул. Полтава №3Ж
+
+Server-side Econt requests use the same dispatch point. The code resolves Велико Търново through Econt's nomenclature service and validates the configured street address before using it as `senderAddress`.

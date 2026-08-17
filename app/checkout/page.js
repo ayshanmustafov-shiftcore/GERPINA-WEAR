@@ -6,6 +6,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useStore } from '@/components/StoreProvider';
 import { TruckIcon } from '@/components/Icons';
+import { siteConfig } from '@/data/site';
 
 function cartPayload(cart) {
   return cart.map((item) => ({ id: item.id, quantity: item.quantity, selectedSize: item.selectedSize || null }));
@@ -17,6 +18,7 @@ export default function CheckoutPage() {
   const formRef = useRef(null);
   const [deliveryType, setDeliveryType] = useState('office');
   const [paymentType, setPaymentType] = useState('cod');
+  const [contact, setContact] = useState({ firstName: '', lastName: '', phone: '', email: '' });
 
   const [cityQuery, setCityQuery] = useState('');
   const [selectedCity, setSelectedCity] = useState(null);
@@ -68,8 +70,9 @@ export default function CheckoutPage() {
     streetPlaceholder: 'Улица, номер, вход, етаж, апартамент',
     note: 'Бележка към поръчката (по желание)',
     notePlaceholder: 'Допълнителна информация за доставката',
-    calculate: 'Изчисли доставка с Еконт',
-    recalculating: 'Изчисляване…',
+    recalculating: 'Еконт изчислява доставката…',
+    autoCalculated: 'Доставката се изчислява автоматично.',
+    autoWaiting: 'Цената ще се появи автоматично след попълване на данните за контакт и доставка.',
     quoteTest: 'Тестова цена от Еконт',
     quoteLive: 'Реална цена от Еконт',
     quoteWeight: 'Демо тегло',
@@ -78,10 +81,15 @@ export default function CheckoutPage() {
     cod: 'Наложен платеж при получаване',
     codSub: 'Стойността на дрехите се плаща при получаване чрез Еконт.',
     shippingPayer: 'Клиентът заплаща и куриерската услуга при получаване.',
+    senderTitle: 'Изпращач',
+    senderCompany: 'Фирма',
+    senderOnBehalf: 'От името на',
+    senderAddress: 'Адрес за изпращане',
+    senderHint: 'Това е адресът, от който GERPINA предава пратките на Еконт.',
     summary: 'Твоята поръчка',
     items: 'Продукти',
     delivery: 'Доставка с Еконт',
-    deliveryCalc: 'изчисли доставка',
+    deliveryCalc: 'изчислява се автоматично',
     itemsTotal: 'Общо продукти',
     payable: 'Общо при получаване',
     qty: 'бр.',
@@ -135,8 +143,9 @@ export default function CheckoutPage() {
     streetPlaceholder: 'Street, number, entrance, floor, apartment',
     note: 'Order note (optional)',
     notePlaceholder: 'Additional delivery information',
-    calculate: 'Calculate Econt delivery',
-    recalculating: 'Calculating…',
+    recalculating: 'Econt is calculating delivery…',
+    autoCalculated: 'Delivery is calculated automatically.',
+    autoWaiting: 'The price will appear automatically after the required contact and delivery details are complete.',
     quoteTest: 'Test price from Econt',
     quoteLive: 'Live price from Econt',
     quoteWeight: 'Demo weight',
@@ -145,10 +154,15 @@ export default function CheckoutPage() {
     cod: 'Cash on delivery',
     codSub: 'The merchandise value is paid through Econt when the parcel is received.',
     shippingPayer: 'The customer also pays the courier fee on receipt.',
+    senderTitle: 'Sender',
+    senderCompany: 'Company',
+    senderOnBehalf: 'On behalf of',
+    senderAddress: 'Dispatch address',
+    senderHint: 'This is the address from which GERPINA hands parcels over to Econt.',
     summary: 'Your order',
     items: 'Items',
     delivery: 'Econt delivery',
-    deliveryCalc: 'calculate delivery',
+    deliveryCalc: 'calculated automatically',
     itemsTotal: 'Items total',
     payable: 'Payable on receipt',
     qty: 'pcs',
@@ -261,7 +275,46 @@ export default function CheckoutPage() {
     setQuote(null);
     setQuoteError('');
     setSubmitState({ loading: false, success: false, error: '' });
-  }, [deliveryType, selectedCity, officeCode, address, cartTotal]);
+  }, [deliveryType, selectedCity, officeCode, address, cartTotal, contact.firstName, contact.lastName, contact.phone]);
+
+  // Econt delivery is intentionally automatic. Once the required contact + destination
+  // fields are complete, wait briefly for the user to finish typing and request a safe
+  // calculate-only quote. No shipment can be created by this effect.
+  useEffect(() => {
+    if (!cart.length || econtStatus.loading) return;
+    if (econtStatus.mode === 'production' && !econtStatus.ready) return;
+
+    const receiverReady = Boolean(
+      contact.firstName.trim() &&
+      contact.lastName.trim() &&
+      contact.phone.replace(/[^+\d]/g, '').length >= 7
+    );
+    const destinationReady = Boolean(
+      selectedCity &&
+      ((deliveryType === 'office' && officeCode) || (deliveryType === 'address' && address.trim().length >= 3))
+    );
+
+    if (!receiverReady || !destinationReady) return;
+
+    const timer = setTimeout(() => {
+      calculateDelivery({ silent: true });
+    }, deliveryType === 'address' ? 700 : 350);
+
+    return () => clearTimeout(timer);
+  }, [
+    cart.length,
+    cartTotal,
+    econtStatus.loading,
+    econtStatus.mode,
+    econtStatus.ready,
+    contact.firstName,
+    contact.lastName,
+    contact.phone,
+    selectedCity,
+    deliveryType,
+    officeCode,
+    address,
+  ]);
 
   if (!cart.length) {
     return (
@@ -298,12 +351,9 @@ export default function CheckoutPage() {
   }
 
   function getReceiver() {
-    const form = formRef.current;
-    if (!form) return {};
-    const data = new FormData(form);
     return {
-      name: `${data.get('firstName') || ''} ${data.get('lastName') || ''}`.trim(),
-      phone: data.get('phone') || '',
+      name: `${contact.firstName} ${contact.lastName}`.trim(),
+      phone: contact.phone,
     };
   }
 
@@ -325,10 +375,10 @@ export default function CheckoutPage() {
     return '';
   }
 
-  async function calculateDelivery() {
+  async function calculateDelivery({ silent = false } = {}) {
     const validation = deliveryValidationMessage();
     if (validation) {
-      setQuoteError(validation);
+      if (!silent) setQuoteError(validation);
       return false;
     }
 
@@ -365,7 +415,7 @@ export default function CheckoutPage() {
     }
 
     if (!quote) {
-      const calculated = await calculateDelivery();
+      const calculated = await calculateDelivery({ silent: false });
       if (!calculated) return;
     }
 
@@ -413,19 +463,19 @@ export default function CheckoutPage() {
             <div className="checkout-fields two-col">
               <label>
                 <span>{copy.firstName} *</span>
-                <input required name="firstName" autoComplete="given-name" />
+                <input required name="firstName" autoComplete="given-name" value={contact.firstName} onChange={(event) => setContact((current) => ({ ...current, firstName: event.target.value }))} />
               </label>
               <label>
                 <span>{copy.lastName} *</span>
-                <input required name="lastName" autoComplete="family-name" />
+                <input required name="lastName" autoComplete="family-name" value={contact.lastName} onChange={(event) => setContact((current) => ({ ...current, lastName: event.target.value }))} />
               </label>
               <label>
                 <span>{copy.phone} *</span>
-                <input required name="phone" type="tel" autoComplete="tel" placeholder="+359 ..." />
+                <input required name="phone" type="tel" autoComplete="tel" placeholder="+359 ..." value={contact.phone} onChange={(event) => setContact((current) => ({ ...current, phone: event.target.value }))} />
               </label>
               <label>
                 <span>{copy.email}</span>
-                <input name="email" type="email" autoComplete="email" />
+                <input name="email" type="email" autoComplete="email" value={contact.email} onChange={(event) => setContact((current) => ({ ...current, email: event.target.value }))} />
               </label>
             </div>
           </section>
@@ -442,7 +492,7 @@ export default function CheckoutPage() {
             {econtStatus.ready && econtStatus.mode === 'production' && (
               <div className="econt-profile-confirmation">
                 <b>{language === 'bg' ? 'Свързан Econt профил' : 'Connected Econt profile'}</b>
-                <span>{econtStatus.profileName}{econtStatus.clientNumber ? ` · № ${econtStatus.clientNumber}` : ''}{econtStatus.agreement ? ` · ${econtStatus.agreement}` : ''}</span>
+                <span>{language === 'bg' ? 'GERPINA WEAR · активна връзка' : 'GERPINA WEAR · connection active'}</span>
               </div>
             )}
 
@@ -526,10 +576,10 @@ export default function CheckoutPage() {
               </label>
             </div>
 
-            <div className="econt-calc-row">
-              <button type="button" className="econt-calculate-button" onClick={calculateDelivery} disabled={quoteLoading}>
-                {quoteLoading ? copy.recalculating : copy.calculate}
-              </button>
+            <div className="econt-auto-row">
+              <div className={`econt-auto-status ${quoteLoading ? 'loading' : quote ? 'ready' : ''}`} role="status">
+                <b>{quoteLoading ? copy.recalculating : quote ? copy.autoCalculated : copy.autoWaiting}</b>
+              </div>
               <div className="econt-weight-note">
                 <b>{copy.quoteWeight}</b>
                 <span>{quote?.shipmentWeightKg ? `${quote.shipmentWeightKg.toFixed(2)} kg · ` : ''}{copy.quoteWeightInfo}</span>
@@ -559,6 +609,29 @@ export default function CheckoutPage() {
             </button>
             <p className="payment-pending">{copy.shippingPayer}</p>
           </section>
+
+          <section className="checkout-section sender-section">
+            <div className="checkout-section-heading">
+              <div>
+                <h2>{copy.senderTitle}</h2>
+                <p>{copy.senderHint}</p>
+              </div>
+            </div>
+            <div className="sender-info-card">
+              <div>
+                <span>{copy.senderCompany}</span>
+                <strong>{siteConfig.sender.company[language]}</strong>
+              </div>
+              <div>
+                <span>{copy.senderOnBehalf}</span>
+                <strong>{siteConfig.sender.agent[language]}</strong>
+              </div>
+              <div className="sender-address-line">
+                <span>{copy.senderAddress}</span>
+                <strong>{siteConfig.sender.address[language]}</strong>
+              </div>
+            </div>
+          </section>
         </div>
 
         <aside className="checkout-summary">
@@ -584,7 +657,7 @@ export default function CheckoutPage() {
 
           <div className="checkout-summary-lines">
             <div><span>{copy.items}</span><b>€{cartTotal.toFixed(2)}</b></div>
-            <div><span>{copy.delivery}</span><b className={shippingPrice === null ? 'summary-action-text' : ''}>{shippingPrice === null ? copy.deliveryCalc : `€${shippingPrice.toFixed(2)}`}</b></div>
+            <div><span>{copy.delivery}</span><b className={shippingPrice === null ? 'summary-action-text' : ''}>{quoteLoading ? copy.recalculating : shippingPrice === null ? copy.deliveryCalc : `€${shippingPrice.toFixed(2)}`}</b></div>
             <div><span>{copy.itemsTotal}</span><b>€{cartTotal.toFixed(2)}</b></div>
             <div className="checkout-grand-total"><span>{copy.payable}</span><strong>€{payableOnDelivery.toFixed(2)}</strong></div>
           </div>

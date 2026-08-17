@@ -10,5 +10,19 @@ export const siteConfig = {
     facebook: null,
     tiktok: null,
   },
+  sender: {
+    company: {
+      bg: 'ГЕРПИНА УЕЪР ЕООД',
+      en: 'GERPINA WEAR EOOD',
+    },
+    agent: {
+      bg: 'Петър Станиславов Петров',
+      en: 'Petar Stanislavov Petrov',
+    },
+    address: {
+      bg: 'гр. Велико Търново, кв. Кольо Фичето, ул. Полтава №3Ж',
+      en: 'Veliko Tarnovo, Kolyu Ficheto district, 3Zh Poltava St.',
+    },
+  },
   orderEmailEnabled: false,
 };

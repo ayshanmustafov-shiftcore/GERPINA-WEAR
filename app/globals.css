@@ -970,6 +970,27 @@ img { display: block; }
 .field-note { color: #777; font-size: 11px; line-height: 1.45; }
 .field-error { color: #a33131; font-size: 11px; line-height: 1.45; }
 .field-helper.success { color: #37744c; }
+
+.econt-auto-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, .75fr);
+  gap: 16px;
+  align-items: stretch;
+  margin-top: 22px;
+}
+.econt-auto-status {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  padding: 16px 18px;
+  border: 1px solid #d8d8d8;
+  background: #fafafa;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.econt-auto-status.loading { border-color: #d4b36b; background: #fbf7ed; }
+.econt-auto-status.ready { border-color: #9bc7a8; background: #f1f8f3; }
+
 .econt-calc-row {
   margin-top: 22px;
   display: grid;
@@ -1031,7 +1052,7 @@ img { display: block; }
 
 @media (max-width: 650px) {
   .econt-live-badge { min-height: 28px; font-size: 10px !important; }
-  .econt-calc-row { grid-template-columns: 1fr; }
+  .econt-calc-row, .econt-auto-row { grid-template-columns: 1fr; }
   .econt-calculate-button { font-size: 14px; }
   .checkout-summary-title-row h2 { font-size: 27px; }
   .econt-suggestions button b { font-size: 14px; }
@@ -1065,4 +1086,44 @@ img { display: block; }
 }
 .econt-office-address .field-note {
   max-width: 760px;
+}
+
+
+/* GERPINA sender details shown in checkout. */
+.sender-info-card {
+  border: 1px solid #d9d9d9;
+  background: #fafafa;
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 28px;
+}
+.sender-info-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sender-info-card span {
+  color: #777;
+  font-size: 12px;
+  font-weight: 700;
+}
+.sender-info-card strong {
+  color: #111;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.sender-info-card .sender-address-line {
+  grid-column: 1 / -1;
+  padding-top: 14px;
+  border-top: 1px solid #e2e2e2;
+}
+@media (max-width: 650px) {
+  .sender-info-card {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+  .sender-info-card .sender-address-line {
+    grid-column: auto;
+  }
 }
