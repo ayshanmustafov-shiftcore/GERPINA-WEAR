@@ -1,2 +1,0 @@
-import ConstructionBlock from '@/components/ConstructionBlock';
-export default function DeliveryPage() { return <ConstructionBlock titleBg="Доставка и връщане" titleEn="Delivery & returns" bodyBg="Доставката ще бъде с Еконт в България. Точните условия, срокове, цени и процедура за връщане ще бъдат добавени преди публикуване." bodyEn="Delivery will be handled through Econt in Bulgaria. Exact terms, times, prices and the returns process will be added before launch." />; }
