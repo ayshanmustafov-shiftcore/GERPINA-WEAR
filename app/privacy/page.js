@@ -1,2 +1,0 @@
-import ConstructionBlock from '@/components/ConstructionBlock';
-export default function PrivacyPage() { return <ConstructionBlock titleBg="Поверителност" titleEn="Privacy" bodyBg="Политиката за поверителност ще бъде завършена преди активиране на формата за поръчка и събирането на клиентски данни." bodyEn="The privacy policy will be completed before the checkout form and collection of customer information are enabled." />; }
