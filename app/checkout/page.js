@@ -34,7 +34,7 @@ export default function CheckoutPage() {
   const [quoteLoading, setQuoteLoading] = useState(false);
   const [quoteError, setQuoteError] = useState('');
   const [submitState, setSubmitState] = useState({ loading: false, success: false, error: '' });
-  const [econtStatus, setEcontStatus] = useState({ loading: true, mode: null, safeMode: true, ready: false, error: '' });
+  const [econtStatus, setEcontStatus] = useState({ loading: true, mode: null, safeMode: true, ready: false, error: '', profileName: '', clientNumber: '', agreement: '' });
 
   const copy = useMemo(() => language === 'bg' ? {
     eyebrow: 'СИГУРНА ПОРЪЧКА',
@@ -62,7 +62,9 @@ export default function CheckoutPage() {
     officePlaceholder: 'Избери офис',
     loadingOffices: 'Зареждане на офиси…',
     noOffices: 'Няма намерени офиси за този град.',
-    street: 'Адрес',
+    street: 'Адрес за доставка',
+    deliveryAddress: 'Адрес за доставка',
+    officeAddressHint: 'При доставка до офис това е адресът на избрания офис на Еконт. Не е необходим личен адрес.',
     streetPlaceholder: 'Улица, номер, вход, етаж, апартамент',
     note: 'Бележка към поръчката (по желание)',
     notePlaceholder: 'Допълнителна информация за доставката',
@@ -127,7 +129,9 @@ export default function CheckoutPage() {
     officePlaceholder: 'Choose an office',
     loadingOffices: 'Loading offices…',
     noOffices: 'No offices found for this city.',
-    street: 'Address',
+    street: 'Delivery address',
+    deliveryAddress: 'Delivery address',
+    officeAddressHint: 'For office delivery, this is the address of the selected Econt office. Your home address is not required.',
     streetPlaceholder: 'Street, number, entrance, floor, apartment',
     note: 'Order note (optional)',
     notePlaceholder: 'Additional delivery information',
@@ -181,9 +185,12 @@ export default function CheckoutPage() {
           safeMode: data.safeMode !== false,
           ready: Boolean(data.profileLoaded && data.senderReady && data.codReady),
           error: data.error || '',
+          profileName: data.selectedProfileName || '',
+          clientNumber: data.selectedClientNumber || '',
+          agreement: data.configuredAgreement || '',
         });
       } catch (error) {
-        if (!cancelled) setEcontStatus({ loading: false, mode: null, safeMode: true, ready: false, error: error.message || copy.apiError });
+        if (!cancelled) setEcontStatus({ loading: false, mode: null, safeMode: true, ready: false, error: error.message || copy.apiError, profileName: '', clientNumber: '', agreement: '' });
       }
     }
     loadEcontStatus();
@@ -378,6 +385,8 @@ export default function CheckoutPage() {
     }
   }
 
+  const selectedOffice = officeCode ? offices.find((office) => String(office.code) === String(officeCode)) : null;
+
   const shippingPrice = quote?.shippingPrice ?? null;
   const payableOnDelivery = quote?.payableOnDelivery ?? cartTotal;
 
@@ -430,6 +439,13 @@ export default function CheckoutPage() {
               <span className={`econt-live-badge ${econtStatus.mode === 'production' ? 'production' : ''}`}>{econtStatus.mode === 'production' ? 'ECONT · LIVE SAFE' : 'ECONT · TEST API'}</span>
             </div>
 
+            {econtStatus.ready && econtStatus.mode === 'production' && (
+              <div className="econt-profile-confirmation">
+                <b>{language === 'bg' ? 'Свързан Econt профил' : 'Connected Econt profile'}</b>
+                <span>{econtStatus.profileName}{econtStatus.clientNumber ? ` · № ${econtStatus.clientNumber}` : ''}{econtStatus.agreement ? ` · ${econtStatus.agreement}` : ''}</span>
+              </div>
+            )}
+
             <div className="delivery-choice-grid">
               <button type="button" className={`delivery-choice ${deliveryType === 'office' ? 'active' : ''}`} onClick={() => setDeliveryType('office')}>
                 <span className="delivery-radio" aria-hidden="true" />
@@ -475,19 +491,28 @@ export default function CheckoutPage() {
               </label>
 
               {deliveryType === 'office' ? (
-                <label>
-                  <span>{copy.officeField} *</span>
-                  <select required name="econtOffice" value={officeCode} onChange={(event) => setOfficeCode(event.target.value)} disabled={!selectedCity || officesLoading}>
-                    <option value="">{officesLoading ? copy.loadingOffices : copy.officePlaceholder}</option>
-                    {offices.map((office) => (
-                      <option key={office.code} value={office.code}>
-                        {language === 'bg' ? office.name : (office.nameEn || office.name)}{office.address ? ` — ${office.address}` : ''}
-                      </option>
-                    ))}
-                  </select>
-                  {!officesLoading && selectedCity && !offices.length && !officeError && <small className="field-note">{copy.noOffices}</small>}
-                  {officeError && <small className="field-error">{officeError}</small>}
-                </label>
+                <>
+                  <label>
+                    <span>{copy.officeField} *</span>
+                    <select required name="econtOffice" value={officeCode} onChange={(event) => setOfficeCode(event.target.value)} disabled={!selectedCity || officesLoading}>
+                      <option value="">{officesLoading ? copy.loadingOffices : copy.officePlaceholder}</option>
+                      {offices.map((office) => (
+                        <option key={office.code} value={office.code}>
+                          {language === 'bg' ? office.name : (office.nameEn || office.name)}{office.address ? ` — ${office.address}` : ''}
+                        </option>
+                      ))}
+                    </select>
+                    {!officesLoading && selectedCity && !offices.length && !officeError && <small className="field-note">{copy.noOffices}</small>}
+                    {officeError && <small className="field-error">{officeError}</small>}
+                  </label>
+                  {selectedOffice?.address && (
+                    <label className="econt-office-address">
+                      <span>{copy.deliveryAddress}</span>
+                      <input value={selectedOffice.address} readOnly aria-readonly="true" />
+                      <small className="field-note">{copy.officeAddressHint}</small>
+                    </label>
+                  )}
+                </>
               ) : (
                 <label>
                   <span>{copy.street} *</span>

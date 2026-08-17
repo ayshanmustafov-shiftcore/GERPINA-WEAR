@@ -167,8 +167,10 @@ img { display: block; }
 .detail-divider { height: 1px; background: var(--line); margin: 26px 0 22px; }
 .colour-line, .size-title { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 10px; }
 .colour-line b { font-size: 10px; }
-.colour-swatch { margin-top: 10px; }
-.colour-swatch > span { width: 34px; height: 34px; display: block; border: 3px solid #fff; outline: 1px solid #111; }
+.colour-swatches { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 11px; align-items: center; }
+.colour-swatch-box { width: 38px; height: 38px; display: block; border: 3px solid #fff; outline: 1px solid #111; box-shadow: inset 0 0 0 1px rgba(0,0,0,.04); }
+.colour-swatch-box.white-swatch { box-shadow: inset 0 0 0 1px #d8d8d8; }
+.colour-unspecified { margin-top: 10px; color: #888; font-size: 12px; }
 .size-title { margin-top: 24px; }
 .size-title span { font-weight: 700; }
 .size-title button { border: 0; background: transparent; color: #999; font-size: 9px; }
@@ -1049,4 +1051,18 @@ img { display: block; }
   border-top: 1px solid rgba(140, 35, 35, 0.18);
   color: #8c2323 !important;
   font-weight: 700;
+}
+
+.econt-profile-confirmation { margin: 18px 0 4px; padding: 12px 14px; border: 1px solid #d6e4d8; background: #f7fbf7; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; }
+.econt-profile-confirmation b { font-size: 12px; color: #1f6e3d; }
+.econt-profile-confirmation span { font-size: 12px; color: #4f6254; }
+
+/* Checkout: make the destination explicit for office delivery without collecting a home address. */
+.econt-office-address input[readonly] {
+  background: #f7f7f7;
+  color: #333;
+  cursor: default;
+}
+.econt-office-address .field-note {
+  max-width: 760px;
 }

@@ -7,6 +7,7 @@ import { HeartIcon, TruckIcon } from '@/components/Icons';
 import { categoryLabels, getDiscountPercent, isProductAvailable } from '@/data/products';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useStore } from '@/components/StoreProvider';
+import { getProductSwatches } from '@/lib/productColours';
 
 export default function ProductDetail({ product }) {
   const { language, t } = useLanguage();
@@ -17,6 +18,7 @@ export default function ProductDetail({ product }) {
   const favorite = favorites.includes(product.id);
   const discount = getDiscountPercent(product.originalPrice, product.price);
   const available = isProductAvailable(product);
+  const colourSwatches = useMemo(() => getProductSwatches(product, language), [product, language]);
 
   const statusText = available
     ? (language === 'bg' ? 'В наличност' : 'In stock')
@@ -62,7 +64,21 @@ export default function ProductDetail({ product }) {
 
           <div className="detail-divider" />
           <div className="colour-line"><span>{language === 'bg' ? 'Цвят' : 'Colour'}</span><b>{product.colour[language]}</b></div>
-          <div className="colour-swatch"><span /></div>
+          {colourSwatches.length ? (
+            <div className="colour-swatches" aria-label={language === 'bg' ? 'Цветове' : 'Colours'}>
+              {colourSwatches.map((swatch) => (
+                <span
+                  key={swatch.key}
+                  className={`colour-swatch-box ${swatch.key === 'white' ? 'white-swatch' : ''}`}
+                  style={{ background: swatch.css }}
+                  title={language === 'bg' ? swatch.bg : swatch.en}
+                  aria-label={language === 'bg' ? swatch.bg : swatch.en}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="colour-unspecified">{language === 'bg' ? 'Цветът не е уточнен' : 'Colour not specified'}</div>
+          )}
 
           <div className="size-title"><span>{language === 'bg' ? 'Размер' : 'Size'}</span><button type="button" disabled>{language === 'bg' ? 'Таблица с размери' : 'Size guide'}</button></div>
           {product.sizes?.length ? (
