@@ -1,0 +1,2 @@
+import ConstructionBlock from '@/components/ConstructionBlock';
+export default function TermsPage() { return <ConstructionBlock titleBg="Общи условия" titleEn="Terms & conditions" bodyBg="Финалните общи условия ще бъдат добавени след потвърждаване на фирмените данни, начина на поръчване, плащане, доставка и връщане." bodyEn="Final terms will be added after the business details, ordering, payment, delivery and returns process are confirmed." />; }
