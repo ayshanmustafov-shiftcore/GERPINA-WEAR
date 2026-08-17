@@ -6,6 +6,7 @@ import ProductGrid from '@/components/ProductGrid';
 import { ChevronDown } from '@/components/Icons';
 import { audienceLabels, categoryLabels, getDiscountPercent, kidGenderLabels, productMatchesAudience, products } from '@/data/products';
 import { useLanguage } from '@/components/LanguageProvider';
+import { useStore } from '@/components/StoreProvider';
 
 function DropFilter({ label, value, options, onChange, open, onToggle, language }) {
   return (
@@ -25,9 +26,13 @@ function DropFilter({ label, value, options, onChange, open, onToggle, language 
 
 export default function ShopExperience({ fixedAudience = null }) {
   const { language, t } = useLanguage();
+  const { activeAudience, setActiveAudience } = useStore();
   const searchParams = useSearchParams();
   const q = (searchParams.get('q') || '').trim().toLowerCase();
   const queryCategory = searchParams.get('category');
+  const queryAudience = searchParams.get('audience');
+  const saleOnly = searchParams.get('sale') === '1';
+  const effectiveAudience = fixedAudience || (['women', 'men', 'kids'].includes(queryAudience) ? queryAudience : activeAudience);
   const [category, setCategory] = useState(queryCategory || 'all');
   const [brand, setBrand] = useState('all');
   const [size, setSize] = useState('all');
@@ -39,7 +44,11 @@ export default function ShopExperience({ fixedAudience = null }) {
 
   useEffect(() => setCategory(queryCategory || 'all'), [queryCategory]);
 
-  const audienceProducts = useMemo(() => products.filter((product) => productMatchesAudience(product, fixedAudience)), [fixedAudience]);
+  useEffect(() => {
+    if (effectiveAudience && effectiveAudience !== activeAudience) setActiveAudience(effectiveAudience);
+  }, [effectiveAudience, activeAudience, setActiveAudience]);
+
+  const audienceProducts = useMemo(() => products.filter((product) => productMatchesAudience(product, effectiveAudience)), [effectiveAudience]);
 
   const availableCategories = useMemo(() => Object.entries(categoryLabels)
     .filter(([key]) => audienceProducts.some((product) => product.category === key))
@@ -63,6 +72,7 @@ export default function ShopExperience({ fixedAudience = null }) {
 
   const filtered = useMemo(() => {
     let next = audienceProducts;
+    if (saleOnly) next = next.filter((product) => product.originalPrice && product.originalPrice > product.price);
     if (q) next = next.filter((product) => {
       const haystack = `${product.brand} ${product.name.bg} ${product.name.en} ${product.category} ${product.colour.bg} ${product.colour.en} ${(product.sizes || []).map((s) => s.label).join(' ')}`.toLowerCase();
       return haystack.includes(q);
@@ -73,17 +83,17 @@ export default function ShopExperience({ fixedAudience = null }) {
     if (colour !== 'all') next = next.filter((product) => product.colour.bg === colour);
     if (availability === 'in_stock') next = next.filter((product) => product.status === 'in_stock');
     if (availability === 'sold_out') next = next.filter((product) => product.status !== 'in_stock');
-    if (fixedAudience === 'kids' && kidGender !== 'all') next = next.filter((product) => product.kidGender === kidGender);
+    if (effectiveAudience === 'kids' && kidGender !== 'all') next = next.filter((product) => product.kidGender === kidGender);
     if (sort === 'low') next = [...next].sort((a, b) => a.price - b.price);
     if (sort === 'high') next = [...next].sort((a, b) => b.price - a.price);
     if (sort === 'discount') next = [...next].sort((a, b) => (getDiscountPercent(b.originalPrice, b.price) || 0) - (getDiscountPercent(a.originalPrice, a.price) || 0));
     if (sort === 'recommended') next = [...next].sort((a, b) => (a.status === 'in_stock' ? 0 : 1) - (b.status === 'in_stock' ? 0 : 1));
     return next;
-  }, [audienceProducts, q, category, brand, size, colour, availability, fixedAudience, kidGender, sort]);
+  }, [audienceProducts, q, category, brand, size, colour, availability, effectiveAudience, kidGender, sort, saleOnly]);
 
-  const title = fixedAudience ? audienceLabels[fixedAudience][language] : t.nav.shop;
+  const title = audienceLabels[effectiveAudience]?.[language] || t.nav.shop;
   const closeSet = (setter) => (value) => { setter(value); setOpenFilter(null); };
-  const activeCount = [category, brand, size, colour, availability, fixedAudience === 'kids' ? kidGender : 'all'].filter((v) => v !== 'all').length;
+  const activeCount = [category, brand, size, colour, availability, effectiveAudience === 'kids' ? kidGender : 'all'].filter((v) => v !== 'all').length + (saleOnly ? 1 : 0);
 
   return (
     <main className="shop-page">
@@ -102,7 +112,7 @@ export default function ShopExperience({ fixedAudience = null }) {
           { value: 'in_stock', label: language === 'bg' ? 'В наличност' : 'In stock' },
           { value: 'sold_out', label: language === 'bg' ? 'Изчерпани' : 'Sold out' },
         ]} onChange={closeSet(setAvailability)} open={openFilter === 'availability'} onToggle={() => setOpenFilter(openFilter === 'availability' ? null : 'availability')} language={language} />
-        {fixedAudience === 'kids' && <DropFilter label={language === 'bg' ? 'За' : 'For'} value={kidGender} options={Object.entries(kidGenderLabels).map(([value, item]) => ({ value, label: item[language] }))} onChange={closeSet(setKidGender)} open={openFilter === 'gender'} onToggle={() => setOpenFilter(openFilter === 'gender' ? null : 'gender')} language={language} />}
+        {effectiveAudience === 'kids' && <DropFilter label={language === 'bg' ? 'За' : 'For'} value={kidGender} options={Object.entries(kidGenderLabels).map(([value, item]) => ({ value, label: item[language] }))} onChange={closeSet(setKidGender)} open={openFilter === 'gender'} onToggle={() => setOpenFilter(openFilter === 'gender' ? null : 'gender')} language={language} />}
 
         <div className="sort-control">
           <span>{t.common.sort}</span>
@@ -122,6 +132,7 @@ export default function ShopExperience({ fixedAudience = null }) {
             <button onClick={() => { setCategory('all'); setBrand('all'); setSize('all'); setColour('all'); setAvailability('all'); setKidGender('all'); }}>{language === 'bg' ? 'Изчисти филтрите' : 'Clear filters'}</button>
           </div>
         )}
+        {saleOnly && <div className="search-result-note">{language === 'bg' ? 'Промоции за' : 'Sale selection for'}: <b>{audienceLabels[effectiveAudience]?.[language]}</b></div>}
         {q && <div className="search-result-note">{language === 'bg' ? 'Резултати за' : 'Results for'}: <b>“{searchParams.get('q')}”</b></div>}
         {filtered.length ? <ProductGrid products={filtered} /> : <div className="no-results">{language === 'bg' ? 'Няма продукти, които отговарят на филтъра.' : 'No products match this filter.'}</div>}
       </section>

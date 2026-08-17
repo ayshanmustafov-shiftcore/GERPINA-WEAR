@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 
 const StoreContext = createContext(null);
+const VALID_AUDIENCES = ['women', 'men', 'kids'];
 
 function normaliseCart(items) {
   if (!Array.isArray(items)) return [];
@@ -17,12 +18,15 @@ function normaliseCart(items) {
 export function StoreProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [favorites, setFavorites] = useState([]);
+  const [activeAudience, setActiveAudienceState] = useState('women');
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     try {
       setCart(normaliseCart(JSON.parse(localStorage.getItem('gerpina-cart-inventory-v1') || '[]')));
       setFavorites(JSON.parse(localStorage.getItem('gerpina-favorites-inventory-v1') || '[]'));
+      const savedAudience = localStorage.getItem('gerpina-active-audience-v1');
+      if (VALID_AUDIENCES.includes(savedAudience)) setActiveAudienceState(savedAudience);
     } catch {}
     setHydrated(true);
   }, []);
@@ -35,9 +39,17 @@ export function StoreProvider({ children }) {
     if (hydrated) localStorage.setItem('gerpina-favorites-inventory-v1', JSON.stringify(favorites));
   }, [favorites, hydrated]);
 
+  useEffect(() => {
+    if (hydrated) localStorage.setItem('gerpina-active-audience-v1', activeAudience);
+  }, [activeAudience, hydrated]);
+
   const api = useMemo(() => ({
     cart,
     favorites,
+    activeAudience,
+    setActiveAudience(audience) {
+      if (VALID_AUDIENCES.includes(audience)) setActiveAudienceState(audience);
+    },
     cartCount: cart.reduce((sum, item) => sum + item.quantity, 0),
     cartTotal: cart.reduce((sum, item) => sum + item.price * item.quantity, 0),
     addToCart(product, selectedSize = null) {
@@ -74,7 +86,7 @@ export function StoreProvider({ children }) {
     toggleFavorite(id) {
       setFavorites((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]);
     },
-  }), [cart, favorites]);
+  }), [cart, favorites, activeAudience]);
 
   return <StoreContext.Provider value={api}>{children}</StoreContext.Provider>;
 }

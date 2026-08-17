@@ -10,7 +10,7 @@ import { useStore } from '@/components/StoreProvider';
 
 export default function ProductDetail({ product }) {
   const { language, t } = useLanguage();
-  const { addToCart, favorites, toggleFavorite } = useStore();
+  const { addToCart, favorites, toggleFavorite, activeAudience } = useStore();
   const availableSizes = useMemo(() => (product.sizes || []).filter((size) => size.available), [product]);
   const [selectedSize, setSelectedSize] = useState(availableSizes[0]?.label || '');
   const [added, setAdded] = useState(false);
@@ -32,9 +32,12 @@ export default function ProductDetail({ product }) {
     setTimeout(() => setAdded(false), 1400);
   };
 
+  const shopHref = `/shop?audience=${activeAudience}`;
+  const categoryHref = `/shop?audience=${activeAudience}&category=${product.category}`;
+
   return (
     <main className="product-page page-width">
-      <div className="product-breadcrumbs"><Link href="/shop">{t.nav.shop}</Link><span>/</span><Link href={`/shop?category=${product.category}`}>{categoryLabels[product.category]?.[language] || product.category}</Link></div>
+      <div className="product-breadcrumbs"><Link href={shopHref}>{t.nav.shop}</Link><span>/</span><Link href={categoryHref}>{categoryLabels[product.category]?.[language] || product.category}</Link></div>
       <div className="product-layout">
         <div className="product-gallery">
           <div className="product-main-image">

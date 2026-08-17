@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { BagIcon, CloseIcon, HeartIcon, MenuIcon, SearchIcon } from '@/components/Icons';
 import { useLanguage } from '@/components/LanguageProvider';
@@ -10,16 +10,23 @@ import { useStore } from '@/components/StoreProvider';
 
 export default function SiteHeader() {
   const { language, setLanguage, t } = useLanguage();
-  const { cartCount, favorites } = useStore();
+  const { cartCount, favorites, activeAudience, setActiveAudience } = useStore();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [query, setQuery] = useState('');
   const router = useRouter();
-  const pathname = usePathname();
+
+  const scopedShopHref = (params = {}) => {
+    const search = new URLSearchParams({ audience: activeAudience });
+    Object.entries(params).forEach(([key, value]) => {
+      if (value) search.set(key, value);
+    });
+    return `/shop?${search.toString()}`;
+  };
 
   const search = (event) => {
     event.preventDefault();
     const value = query.trim();
-    router.push(value ? `/shop?q=${encodeURIComponent(value)}` : '/shop');
+    router.push(scopedShopHref(value ? { q: value } : {}));
   };
 
   const focusSearch = () => {
@@ -31,26 +38,21 @@ export default function SiteHeader() {
   };
 
   const audience = [
-    ['/women', t.nav.women],
-    ['/men', t.nav.men],
-    ['/kids', t.nav.kids],
+    ['women', '/women', t.nav.women],
+    ['men', '/men', t.nav.men],
+    ['kids', '/kids', t.nav.kids],
   ];
 
   const secondary = [
-    ['/shop', t.nav.new],
-    ['/shop', t.nav.clothing],
-    ['/shop?category=dresses', t.nav.dresses],
-    ['/shop?category=tops', t.nav.tops],
-    ['/shop?category=trousers', t.nav.trousers],
-    ['/shop?category=jackets', t.nav.jackets],
-    ['/shop?category=sportswear', t.nav.sport],
-    ['/shop', t.nav.sale],
+    [scopedShopHref(), t.nav.new],
+    [scopedShopHref(), t.nav.clothing],
+    [scopedShopHref({ category: 'dresses' }), t.nav.dresses],
+    [scopedShopHref({ category: 'tops' }), t.nav.tops],
+    [scopedShopHref({ category: 'trousers' }), t.nav.trousers],
+    [scopedShopHref({ category: 'jackets' }), t.nav.jackets],
+    [scopedShopHref({ category: 'sportswear' }), t.nav.sport],
+    [scopedShopHref({ sale: '1' }), t.nav.sale],
   ];
-
-  const audienceIsActive = (href) => {
-    if (pathname === '/' && href === '/women') return true;
-    return pathname === href;
-  };
 
   return (
     <>
@@ -58,7 +60,7 @@ export default function SiteHeader() {
         <div className="top-utility-bar">
           <div className="top-utility-inner page-width">
             <nav className="top-utility-links" aria-label="Quick links">
-              <Link href="/shop" className="outlet-link">
+              <Link href={scopedShopHref({ sale: '1' })} className="outlet-link">
                 <span className="outlet-badge">%</span>
                 <span>Outlet</span>
               </Link>
@@ -82,8 +84,13 @@ export default function SiteHeader() {
           <button className="mobile-menu" onClick={() => setMobileOpen(true)} aria-label="Menu"><MenuIcon /></button>
 
           <nav className="audience-tabs" aria-label="Audience navigation">
-            {audience.map(([href, label]) => (
-              <Link className={audienceIsActive(href) ? 'active' : ''} href={href} key={href}>{label}</Link>
+            {audience.map(([key, href, label]) => (
+              <Link
+                className={activeAudience === key ? 'active' : ''}
+                href={href}
+                key={key}
+                onClick={() => setActiveAudience(key)}
+              >{label}</Link>
             ))}
           </nav>
 
@@ -140,9 +147,10 @@ export default function SiteHeader() {
             </form>
             <div className="drawer-section-title">{language === 'bg' ? 'Пазарувай' : 'Shop'}</div>
             <nav className="drawer-nav">
-              {[...audience, ['/shop', t.nav.shop]].map(([href, label]) => (
-                <Link onClick={() => setMobileOpen(false)} key={href} href={href}>{label}<span>›</span></Link>
+              {audience.map(([key, href, label]) => (
+                <Link onClick={() => { setActiveAudience(key); setMobileOpen(false); }} key={key} href={href}>{label}<span>›</span></Link>
               ))}
+              <Link onClick={() => setMobileOpen(false)} href={scopedShopHref()}>{t.nav.shop}<span>›</span></Link>
             </nav>
             <div className="drawer-section-title">{language === 'bg' ? 'Категории' : 'Categories'}</div>
             <nav className="drawer-nav compact">
