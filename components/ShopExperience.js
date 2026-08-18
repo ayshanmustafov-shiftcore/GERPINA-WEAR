@@ -100,7 +100,7 @@ export default function ShopExperience({ fixedAudience = null }) {
       <section className="shop-heading page-width">
         <div className="breadcrumbs">GERPINA / {title.toUpperCase()}</div>
         <div className="shop-title-line"><h1>{title}</h1><span>{filtered.length} {t.common.products}</span></div>
-        <p>{language === 'bg' ? 'Каталогът вече използва наличностите, размерите и продажните цени от предоставения Excel файл.' : 'The catalogue now uses availability, sizes and selling prices from the supplied Excel inventory.'}</p>
+        <p>{language === 'bg' ? 'Разгледай наличните модели, размери и актуални цени на GERPINA.' : 'Browse available styles, sizes and current GERPINA prices.'}</p>
       </section>
 
       <section className="filter-strip page-width">
@@ -118,7 +118,7 @@ export default function ShopExperience({ fixedAudience = null }) {
           <span>{t.common.sort}</span>
           <select value={sort} onChange={(event) => setSort(event.target.value)}>
             <option value="recommended">{t.common.newest}</option>
-            <option value="discount">{language === 'bg' ? 'Най-голяма отстъпка' : 'Biggest discount'}</option>
+            <option value="discount">{language === 'bg' ? 'Най-голяма разлика в цената' : 'Biggest price difference'}</option>
             <option value="low">{t.common.priceLow}</option>
             <option value="high">{t.common.priceHigh}</option>
           </select>

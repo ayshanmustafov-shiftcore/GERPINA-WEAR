@@ -25,7 +25,7 @@ export default function ProductCard({ product }) {
       <div className="product-card-image-wrap">
         <Link href={`/product/${product.slug}`} className="product-card-image">
           {product.image ? (
-            <Image src={product.image} alt={product.name[language]} fill sizes="(max-width: 700px) 50vw, (max-width: 1100px) 33vw, 25vw" />
+            <Image src={product.image} alt={`${product.brand} ${product.name[language]}`} fill sizes="(max-width: 700px) 50vw, (max-width: 1100px) 33vw, 25vw" />
           ) : (
             <div className="product-image-placeholder" aria-label={language === 'bg' ? 'Снимка предстои' : 'Photo coming soon'}>
               <b>GERPINA</b><span>WEAR</span><small>{language === 'bg' ? 'Снимка скоро' : 'Photo coming soon'}</small>
@@ -42,12 +42,16 @@ export default function ProductCard({ product }) {
         <div className="product-price-line">
           {product.originalPrice && (
             <span className="original-price-wrap">
+              <small>{product.originalPriceType === 'reference' ? (language === 'bg' ? 'Реф. цена' : 'Reference') : (language === 'bg' ? 'Цена на марката' : 'Brand price')}</small>
               <s>€{product.originalPrice.toFixed(2)}</s>
-              {product.originalPriceEstimated && <em>{language === 'bg' ? 'ДЕМО' : 'DEMO'}</em>}
             </span>
           )}
-          <strong>€{product.price.toFixed(2)}</strong>
+          <span className="gerpina-price-wrap">
+            <small>GERPINA</small>
+            <strong>€{product.price.toFixed(2)}</strong>
+          </span>
         </div>
+        {discount && <span className="price-comparison-caption">{language === 'bg' ? `-${discount}% спрямо ${product.originalPriceType === 'reference' ? 'референтната цена' : 'цената на марката'}` : `-${discount}% vs ${product.originalPriceType === 'reference' ? 'reference price' : 'brand price'}`}</span>}
         <span className={`stock-label ${available ? '' : 'sold'}`}><i />{statusText}</span>
       </div>
     </article>

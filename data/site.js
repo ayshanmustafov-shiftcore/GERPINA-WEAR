@@ -1,6 +1,6 @@
 export const siteConfig = {
   brand: 'GERPINA Wear',
-  domain: 'https://gerpina-wear.com',
+  domain: 'https://www.gerpina-wear.com',
   currency: 'EUR',
   market: 'Bulgaria',
   company: {

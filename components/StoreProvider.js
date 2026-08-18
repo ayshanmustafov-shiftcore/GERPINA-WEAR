@@ -23,7 +23,7 @@ export function StoreProvider({ children }) {
 
   useEffect(() => {
     try {
-      setCart(normaliseCart(JSON.parse(localStorage.getItem('gerpina-cart-inventory-v1') || '[]')));
+      setCart(normaliseCart(JSON.parse(localStorage.getItem('gerpina-cart-stock3-v1') || '[]')));
       setFavorites(JSON.parse(localStorage.getItem('gerpina-favorites-inventory-v1') || '[]'));
       const savedAudience = localStorage.getItem('gerpina-active-audience-v1');
       if (VALID_AUDIENCES.includes(savedAudience)) setActiveAudienceState(savedAudience);
@@ -32,7 +32,7 @@ export function StoreProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    if (hydrated) localStorage.setItem('gerpina-cart-inventory-v1', JSON.stringify(cart));
+    if (hydrated) localStorage.setItem('gerpina-cart-stock3-v1', JSON.stringify(cart));
   }, [cart, hydrated]);
 
   useEffect(() => {

@@ -7,12 +7,12 @@ export const products = [
     "category": "jackets",
     "brand": "O'Neill",
     "name": {
-      "bg": "Елек O'Neil",
-      "en": "O'Neill vest"
+      "bg": "Елек",
+      "en": "Vest"
     },
     "description": {
-      "bg": "O'Neill — елек o'neil, цвят розов, размер L.",
-      "en": "O'Neill vest in pink, size L."
+      "bg": "O'Neill — елек, цвят розов, размер L.",
+      "en": "O'Neill vest, in pink, size L."
     },
     "price": 19.99,
     "originalPrice": 89.99,
@@ -29,7 +29,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0002",
@@ -37,14 +40,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "dresses",
-    "brand": "Marc O'Polo",
+    "brand": "Marc O'Polo Denim",
     "name": {
-      "bg": "Рокля Marc O'Polo Denim",
-      "en": "Marc O'Polo dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Marc O'Polo — рокля marc o'polo denim, размер L.",
-      "en": "Marc O'Polo dress, size L."
+      "bg": "Marc O'Polo Denim — рокля, размер L.",
+      "en": "Marc O'Polo Denim dress, size L."
     },
     "price": 29.99,
     "originalPrice": 119.95,
@@ -61,7 +64,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0003",
@@ -71,11 +77,11 @@ export const products = [
     "category": "trousers",
     "brand": "Levi's",
     "name": {
-      "bg": "Анцунг Levis",
-      "en": "Levi's tracksuit"
+      "bg": "Анцуг",
+      "en": "Tracksuit"
     },
     "description": {
-      "bg": "Levi's — анцунг levis, размер XL.",
+      "bg": "Levi's — анцуг, размер XL.",
       "en": "Levi's tracksuit, size XL."
     },
     "price": 18.99,
@@ -93,7 +99,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0004",
@@ -103,11 +112,11 @@ export const products = [
     "category": "trousers",
     "brand": "b.young",
     "name": {
-      "bg": "Панталон B.Young",
-      "en": "b.young trousers"
+      "bg": "Панталон",
+      "en": "Trousers"
     },
     "description": {
-      "bg": "b.young — панталон b.young, размер L / XL.",
+      "bg": "b.young — панталон, размер L / XL.",
       "en": "b.young trousers, size L / XL."
     },
     "price": 17.99,
@@ -125,7 +134,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0005",
@@ -135,12 +147,12 @@ export const products = [
     "category": "dresses",
     "brand": "GAP",
     "name": {
-      "bg": "Рокля GAP",
-      "en": "GAP dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "GAP — рокля gap, цвят зелена, размер S.",
-      "en": "GAP dress in green, size S."
+      "bg": "GAP — рокля, цвят зелена, размер S.",
+      "en": "GAP dress, in green, size S."
     },
     "price": 9.99,
     "originalPrice": 29.99,
@@ -157,7 +169,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0006",
@@ -167,12 +182,12 @@ export const products = [
     "category": "jackets",
     "brand": "Superdry",
     "name": {
-      "bg": "Яке Superdry",
-      "en": "Superdry jacket"
+      "bg": "Яке",
+      "en": "Jacket"
     },
     "description": {
-      "bg": "Superdry — яке superdry, цвят черно, размер M / L.",
-      "en": "Superdry jacket in black, size M / L."
+      "bg": "Superdry — яке, цвят черно, размер M / L.",
+      "en": "Superdry jacket, in black, size M / L."
     },
     "price": 32.99,
     "originalPrice": 89.99,
@@ -189,7 +204,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0007",
@@ -199,12 +217,12 @@ export const products = [
     "category": "dresses",
     "brand": "Guess",
     "name": {
-      "bg": "Рокля Even&Odd",
-      "en": "Guess dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Guess — рокля even&odd, цвят розова, размер S.",
-      "en": "Guess dress in pink, size S."
+      "bg": "Guess — рокля, цвят розова, размер S.",
+      "en": "Guess dress, in pink, size S."
     },
     "price": 19.99,
     "originalPrice": 39.99,
@@ -221,7 +239,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0008",
@@ -231,12 +252,12 @@ export const products = [
     "category": "dresses",
     "brand": "Lauren Ralph Lauren",
     "name": {
-      "bg": "Рокля Ralph Lauren",
-      "en": "Lauren Ralph Lauren dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Lauren Ralph Lauren — рокля ralph lauren, цвят зелена, размер XXXL.",
-      "en": "Lauren Ralph Lauren dress in green, size XXXL."
+      "bg": "Lauren Ralph Lauren — рокля, цвят зелена, размер XXXL.",
+      "en": "Lauren Ralph Lauren dress, in green, size XXXL."
     },
     "price": 29.99,
     "originalPrice": 100.0,
@@ -253,7 +274,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0009",
@@ -261,14 +285,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Edited",
+    "brand": "EDITED",
     "name": {
-      "bg": "Бюстие Edited",
-      "en": "Edited bustier top"
+      "bg": "Бюстие",
+      "en": "Bustier"
     },
     "description": {
-      "bg": "Edited — бюстие edited, размер L.",
-      "en": "Edited bustier top, size L."
+      "bg": "EDITED — бюстие, размер L.",
+      "en": "EDITED bustier, size L."
     },
     "price": 19.99,
     "originalPrice": 34.9,
@@ -285,7 +309,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0010",
@@ -296,19 +323,19 @@ export const products = [
     "brand": "JDY",
     "name": {
       "bg": "Блуза",
-      "en": "JDY blouse"
+      "en": "Blouse"
     },
     "description": {
       "bg": "JDY — блуза, цвят шарени цветя, размер S.",
-      "en": "JDY blouse in multicolour flowers, size S."
+      "en": "JDY blouse, in multicolour floral, size S."
     },
     "price": 15.0,
-    "originalPrice": 39.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Шарени цветя",
-      "en": "Multicolour flowers"
+      "en": "Multicolour floral"
     },
     "sizes": [
       {
@@ -317,7 +344,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0011",
@@ -325,14 +355,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "dresses",
-    "brand": "Vila",
+    "brand": "VILA",
     "name": {
-      "bg": "Рокля Vila",
-      "en": "Vila dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Vila — рокля vila, цвят зелени цветя, размер M.",
-      "en": "Vila dress in green flowers, size M."
+      "bg": "VILA — рокля, цвят зелени цветя, размер M.",
+      "en": "VILA dress, in green floral, size M."
     },
     "price": 14.99,
     "originalPrice": 39.99,
@@ -340,7 +370,7 @@ export const products = [
     "image": null,
     "colour": {
       "bg": "Зелени Цветя",
-      "en": "Green flowers"
+      "en": "Green floral"
     },
     "sizes": [
       {
@@ -349,7 +379,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0012",
@@ -357,14 +390,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "skirts",
-    "brand": "Only",
+    "brand": "ONLY",
     "name": {
-      "bg": "Пола Only",
-      "en": "Only skirt"
+      "bg": "Пола",
+      "en": "Skirt"
     },
     "description": {
-      "bg": "Only — пола only, цвят шарена, размер M.",
-      "en": "Only skirt in multicolour, size M."
+      "bg": "ONLY — пола, цвят шарена, размер M.",
+      "en": "ONLY skirt, in multicolour, size M."
     },
     "price": 19.99,
     "originalPrice": 34.99,
@@ -381,7 +414,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0013",
@@ -392,15 +428,15 @@ export const products = [
     "brand": "BDG",
     "name": {
       "bg": "Дънки",
-      "en": "BDG jeans"
+      "en": "Jeans"
     },
     "description": {
       "bg": "BDG — дънки, цвят сини, размер S.",
-      "en": "BDG jeans in blue, size S."
+      "en": "BDG jeans, in blue, size S."
     },
     "price": 15.0,
-    "originalPrice": 34.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Сини",
@@ -413,7 +449,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0014",
@@ -421,14 +460,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "skirts",
-    "brand": "GWAN",
+    "brand": "Wall G",
     "name": {
-      "bg": "Пола тип панталон Wall G",
-      "en": "GWAN skort"
+      "bg": "Пола тип панталон",
+      "en": "Skort"
     },
     "description": {
-      "bg": "GWAN — пола тип панталон wall g, цвят синя, размер XXL.",
-      "en": "GWAN skort in blue, size XXL."
+      "bg": "Wall G — пола тип панталон, цвят синя, размер XXL.",
+      "en": "Wall G skort, in blue, size XXL."
     },
     "price": 22.99,
     "originalPrice": 45.99,
@@ -445,7 +484,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0015",
@@ -455,12 +497,12 @@ export const products = [
     "category": "trousers",
     "brand": "Cortefiel",
     "name": {
-      "bg": "Панталон Cortefiel",
-      "en": "Cortefiel trousers"
+      "bg": "Панталон",
+      "en": "Trousers"
     },
     "description": {
-      "bg": "Cortefiel — панталон cortefiel, цвят зелен, размер M.",
-      "en": "Cortefiel trousers in green, size M."
+      "bg": "Cortefiel — панталон, цвят зелен, размер M.",
+      "en": "Cortefiel trousers, in green, size M."
     },
     "price": 22.99,
     "originalPrice": 49.99,
@@ -477,7 +519,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0016",
@@ -488,15 +533,15 @@ export const products = [
     "brand": "Kari Traa",
     "name": {
       "bg": "Потник",
-      "en": "Kari Traa tank top"
+      "en": "Tank top"
     },
     "description": {
       "bg": "Kari Traa — потник, цвят жълт, размер XS.",
-      "en": "Kari Traa tank top in yellow, size XS."
+      "en": "Kari Traa tank top, in yellow, size XS."
     },
     "price": 5.0,
-    "originalPrice": 14.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Жълт",
@@ -509,7 +554,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0017",
@@ -519,12 +567,12 @@ export const products = [
     "category": "sweatshirts",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Суитчър Even&Odd",
-      "en": "Even&Odd sweatshirt"
+      "bg": "Суитшърт",
+      "en": "Sweatshirt"
     },
     "description": {
-      "bg": "Even&Odd — суитчър even&odd, цвят розов, размер XXXL.",
-      "en": "Even&Odd sweatshirt in pink, size XXXL."
+      "bg": "Even&Odd — суитшърт, цвят розов, размер XXXL.",
+      "en": "Even&Odd sweatshirt, in pink, size XXXL."
     },
     "price": 14.99,
     "originalPrice": 29.99,
@@ -541,7 +589,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0018",
@@ -549,18 +600,18 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "jackets",
-    "brand": "Only",
+    "brand": "ONLY",
     "name": {
-      "bg": "Зимно Яке",
-      "en": "Only jacket"
+      "bg": "Зимно яке",
+      "en": "Winter jacket"
     },
     "description": {
-      "bg": "Only — зимно яке, цвят лилаво, размер M.",
-      "en": "Only jacket in purple, size M."
+      "bg": "ONLY — зимно яке, цвят лилаво, размер M.",
+      "en": "ONLY winter jacket, in purple, size M."
     },
     "price": 25.0,
-    "originalPrice": 69.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Лилаво",
@@ -573,7 +624,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0019",
@@ -584,15 +638,15 @@ export const products = [
     "brand": "Noa Noa",
     "name": {
       "bg": "Блуза",
-      "en": "Noa Noa blouse"
+      "en": "Blouse"
     },
     "description": {
       "bg": "Noa Noa — блуза, цвят синя, размер L.",
-      "en": "Noa Noa blouse in blue, size L."
+      "en": "Noa Noa blouse, in blue, size L."
     },
     "price": 25.0,
-    "originalPrice": 59.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "синя",
@@ -601,11 +655,14 @@ export const products = [
     "sizes": [
       {
         "label": "L",
-        "available": true
+        "available": false
       }
     ],
-    "status": "in_stock",
-    "stockQuantity": 1
+    "status": "sold_out",
+    "stockQuantity": 1,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0020",
@@ -613,14 +670,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "sportswear",
-    "brand": "Adidas",
+    "brand": "adidas",
     "name": {
-      "bg": "Спортен Клин Adidas",
-      "en": "Adidas sports leggings"
+      "bg": "Спортен клин",
+      "en": "Sports leggings"
     },
     "description": {
-      "bg": "Adidas — спортен клин adidas, цвят розов, размер XXL.",
-      "en": "Adidas sports leggings in pink, size XXL."
+      "bg": "adidas — спортен клин, цвят розов, размер XXL.",
+      "en": "adidas sports leggings, in pink, size XXL."
     },
     "price": 29.99,
     "originalPrice": 64.99,
@@ -637,7 +694,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0021",
@@ -647,11 +707,11 @@ export const products = [
     "category": "sportswear",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Спортен Клин Even&Odd",
-      "en": "Even&Odd sports leggings"
+      "bg": "Спортен клин",
+      "en": "Sports leggings"
     },
     "description": {
-      "bg": "Even&Odd — спортен клин even&odd, размер M / L.",
+      "bg": "Even&Odd — спортен клин, размер M / L.",
       "en": "Even&Odd sports leggings, size M / L."
     },
     "price": 19.99,
@@ -669,7 +729,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0022",
@@ -679,11 +742,11 @@ export const products = [
     "category": "jackets",
     "brand": "NA-KD",
     "name": {
-      "bg": "Палто NA-KD",
-      "en": "NA-KD coat"
+      "bg": "Палто",
+      "en": "Coat"
     },
     "description": {
-      "bg": "NA-KD — палто na-kd, размер S.",
+      "bg": "NA-KD — палто, размер S.",
       "en": "NA-KD coat, size S."
     },
     "price": 19.99,
@@ -701,7 +764,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0023",
@@ -709,14 +775,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Vila",
+    "brand": "VILA",
     "name": {
-      "bg": "Блуза Vila",
-      "en": "Vila blouse"
+      "bg": "Блуза",
+      "en": "Blouse"
     },
     "description": {
-      "bg": "Vila — блуза vila, цвят червена, размер XL.",
-      "en": "Vila blouse in red, size XL."
+      "bg": "VILA — блуза, цвят червена, размер XL.",
+      "en": "VILA blouse, in red, size XL."
     },
     "price": 12.99,
     "originalPrice": 39.99,
@@ -733,7 +799,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0024",
@@ -741,18 +810,18 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Pieces",
+    "brand": "PIECES",
     "name": {
       "bg": "Блуза",
-      "en": "Pieces blouse"
+      "en": "Blouse"
     },
     "description": {
-      "bg": "Pieces — блуза, цвят черна, размер S.",
-      "en": "Pieces blouse in black, size S."
+      "bg": "PIECES — блуза, цвят черна, размер S.",
+      "en": "PIECES blouse, in black, size S."
     },
     "price": 10.0,
-    "originalPrice": 24.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Черна",
@@ -765,7 +834,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0025",
@@ -775,12 +847,12 @@ export const products = [
     "category": "trousers",
     "brand": "LeGer",
     "name": {
-      "bg": "Дънки LeGer",
-      "en": "LeGer jeans"
+      "bg": "Дънки",
+      "en": "Jeans"
     },
     "description": {
-      "bg": "LeGer — дънки leger, цвят черни, размер M.",
-      "en": "LeGer jeans in black, size M."
+      "bg": "LeGer — дънки, цвят черни, размер M.",
+      "en": "LeGer jeans, in black, size M."
     },
     "price": 19.99,
     "originalPrice": 49.99,
@@ -797,7 +869,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0026",
@@ -807,12 +882,12 @@ export const products = [
     "category": "tops",
     "brand": "JDY",
     "name": {
-      "bg": "Блуза JDY",
-      "en": "JDY blouse"
+      "bg": "Блуза",
+      "en": "Blouse"
     },
     "description": {
-      "bg": "JDY — блуза jdy, цвят черна, размер S.",
-      "en": "JDY blouse in black, size S."
+      "bg": "JDY — блуза, цвят черна, размер S.",
+      "en": "JDY blouse, in black, size S."
     },
     "price": 12.99,
     "originalPrice": 29.99,
@@ -829,7 +904,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0027",
@@ -837,22 +915,22 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "dresses",
-    "brand": "Only",
+    "brand": "ONLY",
     "name": {
-      "bg": "Кожена Пола/Рокля",
-      "en": "Only faux-leather skirt/dress"
+      "bg": "Кожена пола/рокля",
+      "en": "Leather skirt/dress"
     },
     "description": {
-      "bg": "Only — кожена пола/рокля, цвят кожена/черна, размер XXS.",
-      "en": "Only faux-leather skirt/dress in кожена/black, size XXS."
+      "bg": "ONLY — кожена пола/рокля, цвят кожена/черна, размер XXS.",
+      "en": "ONLY leather skirt/dress, in black leather, size XXS."
     },
     "price": 20.0,
-    "originalPrice": 59.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Кожена/Черна",
-      "en": "Кожена/black"
+      "en": "Black leather"
     },
     "sizes": [
       {
@@ -861,7 +939,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0028",
@@ -871,11 +952,11 @@ export const products = [
     "category": "bodysuits",
     "brand": "Versace",
     "name": {
-      "bg": "Боди Versace",
-      "en": "Versace bodysuit"
+      "bg": "Боди",
+      "en": "Bodysuit"
     },
     "description": {
-      "bg": "Versace — боди versace, размер 46.",
+      "bg": "Versace — боди, размер 46.",
       "en": "Versace bodysuit, size 46."
     },
     "price": 100.0,
@@ -893,7 +974,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0029",
@@ -901,14 +985,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "jackets",
-    "brand": "Pieces",
+    "brand": "PIECES",
     "name": {
-      "bg": "Яке Pieces",
-      "en": "Pieces jacket"
+      "bg": "Яке",
+      "en": "Jacket"
     },
     "description": {
-      "bg": "Pieces — яке pieces, цвят зелено, размер S.",
-      "en": "Pieces jacket in green, size S."
+      "bg": "PIECES — яке, цвят зелено, размер S.",
+      "en": "PIECES jacket, in green, size S."
     },
     "price": 24.99,
     "originalPrice": 79.99,
@@ -925,7 +1009,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0030",
@@ -935,11 +1022,11 @@ export const products = [
     "category": "tops",
     "brand": "Nike",
     "name": {
-      "bg": "Потник Nike",
-      "en": "Nike tank top"
+      "bg": "Потник",
+      "en": "Tank top"
     },
     "description": {
-      "bg": "Nike — потник nike, размер XXXL.",
+      "bg": "Nike — потник, размер XXXL.",
       "en": "Nike tank top, size XXXL."
     },
     "price": 16.99,
@@ -957,7 +1044,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0031",
@@ -967,11 +1057,11 @@ export const products = [
     "category": "shorts",
     "brand": "Colmar",
     "name": {
-      "bg": "къси гащи Colmar",
-      "en": "Colmar shorts"
+      "bg": "Къси панталони",
+      "en": "Shorts"
     },
     "description": {
-      "bg": "Colmar — къси гащи colmar, размер М.",
+      "bg": "Colmar — къси панталони, размер М.",
       "en": "Colmar shorts, size М."
     },
     "price": 45.99,
@@ -989,7 +1079,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0032",
@@ -999,11 +1092,11 @@ export const products = [
     "category": "tops",
     "brand": "ODLO",
     "name": {
-      "bg": "червена тениска Odlo",
-      "en": "ODLO T-shirt"
+      "bg": "Тениска",
+      "en": "T-shirt"
     },
     "description": {
-      "bg": "ODLO — червена тениска odlo, размер XS.",
+      "bg": "ODLO — тениска, размер XS.",
       "en": "ODLO t-shirt, size XS."
     },
     "price": 15.99,
@@ -1021,7 +1114,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0033",
@@ -1029,18 +1125,18 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Adidas",
+    "brand": "adidas",
     "name": {
-      "bg": "Потник Adidas",
-      "en": "Adidas tank top"
+      "bg": "Потник",
+      "en": "Tank top"
     },
     "description": {
-      "bg": "Adidas — потник adidas, цвят син, размер M.",
-      "en": "Adidas tank top in blue, size M."
+      "bg": "adidas — потник, цвят син, размер M.",
+      "en": "adidas tank top, in blue, size M."
     },
     "price": 20.0,
-    "originalPrice": 59.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Син",
@@ -1053,7 +1149,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0034",
@@ -1061,18 +1160,18 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "trousers",
-    "brand": "Quicksilver",
+    "brand": "Quiksilver",
     "name": {
-      "bg": "Джинси",
-      "en": "Quicksilver jeans"
+      "bg": "Дънки",
+      "en": "Jeans"
     },
     "description": {
-      "bg": "Quicksilver — джинси, размер XS / S.",
-      "en": "Quicksilver jeans, size XS / S."
+      "bg": "Quiksilver — дънки, размер XS / S.",
+      "en": "Quiksilver jeans, size XS / S."
     },
     "price": 20.0,
-    "originalPrice": 59.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Неуточнен",
@@ -1085,7 +1184,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0035",
@@ -1093,14 +1195,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "skirts",
-    "brand": "Vila",
+    "brand": "VILA",
     "name": {
-      "bg": "Пола Vila",
-      "en": "Vila skirt"
+      "bg": "Пола",
+      "en": "Skirt"
     },
     "description": {
-      "bg": "Vila — пола vila, размер XL.",
-      "en": "Vila skirt, size XL."
+      "bg": "VILA — пола, размер XL.",
+      "en": "VILA skirt, size XL."
     },
     "price": 14.99,
     "originalPrice": 34.99,
@@ -1117,7 +1219,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0036",
@@ -1127,12 +1232,12 @@ export const products = [
     "category": "dresses",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Рокля Even&Odd",
-      "en": "Even&Odd dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Even&Odd — рокля even&odd, цвят лилава, размер L.",
-      "en": "Even&Odd dress in purple, size L."
+      "bg": "Even&Odd — рокля, цвят лилава, размер L.",
+      "en": "Even&Odd dress, in purple, size L."
     },
     "price": 12.99,
     "originalPrice": 29.99,
@@ -1149,7 +1254,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0037",
@@ -1159,16 +1267,16 @@ export const products = [
     "category": "other",
     "brand": "JDY",
     "name": {
-      "bg": "JDY дреха",
-      "en": "JDY дреха"
+      "bg": "Карирана блуза",
+      "en": "Checked blouse"
     },
     "description": {
-      "bg": "JDY — jdy дреха, размер XL.",
-      "en": "JDY jdy дреха, size XL."
+      "bg": "JDY — карирана блуза, размер XL.",
+      "en": "JDY checked blouse, size XL."
     },
-    "price": 10.0,
-    "originalPrice": 24.99,
-    "originalPriceEstimated": true,
+    "price": 16.99,
+    "originalPrice": 34.99,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Неуточнен",
@@ -1181,7 +1289,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0038",
@@ -1189,18 +1300,18 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Vila",
+    "brand": "VILA",
     "name": {
       "bg": "Блуза",
-      "en": "Vila blouse"
+      "en": "Blouse"
     },
     "description": {
-      "bg": "Vila — блуза, цвят зелена, размер M.",
-      "en": "Vila blouse in green, size M."
+      "bg": "VILA — блуза, цвят зелена, размер M.",
+      "en": "VILA blouse, in green, size M."
     },
     "price": 10.0,
-    "originalPrice": 29.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Зелена",
@@ -1213,7 +1324,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0039",
@@ -1223,16 +1337,16 @@ export const products = [
     "category": "shorts",
     "brand": "Pepe Jeans",
     "name": {
-      "bg": "Гащи Pepe Jeans",
-      "en": "Гащи Pepe Jeans"
+      "bg": "Гащи",
+      "en": "Bottoms"
     },
     "description": {
-      "bg": "Pepe Jeans — гащи pepe jeans, цвят на цветя, размер M.",
-      "en": "Pepe Jeans гащи pepe jeans in floral, size M."
+      "bg": "Pepe Jeans — гащи, цвят на цветя, размер M.",
+      "en": "Pepe Jeans bottoms, in floral, size M."
     },
-    "price": 15.0,
-    "originalPrice": 39.99,
-    "originalPriceEstimated": true,
+    "price": 15.99,
+    "originalPrice": 34.5,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "На Цветя",
@@ -1245,7 +1359,10 @@ export const products = [
       }
     ],
     "status": "unavailable",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0040",
@@ -1255,11 +1372,11 @@ export const products = [
     "category": "sweatshirts",
     "brand": "Nike",
     "name": {
-      "bg": "Суитчър Nike",
-      "en": "Nike sweatshirt"
+      "bg": "Суитшърт",
+      "en": "Sweatshirt"
     },
     "description": {
-      "bg": "Nike — суитчър nike, размер M.",
+      "bg": "Nike — суитшърт, размер M.",
       "en": "Nike sweatshirt, size M."
     },
     "price": 29.99,
@@ -1277,7 +1394,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0041",
@@ -1285,14 +1405,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "dresses",
-    "brand": "Vila",
+    "brand": "VILA",
     "name": {
-      "bg": "Рокля Vila",
-      "en": "Vila dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Vila — рокля vila, цвят на цветя, размер 42 XL.",
-      "en": "Vila dress in floral, size 42 XL."
+      "bg": "VILA — рокля, цвят на цветя, размер 42 XL.",
+      "en": "VILA dress, in floral, size 42 XL."
     },
     "price": 17.99,
     "originalPrice": 39.99,
@@ -1309,7 +1429,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0042",
@@ -1319,11 +1442,11 @@ export const products = [
     "category": "trousers",
     "brand": "New Look",
     "name": {
-      "bg": "Панталон New Look",
-      "en": "New Look trousers"
+      "bg": "Панталон",
+      "en": "Trousers"
     },
     "description": {
-      "bg": "New Look — панталон new look, размер S.",
+      "bg": "New Look — панталон, размер S.",
       "en": "New Look trousers, size S."
     },
     "price": 13.99,
@@ -1341,7 +1464,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0043",
@@ -1351,12 +1477,12 @@ export const products = [
     "category": "dresses",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Рокля Even&Odd",
-      "en": "Even&Odd dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Even&Odd — рокля even&odd, цвят на цветя, размер XXXXL.",
-      "en": "Even&Odd dress in floral, size XXXXL."
+      "bg": "Even&Odd — рокля, цвят на цветя, размер XXXXL.",
+      "en": "Even&Odd dress, in floral, size XXXXL."
     },
     "price": 19.99,
     "originalPrice": 39.99,
@@ -1373,7 +1499,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0044",
@@ -1381,14 +1510,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Vila",
+    "brand": "VILA",
     "name": {
       "bg": "Блуза",
-      "en": "Vila blouse"
+      "en": "Blouse"
     },
     "description": {
-      "bg": "Vila — блуза, цвят черна с шарени цветя, размер M.",
-      "en": "Vila blouse in black с multicolour flowers, size M."
+      "bg": "VILA — блуза, цвят черна с шарени цветя, размер M.",
+      "en": "VILA blouse, in black floral, size M."
     },
     "price": 19.99,
     "originalPrice": 39.99,
@@ -1396,7 +1525,7 @@ export const products = [
     "image": null,
     "colour": {
       "bg": "Черна С Шарени Цветя",
-      "en": "Black с multicolour flowers"
+      "en": "Black floral"
     },
     "sizes": [
       {
@@ -1405,7 +1534,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0045",
@@ -1415,12 +1547,12 @@ export const products = [
     "category": "tops",
     "brand": "JDY",
     "name": {
-      "bg": "Блуза JDY",
-      "en": "JDY blouse"
+      "bg": "Блуза",
+      "en": "Blouse"
     },
     "description": {
-      "bg": "JDY — блуза jdy, цвят розова, размер L.",
-      "en": "JDY blouse in pink, size L."
+      "bg": "JDY — блуза, цвят розова, размер L.",
+      "en": "JDY blouse, in pink, size L."
     },
     "price": 12.99,
     "originalPrice": 34.99,
@@ -1437,7 +1569,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0046",
@@ -1445,14 +1580,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "dresses",
-    "brand": "Pieces",
+    "brand": "PIECES",
     "name": {
-      "bg": "Рокля Pieces",
-      "en": "Pieces dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Pieces — рокля pieces, цвят зелена, размер M.",
-      "en": "Pieces dress in green, size M."
+      "bg": "PIECES — рокля, цвят зелена, размер M.",
+      "en": "PIECES dress, in green, size M."
     },
     "price": 19.99,
     "originalPrice": 49.99,
@@ -1469,7 +1604,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0047",
@@ -1479,12 +1617,12 @@ export const products = [
     "category": "jackets",
     "brand": "DreiMaster",
     "name": {
-      "bg": "Яке Drei Master",
-      "en": "DreiMaster jacket"
+      "bg": "Яке",
+      "en": "Jacket"
     },
     "description": {
-      "bg": "DreiMaster — яке drei master, цвят drei master, размер L.",
-      "en": "DreiMaster jacket in drei master, size L."
+      "bg": "DreiMaster — яке, цвят drei master, размер L.",
+      "en": "DreiMaster jacket, size L."
     },
     "price": 45.99,
     "originalPrice": 199.95,
@@ -1492,7 +1630,7 @@ export const products = [
     "image": null,
     "colour": {
       "bg": "Drei Master",
-      "en": "Drei master"
+      "en": "Unspecified"
     },
     "sizes": [
       {
@@ -1501,7 +1639,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0048",
@@ -1509,14 +1650,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Pieces",
+    "brand": "PIECES",
     "name": {
-      "bg": "Блуза Vila",
-      "en": "Pieces blouse"
+      "bg": "Блуза",
+      "en": "Blouse"
     },
     "description": {
-      "bg": "Pieces — блуза vila, цвят синя, размер M.",
-      "en": "Pieces blouse in blue, size M."
+      "bg": "PIECES — блуза, цвят синя, размер M.",
+      "en": "PIECES blouse, in blue, size M."
     },
     "price": 14.99,
     "originalPrice": 39.99,
@@ -1533,7 +1674,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0049",
@@ -1543,12 +1687,12 @@ export const products = [
     "category": "skirts",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Пола Even&Odd",
-      "en": "Even&Odd skirt"
+      "bg": "Пола",
+      "en": "Skirt"
     },
     "description": {
-      "bg": "Even&Odd — пола even&odd, цвят розова, размер XS.",
-      "en": "Even&Odd skirt in pink, size XS."
+      "bg": "Even&Odd — пола, цвят розова, размер XS.",
+      "en": "Even&Odd skirt, in pink, size XS."
     },
     "price": 19.99,
     "originalPrice": 39.99,
@@ -1565,7 +1709,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0050",
@@ -1575,12 +1722,12 @@ export const products = [
     "category": "tops",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Туника Even&Odd",
-      "en": "Even&Odd tunic"
+      "bg": "Туника",
+      "en": "Туника"
     },
     "description": {
-      "bg": "Even&Odd — туника even&odd, цвят черна, размер XL.",
-      "en": "Even&Odd tunic in black, size XL."
+      "bg": "Even&Odd — туника, цвят черна, размер XL.",
+      "en": "Even&Odd туника, in black, size XL."
     },
     "price": 15.99,
     "originalPrice": 29.99,
@@ -1597,7 +1744,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0051",
@@ -1607,12 +1757,12 @@ export const products = [
     "category": "tops",
     "brand": "Violeta by Mango",
     "name": {
-      "bg": "Тениска Violeta by Mango",
-      "en": "Violeta by Mango T-shirt"
+      "bg": "Тениска",
+      "en": "T-shirt"
     },
     "description": {
-      "bg": "Violeta by Mango — тениска violeta by mango, цвят синя, размер XXXL.",
-      "en": "Violeta by Mango t-shirt in blue, size XXXL."
+      "bg": "Violeta by Mango — тениска, цвят синя, размер XXXL.",
+      "en": "Violeta by Mango t-shirt, in blue, size XXXL."
     },
     "price": 12.99,
     "originalPrice": 29.99,
@@ -1629,7 +1779,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0052",
@@ -1639,12 +1792,12 @@ export const products = [
     "category": "sportswear",
     "brand": "Reebok",
     "name": {
-      "bg": "Спортен Потник Reebok",
-      "en": "Reebok sports tank top"
+      "bg": "Спортен потник",
+      "en": "Sports tank top"
     },
     "description": {
-      "bg": "Reebok — спортен потник reebok, цвят черен, размер XXL.",
-      "en": "Reebok sports tank top in black, size XXL."
+      "bg": "Reebok — спортен потник, цвят черен, размер XXL.",
+      "en": "Reebok sports tank top, in black, size XXL."
     },
     "price": 25.0,
     "originalPrice": 32.99,
@@ -1661,7 +1814,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0053",
@@ -1671,12 +1827,12 @@ export const products = [
     "category": "dresses",
     "brand": "Noa Noa",
     "name": {
-      "bg": "Рокля Noa Noa",
-      "en": "Noa Noa dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Noa Noa — рокля noa noa, цвят на точки, размер M.",
-      "en": "Noa Noa dress in на точки, size M."
+      "bg": "Noa Noa — рокля, цвят на точки, размер M.",
+      "en": "Noa Noa dress, in polka dot, size M."
     },
     "price": 29.99,
     "originalPrice": 119.95,
@@ -1684,7 +1840,7 @@ export const products = [
     "image": null,
     "colour": {
       "bg": "На Точки",
-      "en": "На точки"
+      "en": "Polka dot"
     },
     "sizes": [
       {
@@ -1693,7 +1849,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0054",
@@ -1703,12 +1862,12 @@ export const products = [
     "category": "tops",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Блузка JDY",
-      "en": "Even&Odd top"
+      "bg": "Туника",
+      "en": "Туника"
     },
     "description": {
-      "bg": "Even&Odd — блузка jdy, цвят черна, размер XL.",
-      "en": "Even&Odd top in black, size XL."
+      "bg": "Even&Odd — туника, цвят черна, размер XL.",
+      "en": "Even&Odd туника, in black, size XL."
     },
     "price": 17.99,
     "originalPrice": 39.99,
@@ -1725,7 +1884,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0055",
@@ -1733,14 +1895,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "jackets",
-    "brand": "Vila",
+    "brand": "VILA",
     "name": {
-      "bg": "Яке Vila",
-      "en": "Vila jacket"
+      "bg": "Яке",
+      "en": "Jacket"
     },
     "description": {
-      "bg": "Vila — яке vila, цвят чернo, размер XXL.",
-      "en": "Vila jacket in чернo, size XXL."
+      "bg": "VILA — яке, цвят чернo, размер XXL.",
+      "en": "VILA jacket, in чернo, size XXL."
     },
     "price": 23.99,
     "originalPrice": 64.99,
@@ -1757,7 +1919,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0056",
@@ -1765,22 +1930,22 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Only",
+    "brand": "ONLY",
     "name": {
-      "bg": "Блуза Only",
-      "en": "Only blouse"
+      "bg": "Блуза",
+      "en": "Blouse"
     },
     "description": {
-      "bg": "Only — блуза only, цвят ярна, размер XXS.",
-      "en": "Only blouse in ярна, size XXS."
+      "bg": "ONLY — блуза, цвят черна, размер XXS.",
+      "en": "ONLY blouse, in black, size XXS."
     },
-    "price": 10.0,
-    "originalPrice": 29.99,
-    "originalPriceEstimated": true,
+    "price": 14.99,
+    "originalPrice": 39.99,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
-      "bg": "Ярна",
-      "en": "Ярна"
+      "bg": "черна",
+      "en": "Black"
     },
     "sizes": [
       {
@@ -1789,7 +1954,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0057",
@@ -1797,14 +1965,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Only",
+    "brand": "ONLY",
     "name": {
       "bg": "Потник",
-      "en": "Only tank top"
+      "en": "Tank top"
     },
     "description": {
-      "bg": "Only — потник, цвят черен, размер XS.",
-      "en": "Only tank top in black, size XS."
+      "bg": "ONLY — потник, цвят черен, размер XS.",
+      "en": "ONLY tank top, in black, size XS."
     },
     "price": 12.99,
     "originalPrice": 34.99,
@@ -1821,7 +1989,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0058",
@@ -1829,14 +2000,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "sportswear",
-    "brand": "IceBreaker",
+    "brand": "Icebreaker",
     "name": {
-      "bg": "Спортен Потник Icebreaker",
-      "en": "IceBreaker sports tank top"
+      "bg": "Спортен потник",
+      "en": "Sports tank top"
     },
     "description": {
-      "bg": "IceBreaker — спортен потник icebreaker, размер L.",
-      "en": "IceBreaker sports tank top, size L."
+      "bg": "Icebreaker — спортен потник, размер L.",
+      "en": "Icebreaker sports tank top, size L."
     },
     "price": 19.99,
     "originalPrice": 69.95,
@@ -1853,7 +2024,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0059",
@@ -1861,14 +2035,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "Vila",
+    "brand": "VILA",
     "name": {
-      "bg": "Прозираща Блуза Vila",
-      "en": "Vila sheer blouse"
+      "bg": "Прозираща блуза",
+      "en": "Sheer blouse"
     },
     "description": {
-      "bg": "Vila — прозираща блуза vila, размер L.",
-      "en": "Vila sheer blouse, size L."
+      "bg": "VILA — прозираща блуза, размер L.",
+      "en": "VILA sheer blouse, size L."
     },
     "price": 9.99,
     "originalPrice": 26.99,
@@ -1885,7 +2059,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0060",
@@ -1895,16 +2072,16 @@ export const products = [
     "category": "jackets",
     "brand": "O'Neill",
     "name": {
-      "bg": "Вълнено Палто",
-      "en": "O'Neill wool coat"
+      "bg": "Вълнено палто",
+      "en": "Wool coat"
     },
     "description": {
       "bg": "O'Neill — вълнено палто, цвят черно, размер М.",
-      "en": "O'Neill wool coat in black, size М."
+      "en": "O'Neill wool coat, in black, size М."
     },
     "price": 35.0,
-    "originalPrice": 89.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Черно",
@@ -1917,7 +2094,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0061",
@@ -1925,14 +2105,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "dresses",
-    "brand": "Closed",
+    "brand": "CLOSED",
     "name": {
-      "bg": "Рокля Vila",
-      "en": "Closed dress"
+      "bg": "Рокля",
+      "en": "Dress"
     },
     "description": {
-      "bg": "Closed — рокля vila, цвят шарена, размер XXL.",
-      "en": "Closed dress in multicolour, size XXL."
+      "bg": "CLOSED — рокля, цвят шарена, размер XXL.",
+      "en": "CLOSED dress, in multicolour, size XXL."
     },
     "price": 19.99,
     "originalPrice": 39.99,
@@ -1949,7 +2129,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0062",
@@ -1959,11 +2142,11 @@ export const products = [
     "category": "sportswear",
     "brand": "Reebok",
     "name": {
-      "bg": "Спортен Клин Reebok",
-      "en": "Reebok sports leggings"
+      "bg": "Спортен клин",
+      "en": "Sports leggings"
     },
     "description": {
-      "bg": "Reebok — спортен клин reebok, размер XXXL.",
+      "bg": "Reebok — спортен клин, размер XXXL.",
       "en": "Reebok sports leggings, size XXXL."
     },
     "price": 22.99,
@@ -1981,7 +2164,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0063",
@@ -1992,11 +2178,11 @@ export const products = [
     "brand": "Anna Field",
     "name": {
       "bg": "Панталон",
-      "en": "Anna Field trousers"
+      "en": "Trousers"
     },
     "description": {
       "bg": "Anna Field — панталон, цвят син, размер M.",
-      "en": "Anna Field trousers in blue, size M."
+      "en": "Anna Field trousers, in blue, size M."
     },
     "price": 15.99,
     "originalPrice": 39.99,
@@ -2013,7 +2199,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0064",
@@ -2023,16 +2212,16 @@ export const products = [
     "category": "skirts",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Къса Пола",
-      "en": "Even&Odd skirt"
+      "bg": "Къса пола",
+      "en": "Mini skirt"
     },
     "description": {
       "bg": "Even&Odd — къса пола, размер S.",
-      "en": "Even&Odd skirt, size S."
+      "en": "Even&Odd mini skirt, size S."
     },
     "price": 20.0,
-    "originalPrice": 59.99,
-    "originalPriceEstimated": true,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
     "image": null,
     "colour": {
       "bg": "Неуточнен",
@@ -2041,11 +2230,14 @@ export const products = [
     "sizes": [
       {
         "label": "S",
-        "available": true
+        "available": false
       }
     ],
-    "status": "in_stock",
-    "stockQuantity": 1
+    "status": "sold_out",
+    "stockQuantity": 1,
+    "originalPriceType": "none",
+    "originalPriceSource": null,
+    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0065",
@@ -2056,11 +2248,11 @@ export const products = [
     "brand": "NU-IN",
     "name": {
       "bg": "Бюстие",
-      "en": "NU-IN bustier top"
+      "en": "Bustier"
     },
     "description": {
       "bg": "NU-IN — бюстие, размер M.",
-      "en": "NU-IN bustier top, size M."
+      "en": "NU-IN bustier, size M."
     },
     "price": 14.99,
     "originalPrice": 34.99,
@@ -2077,7 +2269,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0066",
@@ -2085,14 +2280,14 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "tops",
-    "brand": "GERPINA Selection",
+    "brand": "NU-IN",
     "name": {
-      "bg": "Потник NIU-IN",
-      "en": "GERPINA Selection tank top"
+      "bg": "Потник",
+      "en": "Tank top"
     },
     "description": {
-      "bg": "GERPINA Selection — потник niu-in, размер M.",
-      "en": "GERPINA Selection tank top, size M."
+      "bg": "NU-IN — потник, размер M.",
+      "en": "NU-IN tank top, size M."
     },
     "price": 11.99,
     "originalPrice": 29.99,
@@ -2109,7 +2304,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
     "id": "gw-0067",
@@ -2119,15 +2317,15 @@ export const products = [
     "category": "jackets",
     "brand": "Minoti",
     "name": {
-      "bg": "Зимно Яке С Пух",
-      "en": "Minoti puffer jacket"
+      "bg": "Зимно яке с пух",
+      "en": "Puffer jacket"
     },
     "description": {
-      "bg": "Minoti — зимно яке с пух, цвят синьо, размер 13/14 г..",
-      "en": "Minoti puffer jacket in blue, size 13/14 г.."
+      "bg": "Minoti — зимно яке с пух, цвят синьо, размер 13/14 г.",
+      "en": "Minoti puffer jacket, in blue, size 13/14 г."
     },
     "price": 24.99,
-    "originalPrice": 59.99,
+    "originalPrice": 63.59,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2141,7 +2339,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://bg.sportsdirect.com/minoti",
+    "priceReviewNote": "Current Minoti winter-jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0068",
@@ -2152,14 +2353,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Клин",
-      "en": "Minoti leggings"
+      "en": "Leggings"
     },
     "description": {
       "bg": "Minoti — клин, цвят розов, размер 12/18 месеца.",
-      "en": "Minoti leggings in pink, size 12/18 месеца."
+      "en": "Minoti leggings, in pink, size 12/18 месеца."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 14.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2173,7 +2374,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0069",
@@ -2183,15 +2387,15 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Къси Дънки",
-      "en": "Minoti jeans"
+      "bg": "Къси дънки",
+      "en": "Къси дънки"
     },
     "description": {
-      "bg": "Minoti — къси дънки, цвят сини?, размер 6/7 г..",
-      "en": "Minoti jeans in blue?, size 6/7 г.."
+      "bg": "Minoti — къси дънки, цвят сини?, размер 6/7 г.",
+      "en": "Minoti къси дънки, in blue?, size 6/7 г."
     },
     "price": 13.99,
-    "originalPrice": 39.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2205,7 +2409,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://www.ozone.ro/brand-minoti/",
+    "priceReviewNote": "Ozone Minoti jeans SRP/category reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0070",
@@ -2216,14 +2423,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Клин",
-      "en": "Minoti leggings"
+      "en": "Leggings"
     },
     "description": {
       "bg": "Minoti — клин, цвят сив с цветя, размер 12/18 месеца.",
-      "en": "Minoti leggings in grey with flowers, size 12/18 месеца."
+      "en": "Minoti leggings, in grey with flowers, size 12/18 месеца."
     },
     "price": 9.99,
-    "originalPrice": 29.99,
+    "originalPrice": 14.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2237,7 +2444,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0071",
@@ -2248,14 +2458,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блуза",
-      "en": "Minoti blouse"
+      "en": "Blouse"
     },
     "description": {
-      "bg": "Minoti — блуза, цвят шарена, размер 8/9 г..",
-      "en": "Minoti blouse in multicolour, size 8/9 г.."
+      "bg": "Minoti — блуза, цвят шарена, размер 8/9 г.",
+      "en": "Minoti blouse, in multicolour, size 8/9 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 12.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2269,7 +2479,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0072",
@@ -2280,14 +2493,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блуза",
-      "en": "Minoti blouse"
+      "en": "Blouse"
     },
     "description": {
-      "bg": "Minoti — блуза, цвят бяла, размер 2/3 г..",
-      "en": "Minoti blouse in white, size 2/3 г.."
+      "bg": "Minoti — блуза, цвят бяла, размер 2/3 г.",
+      "en": "Minoti blouse, in white, size 2/3 г."
     },
     "price": 6.99,
-    "originalPrice": 19.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2301,7 +2514,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0073",
@@ -2311,15 +2527,15 @@ export const products = [
     "category": "tops",
     "brand": "Minoti",
     "name": {
-      "bg": "Тениска Поло",
-      "en": "Minoti polo shirt"
+      "bg": "Поло тениска",
+      "en": "Polo shirt"
     },
     "description": {
-      "bg": "Minoti — тениска поло, размер 18/24 месеца.",
+      "bg": "Minoti — поло тениска, размер 18/24 месеца.",
       "en": "Minoti polo shirt, size 18/24 месеца."
     },
     "price": 11.99,
-    "originalPrice": 29.99,
+    "originalPrice": 16.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2333,7 +2549,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0074",
@@ -2344,14 +2563,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Комплект",
-      "en": "Minoti set"
+      "en": "Set"
     },
     "description": {
       "bg": "Minoti — комплект, цвят кремов, размер 12/18 месеца.",
-      "en": "Minoti set in cream, size 12/18 месеца."
+      "en": "Minoti set, in cream, size 12/18 месеца."
     },
     "price": 14.99,
-    "originalPrice": 39.99,
+    "originalPrice": 26.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2365,7 +2584,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/baby",
+    "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0075",
@@ -2375,20 +2597,20 @@ export const products = [
     "category": "tops",
     "brand": "Minoti",
     "name": {
-      "bg": "Блузака",
-      "en": "Minoti top"
+      "bg": "Блузка",
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузака, цвят бяла stay cool, размер 4/5 г..",
-      "en": "Minoti top in white stay cool, size 4/5 г.."
+      "bg": "Minoti — блузка, цвят бяла stay cool, размер 4/5 г.",
+      "en": "Minoti top, in white “stay cool”, size 4/5 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 12.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Бяла STAY COOL",
-      "en": "White stay cool"
+      "en": "White “STAY COOL”"
     },
     "sizes": [
       {
@@ -2397,7 +2619,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0076",
@@ -2407,20 +2632,20 @@ export const products = [
     "category": "shirts",
     "brand": "Minoti",
     "name": {
-      "bg": "Дънкова Риза Къс Ракав",
-      "en": "Minoti short-sleeve denim shirt"
+      "bg": "Дънкова риза с къс ръкав",
+      "en": "Short-sleeve denim shirt"
     },
     "description": {
-      "bg": "Minoti — дънкова риза къс ракав, цвят синя?, размер 18/24 месеца.",
-      "en": "Minoti short-sleeve denim shirt in blue?, size 18/24 месеца."
+      "bg": "Minoti — дънкова риза с къс ръкав, цвят синя?, размер 18/24 месеца.",
+      "en": "Minoti short-sleeve denim shirt, in blue, size 18/24 месеца."
     },
     "price": 9.99,
-    "originalPrice": 19.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Синя?",
-      "en": "Blue?"
+      "en": "Blue"
     },
     "sizes": [
       {
@@ -2429,7 +2654,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/baby?page=8",
+    "priceReviewNote": "Comparable Minoti denim shirt reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0077",
@@ -2440,14 +2668,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
       "bg": "Minoti — яке, цвят розово, размер 18/24 месеца.",
-      "en": "Minoti jacket in pink, size 18/24 месеца."
+      "en": "Minoti jacket, in pink, size 18/24 месеца."
     },
     "price": 12.99,
-    "originalPrice": 39.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2461,7 +2689,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0078",
@@ -2472,14 +2703,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
       "bg": "Minoti — яке, цвят бяло с дъгички, размер 18/24 месеца.",
-      "en": "Minoti jacket in white rainbow print, size 18/24 месеца."
+      "en": "Minoti jacket, in white rainbow print, size 18/24 месеца."
     },
     "price": 14.99,
-    "originalPrice": 44.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2493,7 +2724,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0079",
@@ -2504,19 +2738,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
       "bg": "Minoti — яке, цвят зелено с бели точки, размер 12/18 месеца.",
-      "en": "Minoti jacket in green с white dots, size 12/18 месеца."
+      "en": "Minoti jacket, in green with white dots, size 12/18 месеца."
     },
     "price": 15.99,
-    "originalPrice": 39.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Зелено С Бели Точки",
-      "en": "Green с white dots"
+      "en": "Green with white dots"
     },
     "sizes": [
       {
@@ -2525,7 +2759,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0080",
@@ -2536,14 +2773,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
-      "bg": "Minoti — яке, цвят леопардово, размер 3/4 г..",
-      "en": "Minoti jacket in leopard print, size 3/4 г.."
+      "bg": "Minoti — яке, цвят леопардово, размер 3/4 г.",
+      "en": "Minoti jacket, in leopard print, size 3/4 г."
     },
     "price": 15.99,
-    "originalPrice": 49.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2557,7 +2794,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0081",
@@ -2568,19 +2808,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
-      "bg": "Minoti — яке, цвят синьо с ламички (llama), размер 4/5 г..",
-      "en": "Minoti jacket in blue llama print (llama), size 4/5 г.."
+      "bg": "Minoti — яке, цвят синьо с ламички (llama), размер 4/5 г.",
+      "en": "Minoti jacket, in blue llama print, size 4/5 г."
     },
     "price": 14.99,
-    "originalPrice": 39.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Синьо С Ламички (LLAMA)",
-      "en": "Blue llama print (llama)"
+      "en": "Blue llama print"
     },
     "sizes": [
       {
@@ -2589,7 +2829,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0082",
@@ -2600,14 +2843,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Клин",
-      "en": "Minoti leggings"
+      "en": "Leggings"
     },
     "description": {
       "bg": "Minoti — клин, цвят розов с цветенца, размер 18/24 месеца.",
-      "en": "Minoti leggings in pink floral, size 18/24 месеца."
+      "en": "Minoti leggings, in pink floral, size 18/24 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 14.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2621,7 +2864,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0083",
@@ -2632,14 +2878,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Бански",
-      "en": "Minoti swimwear"
+      "en": "Swimwear"
     },
     "description": {
       "bg": "Minoti — бански, размер 18/24 месеца.",
       "en": "Minoti swimwear, size 18/24 месеца."
     },
     "price": 6.99,
-    "originalPrice": 19.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2653,7 +2899,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/minoti-kids-swimwear?page=2",
+    "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0084",
@@ -2664,14 +2913,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Пуловер",
-      "en": "Minoti sweater"
+      "en": "Sweater"
     },
     "description": {
       "bg": "Minoti — пуловер, цвят сив, размер 3/6 месеца.",
-      "en": "Minoti sweater in grey, size 3/6 месеца."
+      "en": "Minoti sweater, in grey, size 3/6 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2685,7 +2934,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids/jnr?page=4",
+    "priceReviewNote": "Comparable Minoti knit/jumper reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0085",
@@ -2696,14 +2948,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
       "bg": "Minoti — яке, цвят с лимони, размер 12/18 месеца.",
-      "en": "Minoti jacket in lemon print, size 12/18 месеца."
+      "en": "Minoti jacket, in lemon print, size 12/18 месеца."
     },
     "price": 14.99,
-    "originalPrice": 44.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2717,7 +2969,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0086",
@@ -2727,15 +2982,15 @@ export const products = [
     "category": "tops",
     "brand": "Minoti",
     "name": {
-      "bg": "Тениска Love Summer",
-      "en": "Minoti T-shirt"
+      "bg": "Тениска \"Love Summer\"",
+      "en": "“Love Summer” T-shirt"
     },
     "description": {
-      "bg": "Minoti — тениска love summer, размер 2/3 г..",
-      "en": "Minoti t-shirt, size 2/3 г.."
+      "bg": "Minoti — тениска \"love summer\", размер 2/3 г.",
+      "en": "Minoti “love summer” t-shirt, size 2/3 г."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2749,7 +3004,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0087",
@@ -2760,19 +3018,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
       "bg": "Minoti — блузка, цвят леопардова, размер 18/24 месеца.",
-      "en": "Minoti top in leopard print, size 18/24 месеца."
+      "en": "Minoti top, in leopard, size 18/24 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Леопардова",
-      "en": "Leopard print"
+      "en": "Leopard"
     },
     "sizes": [
       {
@@ -2781,7 +3039,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0088",
@@ -2791,15 +3052,15 @@ export const products = [
     "category": "shorts",
     "brand": "Minoti",
     "name": {
-      "bg": "Къси Панталони",
-      "en": "Minoti shorts"
+      "bg": "Къси панталони",
+      "en": "Shorts"
     },
     "description": {
       "bg": "Minoti — къси панталони, цвят сини, размер 12/18 месеца.",
-      "en": "Minoti shorts in blue, size 12/18 месеца."
+      "en": "Minoti shorts, in blue, size 12/18 месеца."
     },
     "price": 9.99,
-    "originalPrice": 29.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2813,7 +3074,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
+    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0089",
@@ -2824,14 +3088,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Дънки",
-      "en": "Minoti jeans"
+      "en": "Jeans"
     },
     "description": {
-      "bg": "Minoti — дънки, цвят бели, размер 8/9 г..",
-      "en": "Minoti jeans in white, size 8/9 г.."
+      "bg": "Minoti — дънки, цвят бели, размер 8/9 г.",
+      "en": "Minoti jeans, in white, size 8/9 г."
     },
     "price": 12.99,
-    "originalPrice": 29.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2845,7 +3109,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://www.ozone.ro/brand-minoti/",
+    "priceReviewNote": "Ozone Minoti jeans SRP/category reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0090",
@@ -2856,19 +3123,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят бяла с цветенца, размер 5/6 г..",
-      "en": "Minoti top in white с цветенца, size 5/6 г.."
+      "bg": "Minoti — блузка, цвят бяла с цветенца, размер 5/6 г.",
+      "en": "Minoti top, in white floral, size 5/6 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 12.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Бяла С Цветенца",
-      "en": "White с цветенца"
+      "en": "White floral"
     },
     "sizes": [
       {
@@ -2877,7 +3144,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0091",
@@ -2888,14 +3158,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Дънки",
-      "en": "Minoti jeans"
+      "en": "Jeans"
     },
     "description": {
-      "bg": "Minoti — дънки, цвят черни, размер 2/3 г..",
-      "en": "Minoti jeans in black, size 2/3 г.."
+      "bg": "Minoti — дънки, цвят черни, размер 2/3 г.",
+      "en": "Minoti jeans, in black, size 2/3 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2909,7 +3179,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://www.ozone.ro/brand-minoti/",
+    "priceReviewNote": "Ozone Minoti jeans SRP/category reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0092",
@@ -2920,14 +3193,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Комплект",
-      "en": "Minoti set"
+      "en": "Set"
     },
     "description": {
-      "bg": "Minoti — комплект, цвят шарено синьо, размер 4/5 г. + 7/8 г..",
-      "en": "Minoti set in multicolour blue, size 4/5 г. + 7/8 г.."
+      "bg": "Minoti — комплект, цвят шарено синьо, размер 4/5 г. + 7/8 г.",
+      "en": "Minoti set, in multicolour blue, size 4/5 г. + 7/8 г."
     },
     "price": 14.99,
-    "originalPrice": 39.99,
+    "originalPrice": 26.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -2945,7 +3218,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/baby",
+    "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0093",
@@ -2956,19 +3232,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
       "bg": "Minoti — блузка, цвят бяла с черни точки, размер 9/12 месеца.",
-      "en": "Minoti top in white с black dots, size 9/12 месеца."
+      "en": "Minoti top, in white with black dots, size 9/12 месеца."
     },
     "price": 9.99,
-    "originalPrice": 29.99,
+    "originalPrice": 12.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Бяла С Черни Точки",
-      "en": "White с black dots"
+      "en": "White with black dots"
     },
     "sizes": [
       {
@@ -2977,7 +3253,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0094",
@@ -2988,14 +3267,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
-      "bg": "Minoti — яке, цвят розово, размер 5/6 г..",
-      "en": "Minoti jacket in pink, size 5/6 г.."
+      "bg": "Minoti — яке, цвят розово, размер 5/6 г.",
+      "en": "Minoti jacket, in pink, size 5/6 г."
     },
     "price": 15.99,
-    "originalPrice": 44.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3009,7 +3288,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0095",
@@ -3020,14 +3302,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
       "bg": "Minoti — яке, цвят с лимони, размер 12/18 месеца.",
-      "en": "Minoti jacket in lemon print, size 12/18 месеца."
+      "en": "Minoti jacket, in lemon print, size 12/18 месеца."
     },
     "price": 19.99,
-    "originalPrice": 59.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3041,7 +3323,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0096",
@@ -3052,19 +3337,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
-      "bg": "Minoti — яке, цвят черно мъжко, размер 2/3 г..",
-      "en": "Minoti jacket in black мъжко, size 2/3 г.."
+      "bg": "Minoti — яке, цвят черно мъжко, размер 2/3 г.",
+      "en": "Minoti jacket, in black, size 2/3 г."
     },
     "price": 14.99,
-    "originalPrice": 39.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Черно Мъжко",
-      "en": "Black мъжко"
+      "en": "Black"
     },
     "sizes": [
       {
@@ -3073,7 +3358,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0097",
@@ -3083,15 +3371,15 @@ export const products = [
     "category": "other",
     "brand": "Minoti",
     "name": {
-      "bg": "Двойни Рокли?",
-      "en": "Minoti Двойни Рокли?"
+      "bg": "2 рокли (комплект?)",
+      "en": "2-dress set"
     },
     "description": {
-      "bg": "Minoti — двойни рокли?, размер 2/3 г..",
-      "en": "Minoti двойни рокли?, size 2/3 г.."
+      "bg": "Minoti — 2 рокли (комплект?), размер 2/3 г.",
+      "en": "Minoti 2-dress set, size 2/3 г."
     },
     "price": 9.99,
-    "originalPrice": 29.99,
+    "originalPrice": 26.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3105,7 +3393,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/multipacks",
+    "priceReviewNote": "Comparable Minoti dress multipack; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0098",
@@ -3116,14 +3407,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят сива, размер 2/3 г..",
-      "en": "Minoti top in grey, size 2/3 г.."
+      "bg": "Minoti — блузка, цвят сива, размер 2/3 г.",
+      "en": "Minoti top, in grey, size 2/3 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 12.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3137,7 +3428,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0099",
@@ -3148,19 +3442,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят бяла venice beach, размер 3/4 г..",
-      "en": "Minoti top in white venice beach, size 3/4 г.."
+      "bg": "Minoti — блузка, цвят бяла venice beach, размер 3/4 г.",
+      "en": "Minoti top, in white “venice beach”, size 3/4 г."
     },
     "price": 6.99,
-    "originalPrice": 19.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Бяла Venice Beach",
-      "en": "White venice beach"
+      "en": "White “Venice Beach”"
     },
     "sizes": [
       {
@@ -3169,7 +3463,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0100",
@@ -3179,15 +3476,15 @@ export const products = [
     "category": "other",
     "brand": "Minoti",
     "name": {
-      "bg": "Двойни Рокли?",
-      "en": "Minoti Двойни Рокли?"
+      "bg": "2 рокли (комплект?)",
+      "en": "2-dress set"
     },
     "description": {
-      "bg": "Minoti — двойни рокли?, размер 12/18 месеца.",
-      "en": "Minoti двойни рокли?, size 12/18 месеца."
+      "bg": "Minoti — 2 рокли (комплект?), размер 12/18 месеца.",
+      "en": "Minoti 2-dress set, size 12/18 месеца."
     },
     "price": 9.99,
-    "originalPrice": 19.99,
+    "originalPrice": 26.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3201,7 +3498,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/multipacks",
+    "priceReviewNote": "Comparable Minoti dress multipack; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0101",
@@ -3211,15 +3511,15 @@ export const products = [
     "category": "accessories",
     "brand": "Minoti",
     "name": {
-      "bg": "Двоййни Шапки?",
-      "en": "Minoti hats"
+      "bg": "2 шапки (комплект?)",
+      "en": "2-hat set"
     },
     "description": {
-      "bg": "Minoti — двоййни шапки?, размер 3/6 месеца.",
-      "en": "Minoti hats, size 3/6 месеца."
+      "bg": "Minoti — 2 шапки (комплект?), размер 3/6 месеца.",
+      "en": "Minoti 2-hat set, size 3/6 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 8.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3233,7 +3533,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/baby-accessories",
+    "priceReviewNote": "Comparable Minoti baby hat pack; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0102",
@@ -3244,19 +3547,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят розова feeling happy, размер 3/4 г..",
-      "en": "Minoti top in pink feeling happy, size 3/4 г.."
+      "bg": "Minoti — блузка, цвят розова feeling happy, размер 3/4 г.",
+      "en": "Minoti top, in pink “feeling happy”, size 3/4 г."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Розова Feeling Happy",
-      "en": "Pink feeling happy"
+      "en": "Pink “Feeling Happy”"
     },
     "sizes": [
       {
@@ -3265,7 +3568,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0103",
@@ -3275,20 +3581,20 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Клинче",
-      "en": "Minoti leggings"
+      "bg": "Клин",
+      "en": "Leggings"
     },
     "description": {
-      "bg": "Minoti — клинче, цвят лилаво леопардово, размер 18/24 месеца.",
-      "en": "Minoti leggings in purple leopard print, size 18/24 месеца."
+      "bg": "Minoti — клин, цвят лилаво леопардово, размер 18/24 месеца.",
+      "en": "Minoti leggings, in purple leopard, size 18/24 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 14.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Лилаво Леопардово",
-      "en": "Purple leopard print"
+      "en": "Purple leopard"
     },
     "sizes": [
       {
@@ -3297,7 +3603,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0104",
@@ -3307,20 +3616,20 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Клинче",
-      "en": "Minoti leggings"
+      "bg": "Клин",
+      "en": "Leggings"
     },
     "description": {
-      "bg": "Minoti — клинче, цвят зелено с черна точка, размер 2/3 г..",
-      "en": "Minoti leggings in green с black точка, size 2/3 г.."
+      "bg": "Minoti — клин, цвят зелено с черна точка, размер 2/3 г.",
+      "en": "Minoti leggings, in green with black dot, size 2/3 г."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 14.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Зелено С Черна Точка",
-      "en": "Green с black точка"
+      "en": "Green with black dot"
     },
     "sizes": [
       {
@@ -3329,7 +3638,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0105",
@@ -3340,19 +3652,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Бански",
-      "en": "Minoti swimwear"
+      "en": "Swimwear"
     },
     "description": {
       "bg": "Minoti — бански, цвят америка, размер 18/24 месеца.",
-      "en": "Minoti swimwear in америка, size 18/24 месеца."
+      "en": "Minoti swimwear, in usa print, size 18/24 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Америка",
-      "en": "Америка"
+      "en": "USA print"
     },
     "sizes": [
       {
@@ -3361,7 +3673,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/minoti-kids-swimwear?page=2",
+    "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0106",
@@ -3372,14 +3687,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Пликчета",
-      "en": "Minoti briefs"
+      "en": "Underwear"
     },
     "description": {
-      "bg": "Minoti — пликчета, размер 10/11 г..",
-      "en": "Minoti briefs, size 10/11 г.."
+      "bg": "Minoti — пликчета, размер 10/11 г.",
+      "en": "Minoti underwear, size 10/11 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3393,7 +3708,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/pack-3",
+    "priceReviewNote": "Comparable Minoti underwear multipack; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0107",
@@ -3403,15 +3721,15 @@ export const products = [
     "category": "bodysuits",
     "brand": "Minoti",
     "name": {
-      "bg": "4 Ромпърг",
-      "en": "Minoti romper set"
+      "bg": "Комплект от 4 ромпъра",
+      "en": "4-pack rompers"
     },
     "description": {
-      "bg": "Minoti — 4 ромпърг, размер Новородено 50см.",
-      "en": "Minoti romper set, size Новородено 50см."
+      "bg": "Minoti — комплект от 4 ромпъра, размер Новородено 50см.",
+      "en": "Minoti 4-pack rompers, size Новородено 50см."
     },
     "price": 9.99,
-    "originalPrice": 29.99,
+    "originalPrice": 28.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3425,7 +3743,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/baby",
+    "priceReviewNote": "Comparable Minoti baby multipack; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0108",
@@ -3435,15 +3756,15 @@ export const products = [
     "category": "accessories",
     "brand": "Minoti",
     "name": {
-      "bg": "Шапки",
-      "en": "Minoti hats"
+      "bg": "Комплект от 2 шапки",
+      "en": "2-pack hats"
     },
     "description": {
-      "bg": "Minoti — шапки, размер 0/3 месеца.",
-      "en": "Minoti hats, size 0/3 месеца."
+      "bg": "Minoti — комплект от 2 шапки, размер 0/3 месеца.",
+      "en": "Minoti 2-pack hats, size 0/3 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 8.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3457,7 +3778,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/baby-accessories",
+    "priceReviewNote": "Comparable Minoti baby hat pack; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0109",
@@ -3468,19 +3792,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят бяла със сърце, размер 3/4 г..",
-      "en": "Minoti top in white със сърце, size 3/4 г.."
+      "bg": "Minoti — блузка, цвят бяла със сърце, размер 3/4 г.",
+      "en": "Minoti top, in white with heart, size 3/4 г."
     },
     "price": 8.99,
-    "originalPrice": 24.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Бяла Със Сърце",
-      "en": "White със сърце"
+      "en": "White with heart"
     },
     "sizes": [
       {
@@ -3489,7 +3813,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0110",
@@ -3500,19 +3827,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Поличка",
-      "en": "Minoti skirt"
+      "en": "Skirt"
     },
     "description": {
       "bg": "Minoti — поличка, цвят дънкова, размер 18/24 месеца.",
-      "en": "Minoti skirt in дънкова, size 18/24 месеца."
+      "en": "Minoti skirt, in denim, size 18/24 месеца."
     },
     "price": 8.99,
-    "originalPrice": 24.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Дънкова",
-      "en": "Дънкова"
+      "en": "Denim"
     },
     "sizes": [
       {
@@ -3521,7 +3848,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
+    "priceReviewNote": "Current Minoti skirt/shorts price band; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0111",
@@ -3531,15 +3861,15 @@ export const products = [
     "category": "underwear",
     "brand": "Minoti",
     "name": {
-      "bg": "5 Пликчета",
-      "en": "Minoti briefs"
+      "bg": "Комплект от 5 пликчета",
+      "en": "5-pack underwear"
     },
     "description": {
-      "bg": "Minoti — 5 пликчета, цвят комплект, размер 2/3 г..",
-      "en": "Minoti briefs in комплект, size 2/3 г.."
+      "bg": "Minoti — комплект от 5 пликчета, цвят комплект, размер 2/3 г.",
+      "en": "Minoti 5-pack underwear, in комплект, size 2/3 г."
     },
     "price": 6.99,
-    "originalPrice": 14.99,
+    "originalPrice": 28.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3553,7 +3883,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/multipacks",
+    "priceReviewNote": "Comparable Minoti underwear multipack; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0112",
@@ -3563,15 +3896,15 @@ export const products = [
     "category": "tops",
     "brand": "Minoti",
     "name": {
-      "bg": "Блузка LOVE",
-      "en": "Minoti top"
+      "bg": "Блузка \"LOVE\"",
+      "en": "“LOVE” top"
     },
     "description": {
-      "bg": "Minoti — блузка love, размер 2/3 г..",
-      "en": "Minoti top, size 2/3 г.."
+      "bg": "Minoti — блузка \"love\", размер 2/3 г.",
+      "en": "Minoti “love” top, size 2/3 г."
     },
     "price": 6.99,
-    "originalPrice": 19.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3585,7 +3918,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0113",
@@ -3595,15 +3931,15 @@ export const products = [
     "category": "bodysuits",
     "brand": "Minoti",
     "name": {
-      "bg": "Комплект Бодита",
-      "en": "Minoti bodysuit"
+      "bg": "Комплект бодита",
+      "en": "Bodysuit set"
     },
     "description": {
       "bg": "Minoti — комплект бодита, размер 6/9 месеца.",
-      "en": "Minoti bodysuit, size 6/9 месеца."
+      "en": "Minoti bodysuit set, size 6/9 месеца."
     },
     "price": 8.99,
-    "originalPrice": 24.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3617,7 +3953,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/multipacks",
+    "priceReviewNote": "Minoti 3-pack bodysuit reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0114",
@@ -3628,19 +3967,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Бански",
-      "en": "Minoti swimwear"
+      "en": "Swimwear"
     },
     "description": {
-      "bg": "Minoti — бански, цвят тигров, размер 5/6 г..",
-      "en": "Minoti swimwear in тигров, size 5/6 г.."
+      "bg": "Minoti — бански, цвят тигров, размер 5/6 г.",
+      "en": "Minoti swimwear, in tiger print, size 5/6 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Тигров",
-      "en": "Тигров"
+      "en": "Tiger print"
     },
     "sizes": [
       {
@@ -3649,7 +3988,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/minoti-kids-swimwear?page=2",
+    "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0115",
@@ -3660,14 +4002,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Чорапи",
-      "en": "Minoti socks"
+      "en": "Socks"
     },
     "description": {
-      "bg": "Minoti — чорапи, размер 1/2 г..",
-      "en": "Minoti socks, size 1/2 г.."
+      "bg": "Minoti — чорапи, размер 1/2 г.",
+      "en": "Minoti socks, size 1/2 г."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 6.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3681,7 +4023,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/products/boys-cotton-socks-blue-13sock3",
+    "priceReviewNote": "Comparable Minoti socks pack; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0116",
@@ -3692,14 +4037,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Чорапи",
-      "en": "Minoti socks"
+      "en": "Socks"
     },
     "description": {
       "bg": "Minoti — чорапи, размер 6/12 месеца.",
       "en": "Minoti socks, size 6/12 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 6.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3713,7 +4058,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/products/boys-cotton-socks-blue-13sock3",
+    "priceReviewNote": "Comparable Minoti socks pack; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0117",
@@ -3724,14 +4072,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Лятна Рокля",
-      "en": "Minoti dress"
+      "en": "Summer dress"
     },
     "description": {
       "bg": "Minoti — лятна рокля, цвят синя с цветя, размер 9/12 месеца.",
-      "en": "Minoti dress in blue with flowers, size 9/12 месеца."
+      "en": "Minoti summer dress, in blue with flowers, size 9/12 месеца."
     },
     "price": 7.99,
-    "originalPrice": 24.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3745,7 +4093,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti casual dress reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0118",
@@ -3756,14 +4107,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Панталонче",
-      "en": "Minoti trousers"
+      "en": "Trousers"
     },
     "description": {
       "bg": "Minoti — панталонче, размер 3/6 месеца.",
       "en": "Minoti trousers, size 3/6 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3777,7 +4128,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0119",
@@ -3788,14 +4142,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Долнище",
-      "en": "Minoti joggers"
+      "en": "Joggers"
     },
     "description": {
-      "bg": "Minoti — долнище, цвят розово, размер 11/12 г..",
-      "en": "Minoti joggers in pink, size 11/12 г.."
+      "bg": "Minoti — долнище, цвят розово, размер 11/12 г.",
+      "en": "Minoti joggers, in pink, size 11/12 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3809,7 +4163,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0120",
@@ -3819,15 +4176,15 @@ export const products = [
     "category": "accessories",
     "brand": "Minoti",
     "name": {
-      "bg": "3 Чифта Чорапи",
-      "en": "Minoti socks"
+      "bg": "3 чифта чорапи",
+      "en": "3-pack socks"
     },
     "description": {
-      "bg": "Minoti — 3 чифта чорапи, размер 7/8 г..",
-      "en": "Minoti socks, size 7/8 г.."
+      "bg": "Minoti — 3 чифта чорапи, размер 7/8 г.",
+      "en": "Minoti 3-pack socks, size 7/8 г."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 6.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3841,7 +4198,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/products/boys-cotton-socks-blue-13sock3",
+    "priceReviewNote": "3-pack socks regular price reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0121",
@@ -3851,15 +4211,15 @@ export const products = [
     "category": "shorts",
     "brand": "Minoti",
     "name": {
-      "bg": "Къси Панталони",
-      "en": "Minoti shorts"
+      "bg": "Къси панталони",
+      "en": "Shorts"
     },
     "description": {
       "bg": "Minoti — къси панталони, размер 12/18 месеца.",
       "en": "Minoti shorts, size 12/18 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3873,7 +4233,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
+    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0122",
@@ -3883,15 +4246,15 @@ export const products = [
     "category": "shorts",
     "brand": "Minoti",
     "name": {
-      "bg": "Къси Панталони",
-      "en": "Minoti shorts"
+      "bg": "Къси панталони",
+      "en": "Shorts"
     },
     "description": {
-      "bg": "Minoti — къси панталони, цвят сини, размер 5/6 г..",
-      "en": "Minoti shorts in blue, size 5/6 г.."
+      "bg": "Minoti — къси панталони, цвят сини, размер 5/6 г.",
+      "en": "Minoti shorts, in blue, size 5/6 г."
     },
     "price": 5.99,
-    "originalPrice": 14.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3905,7 +4268,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
+    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0123",
@@ -3916,19 +4282,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
       "bg": "Minoti — блузка, цвят розова good vibe, размер 12/18 месеца.",
-      "en": "Minoti top in pink good vibe, size 12/18 месеца."
+      "en": "Minoti top, in pink “good vibe”, size 12/18 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Розова GOOD VIBE",
-      "en": "Pink good vibe"
+      "en": "Pink “GOOD VIBE”"
     },
     "sizes": [
       {
@@ -3937,7 +4303,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0124",
@@ -3948,14 +4317,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Долнище",
-      "en": "Minoti joggers"
+      "en": "Joggers"
     },
     "description": {
       "bg": "Minoti — долнище, цвят розово, размер 18/24 месеца.",
-      "en": "Minoti joggers in pink, size 18/24 месеца."
+      "en": "Minoti joggers, in pink, size 18/24 месеца."
     },
     "price": 5.99,
-    "originalPrice": 14.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -3969,7 +4338,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0125",
@@ -3979,15 +4351,15 @@ export const products = [
     "category": "shorts",
     "brand": "Minoti",
     "name": {
-      "bg": "Къси Панталони",
-      "en": "Minoti shorts"
+      "bg": "Къси панталони",
+      "en": "Shorts"
     },
     "description": {
       "bg": "Minoti — къси панталони, цвят сини, размер 12/18 месеца.",
-      "en": "Minoti shorts in blue, size 12/18 месеца."
+      "en": "Minoti shorts, in blue, size 12/18 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4001,7 +4373,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
+    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0126",
@@ -4012,19 +4387,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
       "bg": "Minoti — яке, цвят войнишка шарка, размер 18/24 месеца.",
-      "en": "Minoti jacket in camo, size 18/24 месеца."
+      "en": "Minoti jacket, in camouflage, size 18/24 месеца."
     },
     "price": 15.99,
-    "originalPrice": 44.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Войнишка Шарка",
-      "en": "Camo"
+      "en": "Camouflage"
     },
     "sizes": [
       {
@@ -4033,7 +4408,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0127",
@@ -4043,15 +4421,15 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Клинче",
-      "en": "Minoti leggings"
+      "bg": "Клин",
+      "en": "Leggings"
     },
     "description": {
-      "bg": "Minoti — клинче, цвят розово, размер 12/18 месеца.",
-      "en": "Minoti leggings in pink, size 12/18 месеца."
+      "bg": "Minoti — клин, цвят розово, размер 12/18 месеца.",
+      "en": "Minoti leggings, in pink, size 12/18 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 14.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4065,7 +4443,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0128",
@@ -4076,19 +4457,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блуза",
-      "en": "Minoti blouse"
+      "en": "Blouse"
     },
     "description": {
-      "bg": "Minoti — блуза, цвят бяла basketball, размер 4/5 г..",
-      "en": "Minoti blouse in white basketball, size 4/5 г.."
+      "bg": "Minoti — блуза, цвят бяла basketball, размер 4/5 г.",
+      "en": "Minoti blouse, in white “basketball”, size 4/5 г."
     },
     "price": 7.0,
-    "originalPrice": 19.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Бяла Basketball",
-      "en": "White basketball"
+      "en": "White “Basketball”"
     },
     "sizes": [
       {
@@ -4097,7 +4478,10 @@ export const products = [
       }
     ],
     "status": "sold_out",
-    "stockQuantity": 0
+    "stockQuantity": 0,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0129",
@@ -4108,19 +4492,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
       "bg": "Minoti — блузка, цвят розова good vibe, размер 18/24 месеца.",
-      "en": "Minoti top in pink good vibe, size 18/24 месеца."
+      "en": "Minoti top, in pink “good vibe”, size 18/24 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Розова GOOD VIBE",
-      "en": "Pink good vibe"
+      "en": "Pink “GOOD VIBE”"
     },
     "sizes": [
       {
@@ -4129,7 +4513,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0130",
@@ -4139,20 +4526,20 @@ export const products = [
     "category": "shorts",
     "brand": "Minoti",
     "name": {
-      "bg": "Къси Панталони",
-      "en": "Minoti shorts"
+      "bg": "Къси панталони",
+      "en": "Shorts"
     },
     "description": {
-      "bg": "Minoti — къси панталони, цвят дънкови, размер 2/3 г..",
-      "en": "Minoti shorts in дънкови, size 2/3 г.."
+      "bg": "Minoti — къси панталони, цвят дънкови, размер 2/3 г.",
+      "en": "Minoti shorts, in denim, size 2/3 г."
     },
     "price": 6.99,
-    "originalPrice": 14.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Дънкови",
-      "en": "Дънкови"
+      "en": "Denim"
     },
     "sizes": [
       {
@@ -4161,7 +4548,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
+    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0131",
@@ -4172,14 +4562,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
       "bg": "Minoti — яке, цвят червено, размер 18/24 месеца.",
-      "en": "Minoti jacket in red, size 18/24 месеца."
+      "en": "Minoti jacket, in red, size 18/24 месеца."
     },
     "price": 11.99,
-    "originalPrice": 29.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4193,7 +4583,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0132",
@@ -4204,14 +4597,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Долнище",
-      "en": "Minoti joggers"
+      "en": "Joggers"
     },
     "description": {
       "bg": "Minoti — долнище, цвят черно, размер 18/24 месеца.",
-      "en": "Minoti joggers in black, size 18/24 месеца."
+      "en": "Minoti joggers, in black, size 18/24 месеца."
     },
     "price": 8.99,
-    "originalPrice": 19.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4225,7 +4618,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0133",
@@ -4236,14 +4632,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят сива, размер 9/10 г..",
-      "en": "Minoti top in grey, size 9/10 г.."
+      "bg": "Minoti — блузка, цвят сива, размер 9/10 г.",
+      "en": "Minoti top, in grey, size 9/10 г."
     },
     "price": 8.99,
-    "originalPrice": 24.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4257,7 +4653,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0134",
@@ -4268,14 +4667,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Долнище",
-      "en": "Minoti joggers"
+      "en": "Joggers"
     },
     "description": {
-      "bg": "Minoti — долнище, цвят розово, размер 13/14 г..",
-      "en": "Minoti joggers in pink, size 13/14 г.."
+      "bg": "Minoti — долнище, цвят розово, размер 13/14 г.",
+      "en": "Minoti joggers, in pink, size 13/14 г."
     },
     "price": 9.99,
-    "originalPrice": 29.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4289,7 +4688,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0135",
@@ -4300,19 +4702,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Долнище",
-      "en": "Minoti joggers"
+      "en": "Joggers"
     },
     "description": {
       "bg": "Minoti — долнище, цвят сиво със сърце, размер 18/24 месеца.",
-      "en": "Minoti joggers in grey със сърце, size 18/24 месеца."
+      "en": "Minoti joggers, in grey with heart, size 18/24 месеца."
     },
     "price": 8.99,
-    "originalPrice": 19.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Сиво Със Сърце",
-      "en": "Grey със сърце"
+      "en": "Grey with heart"
     },
     "sizes": [
       {
@@ -4321,7 +4723,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0136",
@@ -4332,14 +4737,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Яке",
-      "en": "Minoti jacket"
+      "en": "Jacket"
     },
     "description": {
-      "bg": "Minoti — яке, цвят сиво, размер 2/3 г..",
-      "en": "Minoti jacket in grey, size 2/3 г.."
+      "bg": "Minoti — яке, цвят сиво, размер 2/3 г.",
+      "en": "Minoti jacket, in grey, size 2/3 г."
     },
     "price": 14.99,
-    "originalPrice": 44.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4353,7 +4758,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0137",
@@ -4364,14 +4772,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Долнище",
-      "en": "Minoti joggers"
+      "en": "Joggers"
     },
     "description": {
       "bg": "Minoti — долнище, цвят синьо, размер 12/18 месеца.",
-      "en": "Minoti joggers in blue, size 12/18 месеца."
+      "en": "Minoti joggers, in blue, size 12/18 месеца."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4385,7 +4793,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0138",
@@ -4396,19 +4807,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
       "bg": "Minoti — блузка, цвят сива с бели точки, размер 9/12 месеца.",
-      "en": "Minoti top in grey с white dots, size 9/12 месеца."
+      "en": "Minoti top, in grey with white dots, size 9/12 месеца."
     },
     "price": 5.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Сива С Бели Точки",
-      "en": "Grey с white dots"
+      "en": "Grey with white dots"
     },
     "sizes": [
       {
@@ -4417,7 +4828,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0139",
@@ -4428,19 +4842,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Долнище",
-      "en": "Minoti joggers"
+      "en": "Joggers"
     },
     "description": {
       "bg": "Minoti — долнище, цвят черно с бели надписи, размер 18/24 месеца.",
-      "en": "Minoti joggers in black с white надписи, size 18/24 месеца."
+      "en": "Minoti joggers, in black with white lettering, size 18/24 месеца."
     },
     "price": 7.99,
-    "originalPrice": 19.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Черно С Бели Надписи",
-      "en": "Black с white надписи"
+      "en": "Black with white lettering"
     },
     "sizes": [
       {
@@ -4449,7 +4863,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0140",
@@ -4459,15 +4876,15 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Панталони Дънки",
-      "en": "Minoti jeans"
+      "bg": "Дънки",
+      "en": "Jeans"
     },
     "description": {
-      "bg": "Minoti — панталони дънки, цвят черни, размер 2/3 г..",
-      "en": "Minoti jeans in black, size 2/3 г.."
+      "bg": "Minoti — дънки, цвят черни, размер 2/3 г.",
+      "en": "Minoti jeans, in black, size 2/3 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4481,7 +4898,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://www.ozone.ro/brand-minoti/",
+    "priceReviewNote": "Ozone Minoti jeans SRP/category reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0141",
@@ -4491,20 +4911,20 @@ export const products = [
     "category": "jackets",
     "brand": "Minoti",
     "name": {
-      "bg": "Тънко Яке",
-      "en": "Minoti jacket"
+      "bg": "Тънко яке",
+      "en": "Lightweight jacket"
     },
     "description": {
       "bg": "Minoti — тънко яке, цвят зелено с шарки, размер 12/18 месеца.",
-      "en": "Minoti jacket in green с шарки, size 12/18 месеца."
+      "en": "Minoti lightweight jacket, in green patterned, size 12/18 месеца."
     },
     "price": 12.99,
-    "originalPrice": 39.99,
+    "originalPrice": 33.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Зелено С Шарки",
-      "en": "Green с шарки"
+      "en": "Green patterned"
     },
     "sizes": [
       {
@@ -4513,7 +4933,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0142",
@@ -4523,15 +4946,15 @@ export const products = [
     "category": "sets",
     "brand": "Minoti",
     "name": {
-      "bg": "Комплект С Динозавър",
-      "en": "Minoti set"
+      "bg": "Комплект с динозавър",
+      "en": "Dinosaur set"
     },
     "description": {
       "bg": "Minoti — комплект с динозавър, цвят зелен, размер 6/9 месеца.",
-      "en": "Minoti set in green, size 6/9 месеца."
+      "en": "Minoti dinosaur set, in green, size 6/9 месеца."
     },
     "price": 8.99,
-    "originalPrice": 19.99,
+    "originalPrice": 26.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4545,7 +4968,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/baby",
+    "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0143",
@@ -4555,15 +4981,15 @@ export const products = [
     "category": "accessories",
     "brand": "Minoti",
     "name": {
-      "bg": "3 Чифта Чорапи",
-      "en": "Minoti socks"
+      "bg": "3 чифта чорапи",
+      "en": "3-pack socks"
     },
     "description": {
       "bg": "Minoti — 3 чифта чорапи, размер 0/6 месеца.",
-      "en": "Minoti socks, size 0/6 месеца."
+      "en": "Minoti 3-pack socks, size 0/6 месеца."
     },
     "price": 2.99,
-    "originalPrice": 14.99,
+    "originalPrice": 6.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4577,7 +5003,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/products/boys-cotton-socks-blue-13sock3",
+    "priceReviewNote": "3-pack socks regular price reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0144",
@@ -4588,19 +5017,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
       "bg": "Minoti — блузка, цвят сива с бели точки, размер 12/18 месеца.",
-      "en": "Minoti top in grey с white dots, size 12/18 месеца."
+      "en": "Minoti top, in grey with white dots, size 12/18 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Сива С Бели Точки",
-      "en": "Grey с white dots"
+      "en": "Grey with white dots"
     },
     "sizes": [
       {
@@ -4609,7 +5038,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0145",
@@ -4620,19 +5052,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Рокля",
-      "en": "Minoti dress"
+      "en": "Dress"
     },
     "description": {
-      "bg": "Minoti — рокля, цвят синьо-бяла, размер 4/5 г..",
-      "en": "Minoti dress in blue-white, size 4/5 г.."
+      "bg": "Minoti — рокля, цвят синьо-бяла, размер 4/5 г.",
+      "en": "Minoti dress, in blue/white, size 4/5 г."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Синьо-Бяла",
-      "en": "Blue-white"
+      "en": "Blue/white"
     },
     "sizes": [
       {
@@ -4641,7 +5073,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti casual dress reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0146",
@@ -4651,15 +5086,15 @@ export const products = [
     "category": "accessories",
     "brand": "Minoti",
     "name": {
-      "bg": "3 Чифта Чорапи",
-      "en": "Minoti socks"
+      "bg": "3 чифта чорапи",
+      "en": "3-pack socks"
     },
     "description": {
-      "bg": "Minoti — 3 чифта чорапи, размер 1/2 г..",
-      "en": "Minoti socks, size 1/2 г.."
+      "bg": "Minoti — 3 чифта чорапи, размер 1/2 г.",
+      "en": "Minoti 3-pack socks, size 1/2 г."
     },
     "price": 2.99,
-    "originalPrice": 14.99,
+    "originalPrice": 6.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4673,7 +5108,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/products/boys-cotton-socks-blue-13sock3",
+    "priceReviewNote": "3-pack socks regular price reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0147",
@@ -4684,14 +5122,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят синя с тигър, размер 2/3 г..",
-      "en": "Minoti top in blue с тигър, size 2/3 г.."
+      "bg": "Minoti — блузка, цвят синя с тигър, размер 2/3 г.",
+      "en": "Minoti top, in blue с тигър, size 2/3 г."
     },
     "price": 6.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4705,7 +5143,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0148",
@@ -4716,19 +5157,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Суитчър",
-      "en": "Minoti sweatshirt"
+      "en": "Sweatshirt"
     },
     "description": {
-      "bg": "Minoti — суитчър, цвят синьо-бял, размер 13/14 г..",
-      "en": "Minoti sweatshirt in blue-white, size 13/14 г.."
+      "bg": "Minoti — суитчър, цвят синьо-бял, размер 13/14 г.",
+      "en": "Minoti sweatshirt, in blue/white, size 13/14 г."
     },
     "price": 12.99,
-    "originalPrice": 39.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Синьо-Бял",
-      "en": "Blue-white"
+      "en": "Blue/white"
     },
     "sizes": [
       {
@@ -4737,7 +5178,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
+    "priceReviewNote": "Comparable Minoti sweatshirt/hoodie reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0149",
@@ -4748,19 +5192,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
       "bg": "Minoti — блузка, цвят сива с розова ябълка, размер 12/18 месеца.",
-      "en": "Minoti top in grey с pink ябълка, size 12/18 месеца."
+      "en": "Minoti top, in grey with pink apple, size 12/18 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Сива С Розова Ябълка",
-      "en": "Grey с pink ябълка"
+      "en": "Grey with pink apple"
     },
     "sizes": [
       {
@@ -4769,7 +5213,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0150",
@@ -4780,19 +5227,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Клин",
-      "en": "Minoti leggings"
+      "en": "Leggings"
     },
     "description": {
-      "bg": "Minoti — клин, цвят лилаво леопардов, размер 2/3 г..",
-      "en": "Minoti leggings in purple леопардов, size 2/3 г.."
+      "bg": "Minoti — клин, цвят лилаво леопардов, размер 2/3 г.",
+      "en": "Minoti leggings, in purple leopard, size 2/3 г."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 14.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Лилаво Леопардов",
-      "en": "Purple леопардов"
+      "en": "Purple leopard"
     },
     "sizes": [
       {
@@ -4801,7 +5248,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0151",
@@ -4812,28 +5262,31 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят бяла adventure, размер 18/24 г..",
-      "en": "Minoti top in white adventure, size 18/24 г.."
+      "bg": "Minoti — блузка, цвят бяла adventure, размер 18/24 месеца.",
+      "en": "Minoti top, in white “adventure”, size 18/24 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Бяла Adventure",
-      "en": "White adventure"
+      "en": "White “Adventure”"
     },
     "sizes": [
       {
-        "label": "18/24 г.",
+        "label": "18/24 месеца",
         "available": true
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0152",
@@ -4844,14 +5297,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Рокля",
-      "en": "Minoti dress"
+      "en": "Dress"
     },
     "description": {
       "bg": "Minoti — рокля, цвят синя, размер 12/18 месеца.",
-      "en": "Minoti dress in blue, size 12/18 месеца."
+      "en": "Minoti dress, in blue, size 12/18 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4865,7 +5318,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti casual dress reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0153",
@@ -4876,19 +5332,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят черна с бяло сърце, размер 2/3 г..",
-      "en": "Minoti top in black с white сърце, size 2/3 г.."
+      "bg": "Minoti — блузка, цвят черна с бяло сърце, размер 2/3 г.",
+      "en": "Minoti top, in black with white heart, size 2/3 г."
     },
     "price": 6.99,
-    "originalPrice": 19.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Черна С Бяло Сърце",
-      "en": "Black с white сърце"
+      "en": "Black with white heart"
     },
     "sizes": [
       {
@@ -4897,7 +5353,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0154",
@@ -4908,14 +5367,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Рокля",
-      "en": "Minoti dress"
+      "en": "Dress"
     },
     "description": {
-      "bg": "Minoti — рокля, цвят оранжева, размер 2/3 г..",
-      "en": "Minoti dress in orange, size 2/3 г.."
+      "bg": "Minoti — рокля, цвят оранжева, размер 2/3 г.",
+      "en": "Minoti dress, in orange, size 2/3 г."
     },
     "price": 6.99,
-    "originalPrice": 19.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -4929,7 +5388,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti casual dress reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0155",
@@ -4940,19 +5402,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Долнище",
-      "en": "Minoti joggers"
+      "en": "Joggers"
     },
     "description": {
-      "bg": "Minoti — долнище, цвят черно с червени връзки, размер 2/3 г..",
-      "en": "Minoti joggers in black с червени връзки, size 2/3 г.."
+      "bg": "Minoti — долнище, цвят черно с червени връзки, размер 2/3 г.",
+      "en": "Minoti joggers, in black with red ties, size 2/3 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 23.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Черно С Червени Връзки",
-      "en": "Black с червени връзки"
+      "en": "Black with red ties"
     },
     "sizes": [
       {
@@ -4961,7 +5423,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0156",
@@ -4972,19 +5437,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
       "bg": "Minoti — блузка, цвят бяла adventure, размер 12/18 месеца.",
-      "en": "Minoti top in white adventure, size 12/18 месеца."
+      "en": "Minoti top, in white “adventure”, size 12/18 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Бяла Adventure",
-      "en": "White adventure"
+      "en": "White “Adventure”"
     },
     "sizes": [
       {
@@ -4993,7 +5458,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0157",
@@ -5003,20 +5471,20 @@ export const products = [
     "category": "tops",
     "brand": "Minoti",
     "name": {
-      "bg": "Къса Блузка",
-      "en": "Minoti top"
+      "bg": "Къса блузка",
+      "en": "Short top"
     },
     "description": {
-      "bg": "Minoti — къса блузка, цвят светло синя, размер 4/5 г..",
-      "en": "Minoti top in светло blue, size 4/5 г.."
+      "bg": "Minoti — къса блузка, цвят светло синя, размер 4/5 г.",
+      "en": "Minoti short top, in light blue, size 4/5 г."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Светло Синя",
-      "en": "Светло blue"
+      "en": "Light blue"
     },
     "sizes": [
       {
@@ -5025,7 +5493,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0158",
@@ -5036,14 +5507,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Горнище",
-      "en": "Minoti top"
+      "en": "Sweatshirt"
     },
     "description": {
-      "bg": "Minoti — горнище, цвят червено, размер 2/3 г..",
-      "en": "Minoti top in red, size 2/3 г.."
+      "bg": "Minoti — горнище, цвят червено, размер 2/3 г.",
+      "en": "Minoti sweatshirt, in red, size 2/3 г."
     },
     "price": 9.99,
-    "originalPrice": 24.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -5057,7 +5528,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
+    "priceReviewNote": "Comparable Minoti sweatshirt/hoodie reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0159",
@@ -5067,15 +5541,15 @@ export const products = [
     "category": "accessories",
     "brand": "Minoti",
     "name": {
-      "bg": "5 Чифта Чорапи",
-      "en": "Minoti socks"
+      "bg": "5 чифта чорапи",
+      "en": "5-pack socks"
     },
     "description": {
       "bg": "Minoti — 5 чифта чорапи, размер 0/6 месеца.",
-      "en": "Minoti socks, size 0/6 месеца."
+      "en": "Minoti 5-pack socks, size 0/6 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -5089,7 +5563,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/baby-accessories",
+    "priceReviewNote": "5-pack socks reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0160",
@@ -5100,19 +5577,19 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Блузка",
-      "en": "Minoti top"
+      "en": "Top"
     },
     "description": {
       "bg": "Minoti — блузка, цвят сива с бели точки, размер 18/24 месеца.",
-      "en": "Minoti top in grey с white dots, size 18/24 месеца."
+      "en": "Minoti top, in grey with white dots, size 18/24 месеца."
     },
     "price": 4.99,
-    "originalPrice": 14.99,
+    "originalPrice": 11.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
       "bg": "Сива С Бели Точки",
-      "en": "Grey с white dots"
+      "en": "Grey with white dots"
     },
     "sizes": [
       {
@@ -5121,7 +5598,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0161",
@@ -5132,14 +5612,14 @@ export const products = [
     "brand": "Minoti",
     "name": {
       "bg": "Бански",
-      "en": "Minoti swimwear"
+      "en": "Swimwear"
     },
     "description": {
-      "bg": "Minoti — бански, цвят розов, размер 11/12 г..",
-      "en": "Minoti swimwear in pink, size 11/12 г.."
+      "bg": "Minoti — бански, цвят розов, размер 11/12 г.",
+      "en": "Minoti swimwear, in pink, size 11/12 г."
     },
     "price": 9.99,
-    "originalPrice": 19.99,
+    "originalPrice": 18.9,
     "originalPriceEstimated": true,
     "image": null,
     "colour": {
@@ -5153,7 +5633,10 @@ export const products = [
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1
+    "stockQuantity": 1,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/minoti-kids-swimwear?page=2",
+    "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match."
   }
 ];
 

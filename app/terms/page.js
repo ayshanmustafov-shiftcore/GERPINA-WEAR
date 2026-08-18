@@ -31,7 +31,7 @@ export default function TermsPage() {
       <section>
         <h2>3. {bg ? 'Продукти и цени' : 'Products and prices'}</h2>
         <p>{bg ? 'Основните характеристики, наличност, размери и продажна цена се показват на страницата на съответния продукт. Всички крайни цени са в евро (EUR). Дружеството не е регистрирано по ДДС.' : 'Key characteristics, availability, sizes and selling price are shown on each product page. Final prices are displayed in euro (EUR). The company is not VAT registered.'}</p>
-        <p>{bg ? 'Тестови или демонстрационни референтни цени, когато са обозначени като DEMO, не представляват окончателно публично ценово твърдение и трябва да бъдат заменени преди търговския старт.' : 'Reference prices marked DEMO are development-only values and must be replaced before commercial launch.'}</p>
+        <p>{bg ? 'Когато е показана „Цена на марката“, това е цена, предоставена за съответния артикул. Когато е показана „Референтна цена на марката“, тя е сравнителна цена на сходен артикул от същата марка, използвана когато точният SKU не може да бъде потвърден. Тези сравнителни цени не представляват предходна цена, прилагана от ГЕРПИНА, освен ако изрично не е посочено друго.' : 'Where a “Brand price” is shown, it is a price supplied for that item. Where a “Reference brand price” is shown, it is a comparison price for a comparable item from the same brand, used when the exact SKU cannot be verified. These comparison prices are not a previous price charged by GERPINA unless explicitly stated otherwise.'}</p>
       </section>
 
       <section>

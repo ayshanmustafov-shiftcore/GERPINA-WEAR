@@ -44,7 +44,7 @@ export default function ProductDetail({ product }) {
         <div className="product-gallery">
           <div className="product-main-image">
             {product.image ? (
-              <Image src={product.image} alt={product.name[language]} fill priority sizes="(max-width: 850px) 100vw, 58vw" />
+              <Image src={product.image} alt={`${product.brand} ${product.name[language]}`} fill priority sizes="(max-width: 850px) 100vw, 58vw" />
             ) : (
               <div className="product-image-placeholder detail-placeholder"><b>GERPINA</b><span>WEAR</span><small>{language === 'bg' ? 'Снимката ще бъде добавена скоро' : 'Photo will be added soon'}</small></div>
             )}
@@ -55,12 +55,20 @@ export default function ProductDetail({ product }) {
           <span className="product-info-brand">{product.brand || 'GERPINA Selection'}</span>
           <h1>{product.name[language]}</h1>
           <p className="product-description">{product.description[language]}</p>
-          <div className="detail-price">
-            {product.originalPrice && <s>€{product.originalPrice.toFixed(2)}</s>}
-            <strong>€{product.price.toFixed(2)}</strong>
-            {discount && <b>-{discount}%</b>}
+          <div className="detail-price-stack">
+            {product.originalPrice && (
+              <div className="detail-reference-price">
+                <span>{product.originalPriceType === 'reference' ? (language === 'bg' ? 'Референтна цена на марката' : 'Reference brand price') : (language === 'bg' ? 'Цена на марката' : 'Brand price')}</span>
+                <s>€{product.originalPrice.toFixed(2)}</s>
+              </div>
+            )}
+            <div className="detail-price">
+              <span className="detail-gerpina-label">GERPINA</span>
+              <strong>€{product.price.toFixed(2)}</strong>
+              {discount && <b>-{discount}%</b>}
+            </div>
           </div>
-          {product.originalPriceEstimated && <span className="estimated-price-note">{language === 'bg' ? 'ДЕМО оригинална цена — предстои потвърждение' : 'DEMO original price — pending confirmation'}</span>}
+          {product.originalPriceType === 'reference' && <span className="estimated-price-note">{language === 'bg' ? 'Референтна цена на сходен артикул от същата марка; точният SKU не е потвърден.' : 'Reference price for a comparable item from the same brand; the exact SKU has not been verified.'}</span>}
 
           <div className="detail-divider" />
           <div className="colour-line"><span>{language === 'bg' ? 'Цвят' : 'Colour'}</span><b>{product.colour[language]}</b></div>

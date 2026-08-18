@@ -6,11 +6,11 @@ import SiteFooter from '@/components/SiteFooter';
 import CookieConsent from '@/components/CookieConsent';
 
 export const metadata = {
-  metadataBase: new URL('https://gerpina-wear.com'),
+  metadataBase: new URL('https://www.gerpina-wear.com'),
   title: { default: 'GERPINA Wear', template: '%s | GERPINA Wear' },
   description: 'GERPINA Wear — подбрана мода за жени, мъже и деца в България.',
   alternates: { canonical: '/' },
-  openGraph: { title: 'GERPINA Wear', description: 'Подбрана мода. По-добра цена.', url: 'https://gerpina-wear.com', siteName: 'GERPINA Wear', locale: 'bg_BG', type: 'website' },
+  openGraph: { title: 'GERPINA Wear', description: 'Подбрана мода. По-добра цена.', url: 'https://www.gerpina-wear.com', siteName: 'GERPINA Wear', locale: 'bg_BG', type: 'website' },
 };
 
 export default function RootLayout({ children }) {

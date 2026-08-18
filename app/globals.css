@@ -760,7 +760,7 @@ img { display: block; }
 }
 .header-search input::placeholder { color: #8c8c8c; }
 
-/* Discounts are intentionally visually strong in this demo. */
+/* Price-comparison badges are intentionally prominent. */
 .product-card-image-wrap .discount-chip {
   left: 12px;
   top: 12px;
@@ -1230,4 +1230,48 @@ img { display: block; }
   .return-steps, .contact-grid { grid-template-columns: 1fr; }
   .cookie-banner { left: 10px; right: 10px; bottom: 10px; flex-direction: column; align-items: stretch; gap: 14px; }
   .cookie-actions { display: grid; grid-template-columns: 1fr 1fr; }
+}
+
+/* Stock list 3: brand/reference price presentation */
+.product-price-line {
+  align-items: flex-end;
+  flex-wrap: wrap;
+  row-gap: 6px;
+}
+.original-price-wrap,
+.gerpina-price-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.original-price-wrap small,
+.gerpina-price-wrap small {
+  font-size: 8px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #858585;
+}
+.gerpina-price-wrap small { color: #a57b27; }
+.price-comparison-caption {
+  display: block;
+  margin-top: 5px;
+  color: #7a7a7a;
+  font-size: 9px;
+  line-height: 1.3;
+}
+.detail-price-stack { display: flex; flex-direction: column; gap: 7px; }
+.detail-reference-price { display: flex; align-items: baseline; gap: 10px; }
+.detail-reference-price span { color: #777; font-size: 12px; font-weight: 700; }
+.detail-reference-price s { color: #858585; font-size: 16px; }
+.detail-gerpina-label { color: #a57b27; font-size: 10px; font-weight: 900; letter-spacing: .08em; }
+.detail-price { align-items: center; }
+
+@media (max-width: 520px) {
+  .original-price-wrap small,
+  .gerpina-price-wrap small { font-size: 7px; }
+  .price-comparison-caption { font-size: 8px; }
+  .detail-reference-price { flex-direction: column; align-items: flex-start; gap: 2px; }
 }
