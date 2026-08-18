@@ -7,6 +7,7 @@ import { ChevronDown } from '@/components/Icons';
 import { audienceLabels, categoryLabels, getDiscountPercent, kidGenderLabels, productMatchesAudience, products } from '@/data/products';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useStore } from '@/components/StoreProvider';
+import { compareSizes } from '@/lib/sizeSort';
 
 function DropFilter({ label, value, options, onChange, open, onToggle, language }) {
   return (
@@ -58,7 +59,7 @@ export default function ShopExperience({ fixedAudience = null }) {
     .sort((a, b) => a.localeCompare(b)).map((value) => ({ value, label: value })), [audienceProducts]);
 
   const sizeOptions = useMemo(() => [...new Set(audienceProducts.flatMap((product) => (product.sizes || []).map((item) => item.label)).filter(Boolean))]
-    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true })).map((value) => ({ value, label: value })), [audienceProducts]);
+    .sort(compareSizes).map((value) => ({ value, label: value })), [audienceProducts]);
 
   const colourOptions = useMemo(() => {
     const key = language === 'bg' ? 'bg' : 'en';

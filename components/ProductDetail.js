@@ -8,11 +8,13 @@ import { categoryLabels, getDiscountPercent, isProductAvailable } from '@/data/p
 import { useLanguage } from '@/components/LanguageProvider';
 import { useStore } from '@/components/StoreProvider';
 import { getProductSwatches } from '@/lib/productColours';
+import { sortSizes } from '@/lib/sizeSort';
 
 export default function ProductDetail({ product }) {
   const { language, t } = useLanguage();
   const { addToCart, favorites, toggleFavorite, activeAudience } = useStore();
-  const availableSizes = useMemo(() => (product.sizes || []).filter((size) => size.available), [product]);
+  const sortedSizes = useMemo(() => sortSizes(product.sizes || []), [product]);
+  const availableSizes = useMemo(() => sortedSizes.filter((size) => size.available), [sortedSizes]);
   const [selectedSize, setSelectedSize] = useState(availableSizes[0]?.label || '');
   const [added, setAdded] = useState(false);
   const favorite = favorites.includes(product.id);
@@ -91,7 +93,7 @@ export default function ProductDetail({ product }) {
           <div className="size-title"><span>{language === 'bg' ? 'Размер' : 'Size'}</span><button type="button" disabled>{language === 'bg' ? 'Таблица с размери' : 'Size guide'}</button></div>
           {product.sizes?.length ? (
             <div className="size-options">
-              {product.sizes.map((size) => (
+              {sortedSizes.map((size) => (
                 <button
                   type="button"
                   key={size.label}
