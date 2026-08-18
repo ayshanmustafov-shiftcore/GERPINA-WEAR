@@ -62,3 +62,6 @@ The production launch still needs an explicit code change to enable Econt `mode:
 - The GERPINA sender must verify the physical parcel before handing it to Econt and correct the waybill if the real parcel is heavier than 1.00 kg.
 - Exact product weights can later replace the provisional estimate without changing the checkout flow.
 - Econt DEMO may not contain the real Poltava 3Zh sender office; the DEMO creator automatically falls back to a staffed test office in Veliko Tarnovo. Production pricing still resolves the real Poltava 3Zh office from Econt's production nomenclature.
+
+## Econt DEMO sender identity
+The public Econt DEMO account contains unrelated sample client profiles. Test-label creation therefore sends GERPINA's sender identity explicitly (GERPINA Wear EOOD / Petar Stanislavov Petrov) while reusing DEMO-only payout configuration and a valid DEMO office. Production creation remains disabled.
