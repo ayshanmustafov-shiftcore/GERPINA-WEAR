@@ -54,3 +54,11 @@ The production launch still needs an explicit code change to enable Econt `mode:
 - complete the required Bulgarian e-shop/NRA setup;
 - test Resend delivery from the verified domain;
 - remove test/safe-mode labels from customer-facing checkout.
+
+
+## Econt weight workflow
+
+- Checkout and test waybills currently use a provisional 1.00 kg shipment weight.
+- The GERPINA sender must verify the physical parcel before handing it to Econt and correct the waybill if the real parcel is heavier than 1.00 kg.
+- Exact product weights can later replace the provisional estimate without changing the checkout flow.
+- Econt DEMO may not contain the real Poltava 3Zh sender office; the DEMO creator automatically falls back to a staffed test office in Veliko Tarnovo. Production pricing still resolves the real Poltava 3Zh office from Econt's production nomenclature.

@@ -35,6 +35,9 @@ export async function POST(request) {
       shippingPrice: order.shippingPrice,
       currency: order.currency,
       merchandiseTotal: order.merchandiseTotal,
+      shipmentWeightKg: order.shipmentWeightKg,
+      weightNeedsVerification: order.weightNeedsVerification,
+      demoFallbacks: order.demoFallbacks,
       payableOnDelivery: Number((order.merchandiseTotal + order.shippingPrice).toFixed(2)),
       senderOffice: order.senderOffice,
       email: {

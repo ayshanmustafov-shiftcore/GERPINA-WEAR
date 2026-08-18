@@ -12,6 +12,35 @@ function cartPayload(cart) {
   return cart.map((item) => ({ id: item.id, quantity: item.quantity, selectedSize: item.selectedSize || null }));
 }
 
+function formatEcontExpectedDate(value, language) {
+  if (value == null || value === '') return '';
+
+  let date = null;
+  const raw = String(value).trim();
+
+  if (/^\d{11,}$/.test(raw)) {
+    const numeric = Number(raw);
+    date = new Date(numeric < 1e12 ? numeric * 1000 : numeric);
+  } else {
+    const ymd = /^(\d{4})-(\d{2})-(\d{2})$/.exec(raw);
+    if (ymd) {
+      date = new Date(Number(ymd[1]), Number(ymd[2]) - 1, Number(ymd[3]));
+    } else {
+      const parsed = new Date(raw);
+      if (!Number.isNaN(parsed.getTime())) date = parsed;
+    }
+  }
+
+  if (!date || Number.isNaN(date.getTime())) return '';
+
+  return new Intl.DateTimeFormat(language === 'bg' ? 'bg-BG' : 'en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    timeZone: 'Europe/Sofia',
+  }).format(date);
+}
+
 export default function CheckoutPage() {
   const { language } = useLanguage();
   const { cart, cartTotal } = useStore();
@@ -77,8 +106,6 @@ export default function CheckoutPage() {
     autoWaiting: 'Цената ще се появи автоматично след попълване на данните за контакт и доставка.',
     quoteTest: 'Тестова цена от Еконт',
     quoteLive: 'Реална цена от Еконт',
-    quoteWeight: 'Демо тегло',
-    quoteWeightInfo: '0,5 кг на артикул до получаване на реалните тегла.',
     paymentTitle: '3. Плащане',
     cod: 'Наложен платеж при получаване',
     codSub: 'Стойността на дрехите се плаща при получаване чрез Еконт.',
@@ -107,6 +134,7 @@ export default function CheckoutPage() {
     liveSafeBody: 'Цената се изчислява през реалния e-Econt акаунт, но финалният бутон създава товарителница само в Econt DEMO. Няма код за създаване на production товарителница или заявка за куриер.',
     successTest: 'Тестовата поръчка и DEMO товарителницата са създадени успешно.',
     successLive: 'Тестовата поръчка е създадена само в Econt DEMO. Production e-Econt не е променен.',
+    weightCheck: 'Преди предаване на пратката в Еконт провери реалното тегло и при необходимост коригирай товарителницата.',
     liveConnectionError: 'Реалният Econt акаунт не е готов за безопасно валидиране. Провери Environment Variables или COD настройките.',
     empty: 'Количката ти е празна',
     emptyText: 'Добави продукт, за да видиш пълния checkout процес.',
@@ -154,8 +182,6 @@ export default function CheckoutPage() {
     autoWaiting: 'The price will appear automatically after the required contact and delivery details are complete.',
     quoteTest: 'Test price from Econt',
     quoteLive: 'Live price from Econt',
-    quoteWeight: 'Demo weight',
-    quoteWeightInfo: '0.5 kg per item until real garment weights are available.',
     paymentTitle: '3. Payment',
     cod: 'Cash on delivery',
     codSub: 'The merchandise value is paid through Econt when the parcel is received.',
@@ -184,6 +210,7 @@ export default function CheckoutPage() {
     liveSafeBody: 'Delivery pricing uses GERPINA’s real e-Econt account, but the final button creates a waybill only in Econt DEMO. There is no production-create or courier-request code in this build.',
     successTest: 'The test order and DEMO waybill were created successfully.',
     successLive: 'The test order was created only in Econt DEMO. Production e-Econt was not changed.',
+    weightCheck: 'Before handing the parcel to Econt, verify the actual weight and correct the waybill if necessary.',
     liveConnectionError: 'The live Econt account is not ready for safe validation. Check the Environment Variables or COD configuration.',
     empty: 'Your bag is empty',
     emptyText: 'Add a product to preview the complete checkout flow.',
@@ -598,10 +625,6 @@ export default function CheckoutPage() {
               <div className={`econt-auto-status ${quoteLoading ? 'loading' : quote ? 'ready' : ''}`} role="status">
                 <b>{quoteLoading ? copy.recalculating : quote ? copy.autoCalculated : copy.autoWaiting}</b>
               </div>
-              <div className="econt-weight-note">
-                <b>{copy.quoteWeight}</b>
-                <span>{quote?.shipmentWeightKg ? `${quote.shipmentWeightKg.toFixed(2)} kg · ` : ''}{copy.quoteWeightInfo}</span>
-              </div>
             </div>
 
             {quoteError && <div className="econt-api-message error" role="alert">{quoteError}</div>}
@@ -611,7 +634,9 @@ export default function CheckoutPage() {
                   <span>{econtStatus.mode === 'production' ? copy.quoteLive : copy.quoteTest}</span>
                   <strong>€{quote.shippingPrice.toFixed(2)}</strong>
                 </div>
-                {quote.expectedDeliveryDate && <small>{language === 'bg' ? 'Очаквана дата' : 'Expected date'}: {quote.expectedDeliveryDate}</small>}
+                {formatEcontExpectedDate(quote.expectedDeliveryDate, language) && (
+                  <small>{language === 'bg' ? 'Очаквана доставка' : 'Expected delivery'}: {formatEcontExpectedDate(quote.expectedDeliveryDate, language)}</small>
+                )}
                 {quote.warnings && <small>{quote.warnings}</small>}
               </div>
             )}
@@ -677,6 +702,7 @@ export default function CheckoutPage() {
               <b>{econtStatus.mode === 'production' ? copy.successLive : copy.successTest}</b>
               <span>{language === 'bg' ? 'Поръчка' : 'Order'}: {submitState.result.orderNumber}</span>
               <span>{language === 'bg' ? 'Тестова товарителница' : 'DEMO waybill'}: {submitState.result.shipmentNumber}</span>
+              <span><b>{copy.weightCheck}</b></span>
               {submitState.result.pdfURL && (
                 <a href={submitState.result.pdfURL} target="_blank" rel="noreferrer">
                   {language === 'bg' ? 'Отвори тестовата товарителница' : 'Open DEMO waybill'}
