@@ -104,7 +104,7 @@ export default function ProductDetail({ product }) {
           </div>
 
           <div className={`stock-detail ${available ? '' : 'sold'}`}><i />{statusText}</div>
-          <div className="delivery-card"><TruckIcon size={25}/><div><b>{language === 'bg' ? 'Доставка с Еконт' : 'Econt delivery'}</b><span>{language === 'bg' ? 'До офис или адрес в България. Изборът на офис ще бъде свързан с Еконт при финалната интеграция.' : 'To an office or address in Bulgaria. Office selection will be connected to Econt in the final integration.'}</span></div></div>
+          <div className="delivery-card"><TruckIcon size={25}/><div><b>{language === 'bg' ? 'Доставка в България' : 'Delivery in Bulgaria'}</b><span>{language === 'bg' ? 'До офис или адрес. Точната цена се показва в checkout.' : 'To an office or address. The exact delivery price is shown at checkout.'}</span></div></div>
         </aside>
       </div>
     </main>

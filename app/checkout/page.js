@@ -18,6 +18,7 @@ export default function CheckoutPage() {
   const formRef = useRef(null);
   const [deliveryType, setDeliveryType] = useState('office');
   const [paymentType, setPaymentType] = useState('cod');
+  const [legalAccepted, setLegalAccepted] = useState(false);
   const [contact, setContact] = useState({ firstName: '', lastName: '', phone: '', email: '' });
 
   const [cityQuery, setCityQuery] = useState('');
@@ -31,11 +32,12 @@ export default function CheckoutPage() {
   const [officesLoading, setOfficesLoading] = useState(false);
   const [officeError, setOfficeError] = useState('');
   const [address, setAddress] = useState('');
+  const [note, setNote] = useState('');
 
   const [quote, setQuote] = useState(null);
   const [quoteLoading, setQuoteLoading] = useState(false);
   const [quoteError, setQuoteError] = useState('');
-  const [submitState, setSubmitState] = useState({ loading: false, success: false, error: '' });
+  const [submitState, setSubmitState] = useState({ loading: false, success: false, error: '', result: null });
   const [econtStatus, setEcontStatus] = useState({ loading: true, mode: null, safeMode: true, ready: false, error: '', profileName: '', clientNumber: '', agreement: '' });
 
   const copy = useMemo(() => language === 'bg' ? {
@@ -81,11 +83,15 @@ export default function CheckoutPage() {
     cod: 'Наложен платеж при получаване',
     codSub: 'Стойността на дрехите се плаща при получаване чрез Еконт.',
     shippingPayer: 'Клиентът заплаща и куриерската услуга при получаване.',
+    reviewTest: 'Преглед и тест',
+    reviewTestText: 'Пратката е подготвена с опция за преглед и тест преди окончателното приемане, когато услугата е приложима.',
+    legalAgree: 'Прочетох и приемам Общите условия и Политиката за поверителност.',
+    legalRequired: 'За да продължите, приемете Общите условия и Политиката за поверителност.',
     senderTitle: 'Изпращач',
     senderCompany: 'Фирма',
     senderOnBehalf: 'От името на',
-    senderAddress: 'Адрес за изпращане',
-    senderHint: 'Това е адресът, от който GERPINA предава пратките на Еконт.',
+    senderAddress: 'Офис за изпращане',
+    senderHint: 'GERPINA предава готовите пратки в този офис на Еконт. Цената се изчислява като офис → офис или офис → адрес.',
     summary: 'Твоята поръчка',
     items: 'Продукти',
     delivery: 'Доставка с Еконт',
@@ -93,14 +99,14 @@ export default function CheckoutPage() {
     itemsTotal: 'Общо продукти',
     payable: 'Общо при получаване',
     qty: 'бр.',
-    place: 'Провери поръчката с Еконт',
-    placing: 'Проверка с Еконт…',
+    place: 'Създай тестова поръчка',
+    placing: 'Създаване на тестова товарителница…',
     demo: 'ECONT TEST MODE',
     liveSafe: 'ECONT LIVE · SAFE MODE',
-    demoBody: 'Това е връзка към тестовата API среда на Еконт. Не се създава реална товарителница и не се заявява куриер.',
-    liveSafeBody: 'Свързано е с реалния e-Econt акаунт на GERPINA за профил, градове, офиси, цени и валидиране. Този build няма функция за създаване на товарителница или заявка за куриер.',
-    successTest: 'Данните са валидирани успешно от тестовата система на Еконт. Не е създадена реална пратка.',
-    successLive: 'Еконт валидира данните успешно през реалния акаунт. Не е създадена товарителница и не е заявен куриер.',
+    demoBody: 'Финалният бутон създава само тестова товарителница в DEMO системата на Еконт. Production e-Econt не се променя и не се заявява куриер.',
+    liveSafeBody: 'Цената се изчислява през реалния e-Econt акаунт, но финалният бутон създава товарителница само в Econt DEMO. Няма код за създаване на production товарителница или заявка за куриер.',
+    successTest: 'Тестовата поръчка и DEMO товарителницата са създадени успешно.',
+    successLive: 'Тестовата поръчка е създадена само в Econt DEMO. Production e-Econt не е променен.',
     liveConnectionError: 'Реалният Econt акаунт не е готов за безопасно валидиране. Провери Environment Variables или COD настройките.',
     empty: 'Количката ти е празна',
     emptyText: 'Добави продукт, за да видиш пълния checkout процес.',
@@ -154,11 +160,15 @@ export default function CheckoutPage() {
     cod: 'Cash on delivery',
     codSub: 'The merchandise value is paid through Econt when the parcel is received.',
     shippingPayer: 'The customer also pays the courier fee on receipt.',
+    reviewTest: 'Review and test',
+    reviewTestText: 'The parcel is prepared with review and test before final acceptance where the service is applicable.',
+    legalAgree: 'I have read and accept the Terms & Conditions and Privacy Policy.',
+    legalRequired: 'Please accept the Terms & Conditions and Privacy Policy to continue.',
     senderTitle: 'Sender',
     senderCompany: 'Company',
     senderOnBehalf: 'On behalf of',
-    senderAddress: 'Dispatch address',
-    senderHint: 'This is the address from which GERPINA hands parcels over to Econt.',
+    senderAddress: 'Dispatch Econt office',
+    senderHint: 'GERPINA hands prepared parcels in at this Econt office. Pricing is office → office or office → address.',
     summary: 'Your order',
     items: 'Items',
     delivery: 'Econt delivery',
@@ -166,14 +176,14 @@ export default function CheckoutPage() {
     itemsTotal: 'Items total',
     payable: 'Payable on receipt',
     qty: 'pcs',
-    place: 'Validate order with Econt',
-    placing: 'Validating with Econt…',
+    place: 'Create test order',
+    placing: 'Creating DEMO waybill…',
     demo: 'ECONT TEST MODE',
     liveSafe: 'ECONT LIVE · SAFE MODE',
-    demoBody: 'This connects to Econt’s test API. No real waybill is created and no courier is requested.',
-    liveSafeBody: 'Connected to GERPINA’s real e-Econt account for profile, cities, offices, prices and validation. This build has no function that can create a waybill or request a courier.',
-    successTest: 'The checkout data was successfully validated by Econt’s test environment. No real shipment was created.',
-    successLive: 'Econt validated the data through the live account. No waybill was created and no courier was requested.',
+    demoBody: 'The final button creates a waybill only in Econt DEMO. Production e-Econt is untouched and no courier is requested.',
+    liveSafeBody: 'Delivery pricing uses GERPINA’s real e-Econt account, but the final button creates a waybill only in Econt DEMO. There is no production-create or courier-request code in this build.',
+    successTest: 'The test order and DEMO waybill were created successfully.',
+    successLive: 'The test order was created only in Econt DEMO. Production e-Econt was not changed.',
     liveConnectionError: 'The live Econt account is not ready for safe validation. Check the Environment Variables or COD configuration.',
     empty: 'Your bag is empty',
     emptyText: 'Add a product to preview the complete checkout flow.',
@@ -274,7 +284,7 @@ export default function CheckoutPage() {
   useEffect(() => {
     setQuote(null);
     setQuoteError('');
-    setSubmitState({ loading: false, success: false, error: '' });
+    setSubmitState({ loading: false, success: false, error: '', result: null });
   }, [deliveryType, selectedCity, officeCode, address, cartTotal, contact.firstName, contact.lastName, contact.phone]);
 
   // Econt delivery is intentionally automatic. Once the required contact + destination
@@ -354,6 +364,7 @@ export default function CheckoutPage() {
     return {
       name: `${contact.firstName} ${contact.lastName}`.trim(),
       phone: contact.phone,
+      email: contact.email.trim() || null,
     };
   }
 
@@ -363,8 +374,11 @@ export default function CheckoutPage() {
       deliveryType,
       city: selectedCity,
       officeCode: deliveryType === 'office' ? officeCode : null,
+      office: deliveryType === 'office' && selectedOffice ? selectedOffice : null,
       address: deliveryType === 'address' ? address : null,
       receiver: getReceiver(),
+      note: note.trim() || null,
+      quotedShippingPrice: typeof quote?.shippingPrice === 'number' ? quote.shippingPrice : null,
     };
   }
 
@@ -384,7 +398,7 @@ export default function CheckoutPage() {
 
     setQuoteLoading(true);
     setQuoteError('');
-    setSubmitState({ loading: false, success: false, error: '' });
+    setSubmitState({ loading: false, success: false, error: '', result: null });
     try {
       const response = await fetch('/api/econt/calculate', {
         method: 'POST',
@@ -406,11 +420,16 @@ export default function CheckoutPage() {
 
   async function submitTest(event) {
     event.preventDefault();
-    setSubmitState({ loading: false, success: false, error: '' });
+    setSubmitState({ loading: false, success: false, error: '', result: null });
 
     const validation = deliveryValidationMessage();
     if (validation) {
-      setSubmitState({ loading: false, success: false, error: validation });
+      setSubmitState({ loading: false, success: false, error: validation, result: null });
+      return;
+    }
+
+    if (!legalAccepted) {
+      setSubmitState({ loading: false, success: false, error: copy.legalRequired, result: null });
       return;
     }
 
@@ -419,19 +438,18 @@ export default function CheckoutPage() {
       if (!calculated) return;
     }
 
-    setSubmitState({ loading: true, success: false, error: '' });
+    setSubmitState({ loading: true, success: false, error: '', result: null });
     try {
-      const response = await fetch('/api/econt/validate', {
+      const response = await fetch('/api/order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(makeEcontPayload()),
       });
       const data = await response.json();
       if (!response.ok || !data.ok) throw new Error(data.error || copy.apiError);
-      setQuote(data);
-      setSubmitState({ loading: false, success: true, error: '' });
+      setSubmitState({ loading: false, success: true, error: '', result: data });
     } catch (error) {
-      setSubmitState({ loading: false, success: false, error: error.message || copy.apiError });
+      setSubmitState({ loading: false, success: false, error: error.message || copy.apiError, result: null });
     }
   }
 
@@ -572,7 +590,7 @@ export default function CheckoutPage() {
 
               <label>
                 <span>{copy.note}</span>
-                <textarea name="note" rows="4" placeholder={copy.notePlaceholder} />
+                <textarea name="note" rows="4" placeholder={copy.notePlaceholder} value={note} onChange={(event) => setNote(event.target.value)} />
               </label>
             </div>
 
@@ -608,36 +626,16 @@ export default function CheckoutPage() {
               <span><b>{copy.cod}</b><small>{copy.codSub}</small></span>
             </button>
             <p className="payment-pending">{copy.shippingPayer}</p>
+            <div className="review-test-note"><b>{copy.reviewTest}</b><span>{copy.reviewTestText}</span></div>
           </section>
 
-          <section className="checkout-section sender-section">
-            <div className="checkout-section-heading">
-              <div>
-                <h2>{copy.senderTitle}</h2>
-                <p>{copy.senderHint}</p>
-              </div>
-            </div>
-            <div className="sender-info-card">
-              <div>
-                <span>{copy.senderCompany}</span>
-                <strong>{siteConfig.sender.company[language]}</strong>
-              </div>
-              <div>
-                <span>{copy.senderOnBehalf}</span>
-                <strong>{siteConfig.sender.agent[language]}</strong>
-              </div>
-              <div className="sender-address-line">
-                <span>{copy.senderAddress}</span>
-                <strong>{siteConfig.sender.address[language]}</strong>
-              </div>
-            </div>
-          </section>
+
         </div>
 
         <aside className="checkout-summary">
           <div className="checkout-summary-title-row">
             <h2>{copy.summary}</h2>
-            <span className={`summary-test-pill ${econtStatus.mode === 'production' ? 'production' : ''}`}>{econtStatus.mode === 'production' ? 'SAFE LIVE' : 'TEST'}</span>
+            <span className={`summary-test-pill ${econtStatus.mode === 'production' ? 'production' : ''}`}>TEST ORDER</span>
           </div>
           <div className="checkout-order-items">
             {cart.map((item) => (
@@ -662,6 +660,8 @@ export default function CheckoutPage() {
             <div className="checkout-grand-total"><span>{copy.payable}</span><strong>€{payableOnDelivery.toFixed(2)}</strong></div>
           </div>
 
+          <label className="checkout-legal-consent"><input type="checkbox" checked={legalAccepted} onChange={(event) => setLegalAccepted(event.target.checked)} /><span>{language === 'bg' ? 'Прочетох и приемам ' : 'I have read and accept '}<Link href="/terms" target="_blank">{language === 'bg' ? 'Общите условия' : 'Terms & Conditions'}</Link>{language === 'bg' ? ' и ' : ' and '}<Link href="/privacy" target="_blank">{language === 'bg' ? 'Политиката за поверителност' : 'Privacy Policy'}</Link>.</span></label>
+
           <button className="place-order-button" type="submit" disabled={submitState.loading || (econtStatus.mode === 'production' && !econtStatus.ready)}>
             {submitState.loading ? copy.placing : copy.place}
           </button>
@@ -672,7 +672,30 @@ export default function CheckoutPage() {
               <p className="checkout-econt-warning">{econtStatus.error || copy.liveConnectionError}</p>
             )}
           </div>
-          {submitState.success && <div className="checkout-submit-notice success" role="status">{econtStatus.mode === 'production' ? copy.successLive : copy.successTest}</div>}
+          {submitState.success && submitState.result && (
+            <div className="checkout-submit-notice success test-order-result" role="status">
+              <b>{econtStatus.mode === 'production' ? copy.successLive : copy.successTest}</b>
+              <span>{language === 'bg' ? 'Поръчка' : 'Order'}: {submitState.result.orderNumber}</span>
+              <span>{language === 'bg' ? 'Тестова товарителница' : 'DEMO waybill'}: {submitState.result.shipmentNumber}</span>
+              {submitState.result.pdfURL && (
+                <a href={submitState.result.pdfURL} target="_blank" rel="noreferrer">
+                  {language === 'bg' ? 'Отвори тестовата товарителница' : 'Open DEMO waybill'}
+                </a>
+              )}
+              <span>
+                {submitState.result.email?.sent
+                  ? (language === 'bg' ? 'Тестовият имейл е изпратен.' : 'Test order email was sent.')
+                  : (language === 'bg' ? 'Имейлът е подготвен като preview, но не е изпратен (липсват email ENV настройки).' : 'The email was prepared as a preview but not sent (email ENV settings are missing).')}
+              </span>
+              {submitState.result.email?.preview?.text && (
+                <details className="test-email-preview">
+                  <summary>{language === 'bg' ? 'Преглед на тестовия имейл' : 'Preview test email'}</summary>
+                  <b>{submitState.result.email.preview.subject}</b>
+                  <pre>{submitState.result.email.preview.text}</pre>
+                </details>
+              )}
+            </div>
+          )}
           {submitState.error && <div className="checkout-submit-notice error" role="alert">{submitState.error}</div>}
         </aside>
       </form>
