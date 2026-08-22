@@ -147,17 +147,17 @@ export const products = [
     "category": "dresses",
     "brand": "GAP",
     "name": {
-      "bg": "Рокля",
-      "en": "Dress"
+      "bg": "Зелена рокля",
+      "en": "Green dress"
     },
     "description": {
-      "bg": "GAP — рокля, цвят зелена, размер S.",
-      "en": "GAP dress, in green, size S."
+      "bg": "GAP — зелена рокля с набрана талия, размер S.",
+      "en": "GAP green dress with a gathered waist, size S."
     },
     "price": 9.99,
     "originalPrice": 29.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/gap-green-dress.jpg",
     "colour": {
       "bg": "Зелена",
       "en": "Green"
@@ -172,7 +172,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Product identity/name refined from the photo supplied on 2026-08-22."
   },
   {
     "id": "gw-0006",
@@ -389,23 +390,23 @@ export const products = [
     "slug": "gerpina-0012",
     "audience": "women",
     "kidGender": null,
-    "category": "skirts",
+    "category": "shorts",
     "brand": "ONLY",
     "name": {
-      "bg": "Пола",
-      "en": "Skirt"
+      "bg": "Къси панталони с флорален принт",
+      "en": "Floral shorts"
     },
     "description": {
-      "bg": "ONLY — пола, цвят шарена, размер M.",
-      "en": "ONLY skirt, in multicolour, size M."
+      "bg": "ONLY — къси панталони с флорален принт, размер M.",
+      "en": "ONLY floral-print shorts, size M."
     },
     "price": 19.99,
     "originalPrice": 34.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/only-floral-shorts.jpg",
     "colour": {
-      "bg": "Шарена",
-      "en": "Multicolour"
+      "bg": "Черен с многоцветни цветя",
+      "en": "Black multicolour floral"
     },
     "sizes": [
       {
@@ -417,7 +418,8 @@ export const products = [
     "stockQuantity": 0,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Product identity/name refined from the photo supplied on 2026-08-22."
   },
   {
     "id": "gw-0013",
@@ -742,20 +744,20 @@ export const products = [
     "category": "jackets",
     "brand": "NA-KD",
     "name": {
-      "bg": "Палто",
-      "en": "Coat"
+      "bg": "Бежово сако",
+      "en": "Beige blazer"
     },
     "description": {
-      "bg": "NA-KD — палто, размер S.",
-      "en": "NA-KD coat, size S."
+      "bg": "NA-KD — бежово сако с ревери и предни джобове, размер S.",
+      "en": "NA-KD beige blazer with lapels and front pockets, size S."
     },
     "price": 19.99,
     "originalPrice": 59.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/nakd-beige-blazer.jpg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Бежово",
+      "en": "Beige"
     },
     "sizes": [
       {
@@ -767,7 +769,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Product identity/name refined from the photo supplied on 2026-08-22."
   },
   {
     "id": "gw-0023",
@@ -987,20 +990,20 @@ export const products = [
     "category": "jackets",
     "brand": "PIECES",
     "name": {
-      "bg": "Яке",
-      "en": "Jacket"
+      "bg": "Маслиненозелено яке с качулка",
+      "en": "Olive hooded jacket"
     },
     "description": {
-      "bg": "PIECES — яке, цвят зелено, размер S.",
-      "en": "PIECES jacket, in green, size S."
+      "bg": "PIECES — маслиненозелено подплатено яке с качулка, размер S.",
+      "en": "PIECES olive padded hooded jacket, size S."
     },
     "price": 24.99,
     "originalPrice": 79.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/pieces-olive-hooded-jacket.jpg",
     "colour": {
-      "bg": "Зелено",
-      "en": "Green"
+      "bg": "Маслиненозелено",
+      "en": "Olive green"
     },
     "sizes": [
       {
@@ -1012,7 +1015,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Product identity/name refined from the photo supplied on 2026-08-22."
   },
   {
     "id": "gw-0030",
@@ -1330,41 +1334,6 @@ export const products = [
     "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
-    "id": "gw-0039",
-    "slug": "gerpina-0039",
-    "audience": "women",
-    "kidGender": null,
-    "category": "shorts",
-    "brand": "Pepe Jeans",
-    "name": {
-      "bg": "Гащи",
-      "en": "Bottoms"
-    },
-    "description": {
-      "bg": "Pepe Jeans — гащи, цвят на цветя, размер M.",
-      "en": "Pepe Jeans bottoms, in floral, size M."
-    },
-    "price": 15.99,
-    "originalPrice": 34.5,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "На Цветя",
-      "en": "Floral"
-    },
-    "sizes": [
-      {
-        "label": "M",
-        "available": false
-      }
-    ],
-    "status": "unavailable",
-    "stockQuantity": 0,
-    "originalPriceType": "brand",
-    "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
-  },
-  {
     "id": "gw-0040",
     "slug": "gerpina-0040",
     "audience": "women",
@@ -1440,22 +1409,22 @@ export const products = [
     "audience": "women",
     "kidGender": null,
     "category": "trousers",
-    "brand": "New Look",
+    "brand": "NG ORDER",
     "name": {
-      "bg": "Панталон",
-      "en": "Trousers"
+      "bg": "Широк панталон с абстрактен принт",
+      "en": "Wide-leg abstract-print trousers"
     },
     "description": {
-      "bg": "New Look — панталон, размер S.",
-      "en": "New Look trousers, size S."
+      "bg": "NG ORDER — широк панталон с абстрактен лилаво-бяло-жълт принт, размер S.",
+      "en": "NG ORDER wide-leg trousers with a purple, white and yellow abstract print, size S."
     },
     "price": 13.99,
     "originalPrice": 34.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/ng-order-abstract-trousers.jpg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Лилаво, бяло и жълто",
+      "en": "Purple, white and yellow"
     },
     "sizes": [
       {
@@ -1467,7 +1436,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Product identity/name refined from the photo supplied on 2026-08-22."
   },
   {
     "id": "gw-0043",
@@ -1512,20 +1482,20 @@ export const products = [
     "category": "tops",
     "brand": "VILA",
     "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
+      "bg": "Блуза с флорален принт",
+      "en": "Floral-print blouse"
     },
     "description": {
-      "bg": "VILA — блуза, цвят черна с шарени цветя, размер M.",
-      "en": "VILA blouse, in black floral, size M."
+      "bg": "VILA — черна блуза с розов, лилав и зелен флорален принт, размер M.",
+      "en": "VILA black blouse with pink, purple and green floral print, size M."
     },
     "price": 19.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/vila-black-floral-blouse.jpg",
     "colour": {
-      "bg": "Черна С Шарени Цветя",
-      "en": "Black floral"
+      "bg": "Черна с многоцветни цветя",
+      "en": "Black multicolour floral"
     },
     "sizes": [
       {
@@ -1537,7 +1507,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Product identity/name refined from the photo supplied on 2026-08-22."
   },
   {
     "id": "gw-0045",
@@ -1687,17 +1658,17 @@ export const products = [
     "category": "skirts",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Пола",
-      "en": "Skirt"
+      "bg": "Розова мини пола",
+      "en": "Pink mini skirt"
     },
     "description": {
-      "bg": "Even&Odd — пола, цвят розова, размер XS.",
-      "en": "Even&Odd skirt, in pink, size XS."
+      "bg": "Even&Odd — розова мини пола, размер XS.",
+      "en": "Even&Odd pink mini skirt, size XS."
     },
     "price": 19.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/evenodd-pink-mini-skirt.jpg",
     "colour": {
       "bg": "Розова",
       "en": "Pink"
@@ -1712,7 +1683,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Product identity/name refined from the photo supplied on 2026-08-22."
   },
   {
     "id": "gw-0050",
@@ -5639,7 +5611,6 @@ export const products = [
     "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match."
   }
 ];
-
 export const categoryLabels = {
   "dresses": {
     "bg": "Рокли",

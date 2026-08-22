@@ -4,7 +4,7 @@ Next.js storefront for GERPINA Wear.
 
 ## Current build
 
-- Stock List 3 integrated: 161 catalogue entries.
+- Stock List 3 integrated: 160 catalogue entries (Pepe Jeans floral shorts removed after stock confirmation).
 - GERPINA selling prices come from the cleaned Stock List 3 workbook.
 - Supplied brand/original prices are shown as `Цена на марката`.
 - Where the exact kids SKU could not be verified, comparable current Minoti retail examples are shown as `Референтна цена на марката` rather than being presented as GERPINA's previous price.
@@ -35,3 +35,5 @@ Do not commit production credentials to Git.
 ## Safety
 
 This is still a test-order build. `mode: create` exists only in the Econt DEMO module. The production Econt account is not used to create waybills or courier requests.
+
+- 2026-08-22 photo pass: GAP dress, NG ORDER trousers, VILA floral blouse, ONLY floral shorts, Even&Odd skirt, NA-KD blazer and PIECES jacket mapped/refined from supplied photos.
