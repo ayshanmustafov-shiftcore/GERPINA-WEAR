@@ -37,3 +37,13 @@ Do not commit production credentials to Git.
 This is still a test-order build. `mode: create` exists only in the Econt DEMO module. The production Econt account is not used to create waybills or courier requests.
 
 - 2026-08-22 photo pass: GAP dress, NG ORDER trousers, VILA floral blouse, ONLY floral shorts, Even&Odd skirt, NA-KD blazer and PIECES jacket mapped/refined from supplied photos.
+
+## 2026-08-27 stock + mobile cleanup
+- Sold/taken products are archived under `source-material/archived-sold-products.json` and are not rendered on the storefront.
+- Cart/favorites are revalidated against the current active catalogue; removed products cannot remain in a stale mobile cart.
+- Mobile header now keeps Women / Men / Kids directly accessible and hides the oversized desktop category row.
+- Shop filters collapse into a mobile-friendly filter panel.
+- Cart layout has been simplified for unique/one-piece stock and narrow screens.
+- Homepage Women / Men / Kids are separate swipeable collection slides.
+- Existing Levi's photo `IMG-20260809-WA0002.jpg` was confidently linked to `gw-0003`.
+- Three image files remain unlinked and are listed in the photo-audit workbook for manual confirmation.

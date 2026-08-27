@@ -113,6 +113,17 @@ export default function SiteHeader() {
           </div>
         </div>
 
+        <nav className="mobile-audience-nav" aria-label={language === 'bg' ? 'Колекции' : 'Collections'}>
+          {audience.map(([key, href, label]) => (
+            <Link
+              className={activeAudience === key ? 'active' : ''}
+              href={href}
+              key={`mobile-${key}`}
+              onClick={() => setActiveAudience(key)}
+            >{label}</Link>
+          ))}
+        </nav>
+
         <div className="category-search-row">
           <div className="category-search-inner page-width">
             <nav className="category-nav" aria-label="Shop categories">

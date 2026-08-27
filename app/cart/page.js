@@ -7,7 +7,7 @@ import { useStore } from '@/components/StoreProvider';
 
 export default function CartPage() {
   const { language, t } = useLanguage();
-  const { cart, cartTotal, updateQuantity, removeFromCart } = useStore();
+  const { cart, cartTotal, activeAudience, updateQuantity, removeFromCart } = useStore();
 
   return (
     <main className="cart-page page-width">
@@ -36,12 +36,15 @@ export default function CartPage() {
                   </div>
                   <div className="cart-quantity-row">
                     <span>{language === 'bg' ? 'Количество' : 'Quantity'}</span>
-                    <div className="quantity-control">
-                      <button type="button" aria-label={language === 'bg' ? 'Намали количеството' : 'Decrease quantity'} onClick={() => updateQuantity(item.cartKey, item.quantity - 1)}>−</button>
-                      <b>{item.quantity}</b>
-                      <button type="button" disabled={item.quantity >= (item.stockQuantity || 1)} aria-label={language === 'bg' ? 'Увеличи количеството' : 'Increase quantity'} onClick={() => updateQuantity(item.cartKey, item.quantity + 1)}>+</button>
-                    </div>
-                    {(item.stockQuantity || 1) === 1 && <small className="stock-limit-note">{language === 'bg' ? '1 бр. налична' : '1 pc available'}</small>}
+                    {(item.stockQuantity || 1) === 1 ? (
+                      <div className="single-stock-quantity">1 {language === 'bg' ? 'бр.' : 'pc'}</div>
+                    ) : (
+                      <div className="quantity-control">
+                        <button type="button" aria-label={language === 'bg' ? 'Намали количеството' : 'Decrease quantity'} onClick={() => updateQuantity(item.cartKey, item.quantity - 1)}>−</button>
+                        <b>{item.quantity}</b>
+                        <button type="button" disabled={item.quantity >= (item.stockQuantity || 1)} aria-label={language === 'bg' ? 'Увеличи количеството' : 'Increase quantity'} onClick={() => updateQuantity(item.cartKey, item.quantity + 1)}>+</button>
+                      </div>
+                    )}
                   </div>
                   <button className="remove-item" onClick={() => removeFromCart(item.cartKey)}>{language === 'bg' ? 'Премахни' : 'Remove'}</button>
                 </div>
@@ -54,6 +57,7 @@ export default function CartPage() {
             <div><span>{language === 'bg' ? 'Доставка' : 'Delivery'}</span><b>{language === 'bg' ? 'Изчислява се при поръчка' : 'Calculated at checkout'}</b></div>
             <div className="cart-total"><span>{language === 'bg' ? 'Общо продукти' : 'Items total'}</span><strong>€{cartTotal.toFixed(2)}</strong></div>
             <Link href="/checkout" className="checkout-button">{t.common.checkout}</Link>
+            <Link href={`/${activeAudience}`} className="continue-shopping-link">{language === 'bg' ? 'Продължи да пазаруваш' : 'Continue shopping'}</Link>
             <p>{language === 'bg' ? 'Доставката и наложеният платеж ще бъдат финализирани чрез Еконт.' : 'Delivery and cash on delivery will be finalized through Econt.'}</p>
           </aside>
         </div>

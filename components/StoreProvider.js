@@ -1,18 +1,38 @@
 'use client';
 
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import { products } from '@/data/products';
 
 const StoreContext = createContext(null);
 const VALID_AUDIENCES = ['women', 'men', 'kids'];
+const PRODUCT_MAP = new Map(products.map((product) => [product.id, product]));
 
 function normaliseCart(items) {
   if (!Array.isArray(items)) return [];
-  return items.map((item) => ({
-    ...item,
-    selectedSize: item.selectedSize || null,
-    cartKey: item.cartKey || `${item.id}::${item.selectedSize || 'default'}`,
-    stockQuantity: item.stockQuantity || 1,
-  }));
+
+  return items.flatMap((item) => {
+    const product = PRODUCT_MAP.get(item.id);
+    if (!product || product.status !== 'in_stock') return [];
+
+    const selectedSize = item.selectedSize || null;
+    const sizeStillAvailable = !selectedSize || !product.sizes?.length || product.sizes.some((size) => size.label === selectedSize && size.available);
+    if (!sizeStillAvailable) return [];
+
+    const stockQuantity = Math.max(1, product.stockQuantity || 1);
+    return [{
+      id: product.id,
+      cartKey: `${product.id}::${selectedSize || 'default'}`,
+      slug: product.slug,
+      name: product.name,
+      brand: product.brand,
+      image: product.image,
+      price: product.price,
+      originalPrice: product.originalPrice,
+      selectedSize,
+      stockQuantity,
+      quantity: Math.min(Math.max(1, Number(item.quantity) || 1), stockQuantity),
+    }];
+  });
 }
 
 export function StoreProvider({ children }) {
@@ -23,8 +43,10 @@ export function StoreProvider({ children }) {
 
   useEffect(() => {
     try {
-      setCart(normaliseCart(JSON.parse(localStorage.getItem('gerpina-cart-stock3-v1') || '[]')));
-      setFavorites(JSON.parse(localStorage.getItem('gerpina-favorites-inventory-v1') || '[]'));
+      const storedCart = JSON.parse(localStorage.getItem('gerpina-cart-stock4-v1') || localStorage.getItem('gerpina-cart-stock3-v1') || '[]');
+      setCart(normaliseCart(storedCart));
+      const storedFavorites = JSON.parse(localStorage.getItem('gerpina-favorites-inventory-v1') || '[]');
+      setFavorites(Array.isArray(storedFavorites) ? storedFavorites.filter((id) => PRODUCT_MAP.has(id)) : []);
       const savedAudience = localStorage.getItem('gerpina-active-audience-v1');
       if (VALID_AUDIENCES.includes(savedAudience)) setActiveAudienceState(savedAudience);
     } catch {}
@@ -32,7 +54,10 @@ export function StoreProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    if (hydrated) localStorage.setItem('gerpina-cart-stock3-v1', JSON.stringify(cart));
+    if (hydrated) {
+      localStorage.setItem('gerpina-cart-stock4-v1', JSON.stringify(cart));
+      localStorage.removeItem('gerpina-cart-stock3-v1');
+    }
   }, [cart, hydrated]);
 
   useEffect(() => {
@@ -84,6 +109,7 @@ export function StoreProvider({ children }) {
       setCart((current) => current.filter((item) => item.cartKey !== cartKey));
     },
     toggleFavorite(id) {
+      if (!PRODUCT_MAP.has(id)) return;
       setFavorites((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]);
     },
   }), [cart, favorites, activeAudience]);

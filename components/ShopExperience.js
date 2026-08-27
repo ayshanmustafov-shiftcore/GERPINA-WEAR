@@ -38,10 +38,10 @@ export default function ShopExperience({ fixedAudience = null }) {
   const [brand, setBrand] = useState('all');
   const [size, setSize] = useState('all');
   const [colour, setColour] = useState('all');
-  const [availability, setAvailability] = useState('all');
   const [kidGender, setKidGender] = useState('all');
   const [sort, setSort] = useState('recommended');
   const [openFilter, setOpenFilter] = useState(null);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   useEffect(() => setCategory(queryCategory || 'all'), [queryCategory]);
 
@@ -49,7 +49,7 @@ export default function ShopExperience({ fixedAudience = null }) {
     if (effectiveAudience && effectiveAudience !== activeAudience) setActiveAudience(effectiveAudience);
   }, [effectiveAudience, activeAudience, setActiveAudience]);
 
-  const audienceProducts = useMemo(() => products.filter((product) => productMatchesAudience(product, effectiveAudience)), [effectiveAudience]);
+  const audienceProducts = useMemo(() => products.filter((product) => product.status === 'in_stock' && productMatchesAudience(product, effectiveAudience)), [effectiveAudience]);
 
   const availableCategories = useMemo(() => Object.entries(categoryLabels)
     .filter(([key]) => audienceProducts.some((product) => product.category === key))
@@ -82,19 +82,17 @@ export default function ShopExperience({ fixedAudience = null }) {
     if (brand !== 'all') next = next.filter((product) => product.brand === brand);
     if (size !== 'all') next = next.filter((product) => (product.sizes || []).some((item) => item.label === size));
     if (colour !== 'all') next = next.filter((product) => product.colour.bg === colour);
-    if (availability === 'in_stock') next = next.filter((product) => product.status === 'in_stock');
-    if (availability === 'sold_out') next = next.filter((product) => product.status !== 'in_stock');
     if (effectiveAudience === 'kids' && kidGender !== 'all') next = next.filter((product) => product.kidGender === kidGender);
     if (sort === 'low') next = [...next].sort((a, b) => a.price - b.price);
     if (sort === 'high') next = [...next].sort((a, b) => b.price - a.price);
     if (sort === 'discount') next = [...next].sort((a, b) => (getDiscountPercent(b.originalPrice, b.price) || 0) - (getDiscountPercent(a.originalPrice, a.price) || 0));
     if (sort === 'recommended') next = [...next].sort((a, b) => (a.status === 'in_stock' ? 0 : 1) - (b.status === 'in_stock' ? 0 : 1));
     return next;
-  }, [audienceProducts, q, category, brand, size, colour, availability, effectiveAudience, kidGender, sort, saleOnly]);
+  }, [audienceProducts, q, category, brand, size, colour, effectiveAudience, kidGender, sort, saleOnly]);
 
   const title = audienceLabels[effectiveAudience]?.[language] || t.nav.shop;
   const closeSet = (setter) => (value) => { setter(value); setOpenFilter(null); };
-  const activeCount = [category, brand, size, colour, availability, effectiveAudience === 'kids' ? kidGender : 'all'].filter((v) => v !== 'all').length + (saleOnly ? 1 : 0);
+  const activeCount = [category, brand, size, colour, effectiveAudience === 'kids' ? kidGender : 'all'].filter((v) => v !== 'all').length + (saleOnly ? 1 : 0);
 
   return (
     <main className="shop-page">
@@ -104,15 +102,22 @@ export default function ShopExperience({ fixedAudience = null }) {
         <p>{language === 'bg' ? 'Разгледай наличните модели, размери и актуални цени на GERPINA.' : 'Browse available styles, sizes and current GERPINA prices.'}</p>
       </section>
 
-      <section className="filter-strip page-width">
+      <div className="mobile-shop-toolbar page-width">
+        <button type="button" className="mobile-filter-toggle" onClick={() => setMobileFiltersOpen((open) => !open)} aria-expanded={mobileFiltersOpen}>
+          {language === 'bg' ? 'Филтри' : 'Filters'}{activeCount ? ` (${activeCount})` : ''}
+        </button>
+        <span>{filtered.length} {t.common.products}</span>
+      </div>
+
+      <section className={`filter-strip page-width ${mobileFiltersOpen ? 'mobile-open' : ''}`}>
+        <div className="mobile-filter-head">
+          <b>{language === 'bg' ? 'Филтри и сортиране' : 'Filters & sorting'}</b>
+          <button type="button" onClick={() => setMobileFiltersOpen(false)}>{language === 'bg' ? 'Готово' : 'Done'}</button>
+        </div>
         <DropFilter label={language === 'bg' ? 'Категория' : 'Category'} value={category} options={availableCategories} onChange={closeSet(setCategory)} open={openFilter === 'category'} onToggle={() => setOpenFilter(openFilter === 'category' ? null : 'category')} language={language} />
         <DropFilter label={language === 'bg' ? 'Марка' : 'Brand'} value={brand} options={brandOptions} onChange={closeSet(setBrand)} open={openFilter === 'brand'} onToggle={() => setOpenFilter(openFilter === 'brand' ? null : 'brand')} language={language} />
         <DropFilter label={language === 'bg' ? 'Размер' : 'Size'} value={size} options={sizeOptions} onChange={closeSet(setSize)} open={openFilter === 'size'} onToggle={() => setOpenFilter(openFilter === 'size' ? null : 'size')} language={language} />
         <DropFilter label={language === 'bg' ? 'Цвят' : 'Colour'} value={colour} options={colourOptions} onChange={closeSet(setColour)} open={openFilter === 'colour'} onToggle={() => setOpenFilter(openFilter === 'colour' ? null : 'colour')} language={language} />
-        <DropFilter label={language === 'bg' ? 'Наличност' : 'Availability'} value={availability} options={[
-          { value: 'in_stock', label: language === 'bg' ? 'В наличност' : 'In stock' },
-          { value: 'sold_out', label: language === 'bg' ? 'Изчерпани' : 'Sold out' },
-        ]} onChange={closeSet(setAvailability)} open={openFilter === 'availability'} onToggle={() => setOpenFilter(openFilter === 'availability' ? null : 'availability')} language={language} />
         {effectiveAudience === 'kids' && <DropFilter label={language === 'bg' ? 'За' : 'For'} value={kidGender} options={Object.entries(kidGenderLabels).map(([value, item]) => ({ value, label: item[language] }))} onChange={closeSet(setKidGender)} open={openFilter === 'gender'} onToggle={() => setOpenFilter(openFilter === 'gender' ? null : 'gender')} language={language} />}
 
         <div className="sort-control">
@@ -130,7 +135,7 @@ export default function ShopExperience({ fixedAudience = null }) {
         {(activeCount > 0 || q) && (
           <div className="active-filter-row">
             <span>{language === 'bg' ? `${activeCount} активни филтъра` : `${activeCount} active filters`}</span>
-            <button onClick={() => { setCategory('all'); setBrand('all'); setSize('all'); setColour('all'); setAvailability('all'); setKidGender('all'); }}>{language === 'bg' ? 'Изчисти филтрите' : 'Clear filters'}</button>
+            <button onClick={() => { setCategory('all'); setBrand('all'); setSize('all'); setColour('all'); setKidGender('all'); }}>{language === 'bg' ? 'Изчисти филтрите' : 'Clear filters'}</button>
           </div>
         )}
         {saleOnly && <div className="search-result-note">{language === 'bg' ? 'Промоции за' : 'Sale selection for'}: <b>{audienceLabels[effectiveAudience]?.[language]}</b></div>}

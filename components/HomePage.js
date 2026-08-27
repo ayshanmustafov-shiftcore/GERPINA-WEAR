@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from '@/components/Icons';
 import ProductGrid from '@/components/ProductGrid';
+import AudienceCollectionSlider from '@/components/AudienceCollectionSlider';
 import { products, categoryLabels, getDiscountPercent, isProductAvailable, productMatchesAudience } from '@/data/products';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useStore } from '@/components/StoreProvider';
@@ -36,11 +37,7 @@ export default function HomePage() {
 
     <section className="home-section page-width"><div className="section-title-row stacked"><div><h2>{t.home.latest}</h2><p>{t.home.latestText}</p></div><Link href={scopedShopHref()}>{language === 'bg' ? 'Всички продукти' : 'All products'} <ArrowRight /></Link></div><ProductGrid products={latestProducts} /></section>
 
-    <section className="audience-banners page-width">
-      <Link href="/women" onClick={() => setActiveAudience('women')} className="audience-banner">{products.find((p) => productMatchesAudience(p, 'women') && p.image)?.image ? <Image src={products.find((p) => productMatchesAudience(p, 'women') && p.image).image} alt="Women" fill sizes="33vw"/> : <div className="audience-placeholder" />}<span>{t.nav.women}<ArrowRight /></span></Link>
-      <Link href="/kids" onClick={() => setActiveAudience('kids')} className="audience-banner audience-banner-no-photo"><div className="audience-placeholder"><b>GERPINA</b><small>{language === 'bg' ? 'Детска колекция' : 'Kids collection'}</small></div><span>{t.nav.kids}<ArrowRight /></span></Link>
-      <Link href="/men" onClick={() => setActiveAudience('men')} className="audience-banner">{products.find((p) => productMatchesAudience(p, 'men') && p.image)?.image ? <Image src={products.find((p) => productMatchesAudience(p, 'men') && p.image).image} alt="Men" fill sizes="33vw"/> : <div className="audience-placeholder"><b>GERPINA</b></div>}<span>{t.nav.men}<ArrowRight /></span></Link>
-    </section>
+    <AudienceCollectionSlider />
 
     <section className="home-service-links page-width"><Link href="/delivery-returns"><b>{language === 'bg' ? '14 дни право на връщане' : '14-day withdrawal right'}</b><span>{language === 'bg' ? 'Виж условията за доставка и връщане' : 'See delivery and return information'} →</span></Link><Link href="/contact"><b>{language === 'bg' ? 'Нужда от помощ?' : 'Need help?'}</b><span>{language === 'bg' ? 'Свържи се с GERPINA' : 'Contact GERPINA'} →</span></Link></section>
   </main>;

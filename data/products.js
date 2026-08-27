@@ -77,20 +77,20 @@ export const products = [
     "category": "trousers",
     "brand": "Levi's",
     "name": {
-      "bg": "Анцуг",
-      "en": "Tracksuit"
+      "bg": "Анцуг долнище",
+      "en": "Joggers"
     },
     "description": {
-      "bg": "Levi's — анцуг, размер XL.",
-      "en": "Levi's tracksuit, size XL."
+      "bg": "Levi's — сиво анцуг долнище, размер XL.",
+      "en": "Levi's grey joggers, size XL."
     },
     "price": 18.99,
     "originalPrice": 49.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/IMG-20260809-WA0002.jpg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Сиво",
+      "en": "Grey"
     },
     "sizes": [
       {
@@ -102,7 +102,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Matched confidently from visible Levi’s product tag in existing photo."
   },
   {
     "id": "gw-0004",
@@ -211,41 +212,6 @@ export const products = [
     "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
-    "id": "gw-0007",
-    "slug": "gerpina-0007",
-    "audience": "women",
-    "kidGender": null,
-    "category": "dresses",
-    "brand": "Guess",
-    "name": {
-      "bg": "Рокля",
-      "en": "Dress"
-    },
-    "description": {
-      "bg": "Guess — рокля, цвят розова, размер S.",
-      "en": "Guess dress, in pink, size S."
-    },
-    "price": 19.99,
-    "originalPrice": 39.99,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Розова",
-      "en": "Pink"
-    },
-    "sizes": [
-      {
-        "label": "S",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "brand",
-    "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
-  },
-  {
     "id": "gw-0008",
     "slug": "gerpina-0008",
     "audience": "women",
@@ -316,41 +282,6 @@ export const products = [
     "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
-    "id": "gw-0010",
-    "slug": "gerpina-0010",
-    "audience": "women",
-    "kidGender": null,
-    "category": "tops",
-    "brand": "JDY",
-    "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
-    },
-    "description": {
-      "bg": "JDY — блуза, цвят шарени цветя, размер S.",
-      "en": "JDY blouse, in multicolour floral, size S."
-    },
-    "price": 15.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Шарени цветя",
-      "en": "Multicolour floral"
-    },
-    "sizes": [
-      {
-        "label": "S",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
-  },
-  {
     "id": "gw-0011",
     "slug": "gerpina-0011",
     "audience": "women",
@@ -384,77 +315,6 @@ export const products = [
     "originalPriceType": "brand",
     "originalPriceSource": null,
     "priceReviewNote": "Original price supplied in Stock list 3."
-  },
-  {
-    "id": "gw-0012",
-    "slug": "gerpina-0012",
-    "audience": "women",
-    "kidGender": null,
-    "category": "shorts",
-    "brand": "ONLY",
-    "name": {
-      "bg": "Къси панталони с флорален принт",
-      "en": "Floral shorts"
-    },
-    "description": {
-      "bg": "ONLY — къси панталони с флорален принт, размер M.",
-      "en": "ONLY floral-print shorts, size M."
-    },
-    "price": 19.99,
-    "originalPrice": 34.99,
-    "originalPriceEstimated": false,
-    "image": "/images/products/only-floral-shorts.jpg",
-    "colour": {
-      "bg": "Черен с многоцветни цветя",
-      "en": "Black multicolour floral"
-    },
-    "sizes": [
-      {
-        "label": "M",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "brand",
-    "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3.",
-    "photoReviewNote": "Product identity/name refined from the photo supplied on 2026-08-22."
-  },
-  {
-    "id": "gw-0013",
-    "slug": "gerpina-0013",
-    "audience": "women",
-    "kidGender": null,
-    "category": "trousers",
-    "brand": "BDG",
-    "name": {
-      "bg": "Дънки",
-      "en": "Jeans"
-    },
-    "description": {
-      "bg": "BDG — дънки, цвят сини, размер S.",
-      "en": "BDG jeans, in blue, size S."
-    },
-    "price": 15.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Сини",
-      "en": "Blue"
-    },
-    "sizes": [
-      {
-        "label": "S",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0014",
@@ -527,41 +387,6 @@ export const products = [
     "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
-    "id": "gw-0016",
-    "slug": "gerpina-0016",
-    "audience": "women",
-    "kidGender": null,
-    "category": "tops",
-    "brand": "Kari Traa",
-    "name": {
-      "bg": "Потник",
-      "en": "Tank top"
-    },
-    "description": {
-      "bg": "Kari Traa — потник, цвят жълт, размер XS.",
-      "en": "Kari Traa tank top, in yellow, size XS."
-    },
-    "price": 5.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Жълт",
-      "en": "Yellow"
-    },
-    "sizes": [
-      {
-        "label": "XS",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
-  },
-  {
     "id": "gw-0017",
     "slug": "gerpina-0017",
     "audience": "women",
@@ -595,76 +420,6 @@ export const products = [
     "originalPriceType": "brand",
     "originalPriceSource": null,
     "priceReviewNote": "Original price supplied in Stock list 3."
-  },
-  {
-    "id": "gw-0018",
-    "slug": "gerpina-0018",
-    "audience": "women",
-    "kidGender": null,
-    "category": "jackets",
-    "brand": "ONLY",
-    "name": {
-      "bg": "Зимно яке",
-      "en": "Winter jacket"
-    },
-    "description": {
-      "bg": "ONLY — зимно яке, цвят лилаво, размер M.",
-      "en": "ONLY winter jacket, in purple, size M."
-    },
-    "price": 25.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Лилаво",
-      "en": "Purple"
-    },
-    "sizes": [
-      {
-        "label": "M",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
-  },
-  {
-    "id": "gw-0019",
-    "slug": "gerpina-0019",
-    "audience": "women",
-    "kidGender": null,
-    "category": "tops",
-    "brand": "Noa Noa",
-    "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
-    },
-    "description": {
-      "bg": "Noa Noa — блуза, цвят синя, размер L.",
-      "en": "Noa Noa blouse, in blue, size L."
-    },
-    "price": 25.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "синя",
-      "en": "Blue"
-    },
-    "sizes": [
-      {
-        "label": "L",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 1,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0020",
@@ -808,41 +563,6 @@ export const products = [
     "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
-    "id": "gw-0024",
-    "slug": "gerpina-0024",
-    "audience": "women",
-    "kidGender": null,
-    "category": "tops",
-    "brand": "PIECES",
-    "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
-    },
-    "description": {
-      "bg": "PIECES — блуза, цвят черна, размер S.",
-      "en": "PIECES blouse, in black, size S."
-    },
-    "price": 10.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Черна",
-      "en": "Black"
-    },
-    "sizes": [
-      {
-        "label": "S",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
-  },
-  {
     "id": "gw-0025",
     "slug": "gerpina-0025",
     "audience": "women",
@@ -911,41 +631,6 @@ export const products = [
     "originalPriceType": "brand",
     "originalPriceSource": null,
     "priceReviewNote": "Original price supplied in Stock list 3."
-  },
-  {
-    "id": "gw-0027",
-    "slug": "gerpina-0027",
-    "audience": "women",
-    "kidGender": null,
-    "category": "dresses",
-    "brand": "ONLY",
-    "name": {
-      "bg": "Кожена пола/рокля",
-      "en": "Leather skirt/dress"
-    },
-    "description": {
-      "bg": "ONLY — кожена пола/рокля, цвят кожена/черна, размер XXS.",
-      "en": "ONLY leather skirt/dress, in black leather, size XXS."
-    },
-    "price": 20.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Кожена/Черна",
-      "en": "Black leather"
-    },
-    "sizes": [
-      {
-        "label": "XXS",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0028",
@@ -1124,76 +809,6 @@ export const products = [
     "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
-    "id": "gw-0033",
-    "slug": "gerpina-0033",
-    "audience": "women",
-    "kidGender": null,
-    "category": "tops",
-    "brand": "adidas",
-    "name": {
-      "bg": "Потник",
-      "en": "Tank top"
-    },
-    "description": {
-      "bg": "adidas — потник, цвят син, размер M.",
-      "en": "adidas tank top, in blue, size M."
-    },
-    "price": 20.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Син",
-      "en": "Blue"
-    },
-    "sizes": [
-      {
-        "label": "M",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
-  },
-  {
-    "id": "gw-0034",
-    "slug": "gerpina-0034",
-    "audience": "women",
-    "kidGender": null,
-    "category": "trousers",
-    "brand": "Quiksilver",
-    "name": {
-      "bg": "Дънки",
-      "en": "Jeans"
-    },
-    "description": {
-      "bg": "Quiksilver — дънки, размер XS / S.",
-      "en": "Quiksilver jeans, size XS / S."
-    },
-    "price": 20.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
-    },
-    "sizes": [
-      {
-        "label": "XS / S",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
-  },
-  {
     "id": "gw-0035",
     "slug": "gerpina-0035",
     "audience": "women",
@@ -1297,41 +912,6 @@ export const products = [
     "originalPriceType": "brand",
     "originalPriceSource": null,
     "priceReviewNote": "Original price supplied in Stock list 3."
-  },
-  {
-    "id": "gw-0038",
-    "slug": "gerpina-0038",
-    "audience": "women",
-    "kidGender": null,
-    "category": "tops",
-    "brand": "VILA",
-    "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
-    },
-    "description": {
-      "bg": "VILA — блуза, цвят зелена, размер M.",
-      "en": "VILA blouse, in green, size M."
-    },
-    "price": 10.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Зелена",
-      "en": "Green"
-    },
-    "sizes": [
-      {
-        "label": "M",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0040",
@@ -1932,41 +1512,6 @@ export const products = [
     "priceReviewNote": "Original price supplied in Stock list 3."
   },
   {
-    "id": "gw-0057",
-    "slug": "gerpina-0057",
-    "audience": "women",
-    "kidGender": null,
-    "category": "tops",
-    "brand": "ONLY",
-    "name": {
-      "bg": "Потник",
-      "en": "Tank top"
-    },
-    "description": {
-      "bg": "ONLY — потник, цвят черен, размер XS.",
-      "en": "ONLY tank top, in black, size XS."
-    },
-    "price": 12.99,
-    "originalPrice": 34.99,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Черен",
-      "en": "Black"
-    },
-    "sizes": [
-      {
-        "label": "XS",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "brand",
-    "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
-  },
-  {
     "id": "gw-0058",
     "slug": "gerpina-0058",
     "audience": "women",
@@ -2035,41 +1580,6 @@ export const products = [
     "originalPriceType": "brand",
     "originalPriceSource": null,
     "priceReviewNote": "Original price supplied in Stock list 3."
-  },
-  {
-    "id": "gw-0060",
-    "slug": "gerpina-0060",
-    "audience": "women",
-    "kidGender": null,
-    "category": "jackets",
-    "brand": "O'Neill",
-    "name": {
-      "bg": "Вълнено палто",
-      "en": "Wool coat"
-    },
-    "description": {
-      "bg": "O'Neill — вълнено палто, цвят черно, размер М.",
-      "en": "O'Neill wool coat, in black, size М."
-    },
-    "price": 35.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Черно",
-      "en": "Black"
-    },
-    "sizes": [
-      {
-        "label": "М",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0061",
@@ -2175,41 +1685,6 @@ export const products = [
     "originalPriceType": "brand",
     "originalPriceSource": null,
     "priceReviewNote": "Original price supplied in Stock list 3."
-  },
-  {
-    "id": "gw-0064",
-    "slug": "gerpina-0064",
-    "audience": "women",
-    "kidGender": null,
-    "category": "skirts",
-    "brand": "Even&Odd",
-    "name": {
-      "bg": "Къса пола",
-      "en": "Mini skirt"
-    },
-    "description": {
-      "bg": "Even&Odd — къса пола, размер S.",
-      "en": "Even&Odd mini skirt, size S."
-    },
-    "price": 20.0,
-    "originalPrice": null,
-    "originalPriceEstimated": false,
-    "image": null,
-    "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
-    },
-    "sizes": [
-      {
-        "label": "S",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 1,
-    "originalPriceType": "none",
-    "originalPriceSource": null,
-    "priceReviewNote": "Exact original price not verified; item is marked sold/taken in the stock notes."
   },
   {
     "id": "gw-0065",
@@ -2562,41 +2037,6 @@ export const products = [
     "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match."
   },
   {
-    "id": "gw-0075",
-    "slug": "gerpina-0075",
-    "audience": "kids",
-    "kidGender": "boy",
-    "category": "tops",
-    "brand": "Minoti",
-    "name": {
-      "bg": "Блузка",
-      "en": "Top"
-    },
-    "description": {
-      "bg": "Minoti — блузка, цвят бяла stay cool, размер 4/5 г.",
-      "en": "Minoti top, in white “stay cool”, size 4/5 г."
-    },
-    "price": 9.99,
-    "originalPrice": 12.9,
-    "originalPriceEstimated": true,
-    "image": null,
-    "colour": {
-      "bg": "Бяла STAY COOL",
-      "en": "White “STAY COOL”"
-    },
-    "sizes": [
-      {
-        "label": "4/5 г.",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "reference",
-    "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
-  },
-  {
     "id": "gw-0076",
     "slug": "gerpina-0076",
     "audience": "kids",
@@ -2732,76 +2172,6 @@ export const products = [
     ],
     "status": "in_stock",
     "stockQuantity": 1,
-    "originalPriceType": "reference",
-    "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
-  },
-  {
-    "id": "gw-0080",
-    "slug": "gerpina-0080",
-    "audience": "kids",
-    "kidGender": "girl",
-    "category": "jackets",
-    "brand": "Minoti",
-    "name": {
-      "bg": "Яке",
-      "en": "Jacket"
-    },
-    "description": {
-      "bg": "Minoti — яке, цвят леопардово, размер 3/4 г.",
-      "en": "Minoti jacket, in leopard print, size 3/4 г."
-    },
-    "price": 15.99,
-    "originalPrice": 33.9,
-    "originalPriceEstimated": true,
-    "image": null,
-    "colour": {
-      "bg": "Леопардово",
-      "en": "Leopard print"
-    },
-    "sizes": [
-      {
-        "label": "3/4 г.",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "reference",
-    "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
-  },
-  {
-    "id": "gw-0081",
-    "slug": "gerpina-0081",
-    "audience": "kids",
-    "kidGender": "girl",
-    "category": "jackets",
-    "brand": "Minoti",
-    "name": {
-      "bg": "Яке",
-      "en": "Jacket"
-    },
-    "description": {
-      "bg": "Minoti — яке, цвят синьо с ламички (llama), размер 4/5 г.",
-      "en": "Minoti jacket, in blue llama print, size 4/5 г."
-    },
-    "price": 14.99,
-    "originalPrice": 33.9,
-    "originalPriceEstimated": true,
-    "image": null,
-    "colour": {
-      "bg": "Синьо С Ламички (LLAMA)",
-      "en": "Blue llama print"
-    },
-    "sizes": [
-      {
-        "label": "4/5 г.",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
     "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
@@ -3336,41 +2706,6 @@ export const products = [
     "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
   },
   {
-    "id": "gw-0097",
-    "slug": "gerpina-0097",
-    "audience": "kids",
-    "kidGender": "girl",
-    "category": "other",
-    "brand": "Minoti",
-    "name": {
-      "bg": "2 рокли (комплект?)",
-      "en": "2-dress set"
-    },
-    "description": {
-      "bg": "Minoti — 2 рокли (комплект?), размер 2/3 г.",
-      "en": "Minoti 2-dress set, size 2/3 г."
-    },
-    "price": 9.99,
-    "originalPrice": 26.9,
-    "originalPriceEstimated": true,
-    "image": null,
-    "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
-    },
-    "sizes": [
-      {
-        "label": "2/3 г.",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "reference",
-    "originalPriceSource": "https://minoti.com/collections/multipacks",
-    "priceReviewNote": "Comparable Minoti dress multipack; comparable retail reference, not an exact SKU match."
-  },
-  {
     "id": "gw-0098",
     "slug": "gerpina-0098",
     "audience": "kids",
@@ -3754,41 +3089,6 @@ export const products = [
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/baby-accessories",
     "priceReviewNote": "Comparable Minoti baby hat pack; comparable retail reference, not an exact SKU match."
-  },
-  {
-    "id": "gw-0109",
-    "slug": "gerpina-0109",
-    "audience": "kids",
-    "kidGender": "girl",
-    "category": "tops",
-    "brand": "Minoti",
-    "name": {
-      "bg": "Блузка",
-      "en": "Top"
-    },
-    "description": {
-      "bg": "Minoti — блузка, цвят бяла със сърце, размер 3/4 г.",
-      "en": "Minoti top, in white with heart, size 3/4 г."
-    },
-    "price": 8.99,
-    "originalPrice": 11.9,
-    "originalPriceEstimated": true,
-    "image": null,
-    "colour": {
-      "bg": "Бяла Със Сърце",
-      "en": "White with heart"
-    },
-    "sizes": [
-      {
-        "label": "3/4 г.",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "reference",
-    "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0110",
@@ -4419,41 +3719,6 @@ export const products = [
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
     "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
-  },
-  {
-    "id": "gw-0128",
-    "slug": "gerpina-0128",
-    "audience": "kids",
-    "kidGender": "boy",
-    "category": "tops",
-    "brand": "Minoti",
-    "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
-    },
-    "description": {
-      "bg": "Minoti — блуза, цвят бяла basketball, размер 4/5 г.",
-      "en": "Minoti blouse, in white “basketball”, size 4/5 г."
-    },
-    "price": 7.0,
-    "originalPrice": 11.9,
-    "originalPriceEstimated": true,
-    "image": null,
-    "colour": {
-      "bg": "Бяла Basketball",
-      "en": "White “Basketball”"
-    },
-    "sizes": [
-      {
-        "label": "4/5 г.",
-        "available": false
-      }
-    ],
-    "status": "sold_out",
-    "stockQuantity": 0,
-    "originalPriceType": "reference",
-    "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
   },
   {
     "id": "gw-0129",
@@ -5611,6 +4876,7 @@ export const products = [
     "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match."
   }
 ];
+
 export const categoryLabels = {
   "dresses": {
     "bg": "Рокли",
@@ -5707,5 +4973,6 @@ export function productMatchesAudience(product, audience) {
 }
 
 export function getProductBySlug(slug) {
-  return products.find((product) => product.slug === slug);
+  return products.find((product) => product.slug === slug && isProductAvailable(product));
 }
+
