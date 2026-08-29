@@ -14,7 +14,7 @@ export default function ProductDetail({ product }) {
   const { language, t } = useLanguage();
   const { addToCart, favorites, toggleFavorite, activeAudience } = useStore();
   const sortedSizes = useMemo(() => sortSizes(product.sizes || []), [product]);
-  const availableSizes = useMemo(() => sortedSizes.filter((size) => size.available), [sortedSizes]);
+  const availableSizes = useMemo(() => sortedSizes.filter((size) => size.available !== false && (size.quantity == null || Number(size.quantity) > 0)), [sortedSizes]);
   const [selectedSize, setSelectedSize] = useState(availableSizes[0]?.label || '');
   const [added, setAdded] = useState(false);
   const favorite = favorites.includes(product.id);
@@ -93,16 +93,14 @@ export default function ProductDetail({ product }) {
           <div className="size-title"><span>{language === 'bg' ? 'Размер' : 'Size'}</span><button type="button" disabled>{language === 'bg' ? 'Таблица с размери' : 'Size guide'}</button></div>
           {product.sizes?.length ? (
             <div className="size-options">
-              {sortedSizes.map((size) => (
+              {availableSizes.map((size) => (
                 <button
                   type="button"
                   key={size.label}
-                  disabled={!size.available}
-                  className={`${selectedSize === size.label ? 'active' : ''} ${!size.available ? 'unavailable' : ''}`}
-                  onClick={() => size.available && setSelectedSize(size.label)}
+                  className={selectedSize === size.label ? 'active' : ''}
+                  onClick={() => setSelectedSize(size.label)}
                 >
                   {size.label}
-                  {!size.available && <small>{language === 'bg' ? 'Изчерпан' : 'Sold out'}</small>}
                 </button>
               ))}
             </div>

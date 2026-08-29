@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import ProductGrid from '@/components/ProductGrid';
 import { ChevronDown } from '@/components/Icons';
-import { audienceLabels, categoryLabels, getDiscountPercent, kidGenderLabels, productMatchesAudience, products } from '@/data/products';
+import { audienceLabels, categoryLabels, getDiscountPercent, isProductAvailable, kidGenderLabels, productMatchesAudience, products } from '@/data/products';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useStore } from '@/components/StoreProvider';
 import { compareSizes } from '@/lib/sizeSort';
@@ -49,7 +49,7 @@ export default function ShopExperience({ fixedAudience = null }) {
     if (effectiveAudience && effectiveAudience !== activeAudience) setActiveAudience(effectiveAudience);
   }, [effectiveAudience, activeAudience, setActiveAudience]);
 
-  const audienceProducts = useMemo(() => products.filter((product) => product.status === 'in_stock' && productMatchesAudience(product, effectiveAudience)), [effectiveAudience]);
+  const audienceProducts = useMemo(() => products.filter((product) => isProductAvailable(product) && productMatchesAudience(product, effectiveAudience)), [effectiveAudience]);
 
   const availableCategories = useMemo(() => Object.entries(categoryLabels)
     .filter(([key]) => audienceProducts.some((product) => product.category === key))
@@ -58,7 +58,7 @@ export default function ShopExperience({ fixedAudience = null }) {
   const brandOptions = useMemo(() => [...new Set(audienceProducts.map((product) => product.brand).filter(Boolean))]
     .sort((a, b) => a.localeCompare(b)).map((value) => ({ value, label: value })), [audienceProducts]);
 
-  const sizeOptions = useMemo(() => [...new Set(audienceProducts.flatMap((product) => (product.sizes || []).map((item) => item.label)).filter(Boolean))]
+  const sizeOptions = useMemo(() => [...new Set(audienceProducts.flatMap((product) => (product.sizes || []).filter((item) => item.available !== false && (item.quantity == null || Number(item.quantity) > 0)).map((item) => item.label)).filter(Boolean))]
     .sort(compareSizes).map((value) => ({ value, label: value })), [audienceProducts]);
 
   const colourOptions = useMemo(() => {
@@ -80,7 +80,7 @@ export default function ShopExperience({ fixedAudience = null }) {
     });
     if (category !== 'all') next = next.filter((product) => product.category === category);
     if (brand !== 'all') next = next.filter((product) => product.brand === brand);
-    if (size !== 'all') next = next.filter((product) => (product.sizes || []).some((item) => item.label === size));
+    if (size !== 'all') next = next.filter((product) => (product.sizes || []).some((item) => item.label === size && item.available !== false && (item.quantity == null || Number(item.quantity) > 0)));
     if (colour !== 'all') next = next.filter((product) => product.colour.bg === colour);
     if (effectiveAudience === 'kids' && kidGender !== 'all') next = next.filter((product) => product.kidGender === kidGender);
     if (sort === 'low') next = [...next].sort((a, b) => a.price - b.price);

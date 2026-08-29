@@ -7,6 +7,15 @@ const StoreContext = createContext(null);
 const VALID_AUDIENCES = ['women', 'men', 'kids'];
 const PRODUCT_MAP = new Map(products.map((product) => [product.id, product]));
 
+function getVariantStock(product, selectedSize = null) {
+  if (selectedSize && product.sizes?.length) {
+    const variant = product.sizes.find((size) => size.label === selectedSize);
+    if (!variant || variant.available === false) return 0;
+    if (variant.quantity != null) return Math.max(0, Number(variant.quantity) || 0);
+  }
+  return Math.max(0, Number(product.stockQuantity) || 1);
+}
+
 function normaliseCart(items) {
   if (!Array.isArray(items)) return [];
 
@@ -15,10 +24,9 @@ function normaliseCart(items) {
     if (!product || product.status !== 'in_stock') return [];
 
     const selectedSize = item.selectedSize || null;
-    const sizeStillAvailable = !selectedSize || !product.sizes?.length || product.sizes.some((size) => size.label === selectedSize && size.available);
-    if (!sizeStillAvailable) return [];
+    const stockQuantity = getVariantStock(product, selectedSize);
+    if (stockQuantity <= 0) return [];
 
-    const stockQuantity = Math.max(1, product.stockQuantity || 1);
     return [{
       id: product.id,
       cartKey: `${product.id}::${selectedSize || 'default'}`,
@@ -43,7 +51,7 @@ export function StoreProvider({ children }) {
 
   useEffect(() => {
     try {
-      const storedCart = JSON.parse(localStorage.getItem('gerpina-cart-stock4-v1') || localStorage.getItem('gerpina-cart-stock3-v1') || '[]');
+      const storedCart = JSON.parse(localStorage.getItem('gerpina-cart-stock5-v1') || localStorage.getItem('gerpina-cart-stock4-v1') || localStorage.getItem('gerpina-cart-stock3-v1') || '[]');
       setCart(normaliseCart(storedCart));
       const storedFavorites = JSON.parse(localStorage.getItem('gerpina-favorites-inventory-v1') || '[]');
       setFavorites(Array.isArray(storedFavorites) ? storedFavorites.filter((id) => PRODUCT_MAP.has(id)) : []);
@@ -55,7 +63,8 @@ export function StoreProvider({ children }) {
 
   useEffect(() => {
     if (hydrated) {
-      localStorage.setItem('gerpina-cart-stock4-v1', JSON.stringify(cart));
+      localStorage.setItem('gerpina-cart-stock5-v1', JSON.stringify(cart));
+      localStorage.removeItem('gerpina-cart-stock4-v1');
       localStorage.removeItem('gerpina-cart-stock3-v1');
     }
   }, [cart, hydrated]);
@@ -82,9 +91,10 @@ export function StoreProvider({ children }) {
       const cartKey = `${product.id}::${selectedSize || 'default'}`;
       setCart((current) => {
         const existing = current.find((item) => item.cartKey === cartKey);
+        const max = getVariantStock(product, selectedSize);
+        if (max <= 0) return current;
         if (existing) {
-          const max = product.stockQuantity || 1;
-          return current.map((item) => item.cartKey === cartKey ? { ...item, quantity: Math.min(item.quantity + 1, max) } : item);
+          return current.map((item) => item.cartKey === cartKey ? { ...item, quantity: Math.min(item.quantity + 1, max), stockQuantity: max } : item);
         }
         return [...current, {
           id: product.id,
@@ -96,7 +106,7 @@ export function StoreProvider({ children }) {
           price: product.price,
           originalPrice: product.originalPrice,
           selectedSize,
-          stockQuantity: product.stockQuantity || 1,
+          stockQuantity: max,
           quantity: 1,
         }];
       });

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRef } from 'react';
 import { ArrowRight } from '@/components/Icons';
-import { products, productMatchesAudience } from '@/data/products';
+import { isProductAvailable, products, productMatchesAudience } from '@/data/products';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useStore } from '@/components/StoreProvider';
 
@@ -40,7 +40,7 @@ export default function AudienceCollectionSlider() {
 
       <div className="collection-slider-track" ref={trackRef}>
         {COLLECTIONS.map((collection) => {
-          const audienceProducts = products.filter((product) => productMatchesAudience(product, collection.key));
+          const audienceProducts = products.filter((product) => isProductAvailable(product) && productMatchesAudience(product, collection.key));
           const visual = audienceProducts.find((product) => product.image) || null;
           const label = collection.key === 'women' ? t.nav.women : collection.key === 'men' ? t.nav.men : t.nav.kids;
           return (

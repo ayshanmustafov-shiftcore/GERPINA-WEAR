@@ -4,15 +4,15 @@ export const products = [
     "slug": "gerpina-0001",
     "audience": "women",
     "kidGender": null,
-    "category": "jackets",
+    "category": "knitwear",
     "brand": "O'Neill",
     "name": {
-      "bg": "Елек",
-      "en": "Vest"
+      "bg": "Розова плетена жилетка",
+      "en": "Pink knit cardigan"
     },
     "description": {
-      "bg": "O'Neill — елек, цвят розов, размер L.",
-      "en": "O'Neill vest, in pink, size L."
+      "bg": "O'Neill — розова плетена жилетка с копчета, размер L.",
+      "en": "O'Neill pink knit button cardigan, size L."
     },
     "price": 19.99,
     "originalPrice": 89.99,
@@ -32,7 +32,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Existing linked photo shows an O'Neill knit cardigan; product type corrected during the 2026-08-29 stock cleanup."
   },
   {
     "id": "gw-0002",
@@ -42,20 +43,20 @@ export const products = [
     "category": "dresses",
     "brand": "Marc O'Polo Denim",
     "name": {
-      "bg": "Рокля",
-      "en": "Dress"
+      "bg": "Тъмносиня рокля с абстрактен принт",
+      "en": "Navy abstract-print dress"
     },
     "description": {
-      "bg": "Marc O'Polo Denim — рокля, размер L.",
-      "en": "Marc O'Polo Denim dress, size L."
+      "bg": "Marc O'Polo Denim — тъмносиня рокля с многоцветен абстрактен флорален принт, размер L.",
+      "en": "Marc O'Polo Denim navy dress with a multicolour abstract floral print, size L."
     },
     "price": 29.99,
     "originalPrice": 119.95,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0002.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Тъмносиня с многоцветен принт",
+      "en": "Navy with multicolour print"
     },
     "sizes": [
       {
@@ -67,7 +68,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 2.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0003",
@@ -289,20 +291,20 @@ export const products = [
     "category": "dresses",
     "brand": "VILA",
     "name": {
-      "bg": "Рокля",
-      "en": "Dress"
+      "bg": "Светлосиня флорална рокля",
+      "en": "Light blue floral dress"
     },
     "description": {
-      "bg": "VILA — рокля, цвят зелени цветя, размер M.",
-      "en": "VILA dress, in green floral, size M."
+      "bg": "VILA — светлосиня рокля с фин флорален принт и набрана талия, размер M.",
+      "en": "VILA light blue dress with a delicate floral print and gathered waist, size M."
     },
     "price": 14.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0011.jpeg",
     "colour": {
-      "bg": "Зелени Цветя",
-      "en": "Green floral"
+      "bg": "Светлосиня с цветя",
+      "en": "Light blue floral"
     },
     "sizes": [
       {
@@ -314,7 +316,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 10.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0014",
@@ -359,20 +362,20 @@ export const products = [
     "category": "trousers",
     "brand": "Cortefiel",
     "name": {
-      "bg": "Панталон",
-      "en": "Trousers"
+      "bg": "Кариран панталон",
+      "en": "Plaid trousers"
     },
     "description": {
-      "bg": "Cortefiel — панталон, цвят зелен, размер M.",
-      "en": "Cortefiel trousers, in green, size M."
+      "bg": "Cortefiel — тъмнозелен кариран панталон, размер M.",
+      "en": "Cortefiel dark green plaid trousers, size M."
     },
     "price": 22.99,
     "originalPrice": 49.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0015.jpeg",
     "colour": {
-      "bg": "Зелен",
-      "en": "Green"
+      "bg": "Тъмнозелен каре",
+      "en": "Dark green plaid"
     },
     "sizes": [
       {
@@ -384,7 +387,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 12.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0017",
@@ -535,17 +539,17 @@ export const products = [
     "category": "tops",
     "brand": "VILA",
     "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
+      "bg": "Червена блуза с връзка",
+      "en": "Red tie-detail blouse"
     },
     "description": {
-      "bg": "VILA — блуза, цвят червена, размер XL.",
-      "en": "VILA blouse, in red, size XL."
+      "bg": "VILA — червена блуза с дълъг ръкав и връзка в талията, размер XL.",
+      "en": "VILA red long-sleeve blouse with a waist tie, size XL."
     },
     "price": 12.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0023.jpeg",
     "colour": {
       "bg": "Червена",
       "en": "Red"
@@ -560,7 +564,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 17.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0025",
@@ -570,17 +575,17 @@ export const products = [
     "category": "trousers",
     "brand": "LeGer",
     "name": {
-      "bg": "Дънки",
-      "en": "Jeans"
+      "bg": "Черни дънки с широк крачол",
+      "en": "Black wide-leg jeans"
     },
     "description": {
-      "bg": "LeGer — дънки, цвят черни, размер M.",
-      "en": "LeGer jeans, in black, size M."
+      "bg": "LeGer — черни дънки с широк крачол, размер M.",
+      "en": "LeGer black wide-leg jeans, size M."
     },
     "price": 19.99,
     "originalPrice": 49.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0025.jpeg",
     "colour": {
       "bg": "Черни",
       "en": "Black"
@@ -595,7 +600,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 18.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0026",
@@ -685,7 +691,7 @@ export const products = [
     "price": 24.99,
     "originalPrice": 79.99,
     "originalPriceEstimated": false,
-    "image": "/images/products/pieces-olive-hooded-jacket.jpg",
+    "image": "/images/products/audit-gw-0029.jpeg",
     "colour": {
       "bg": "Маслиненозелено",
       "en": "Olive green"
@@ -701,7 +707,7 @@ export const products = [
     "originalPriceType": "brand",
     "originalPriceSource": null,
     "priceReviewNote": "Original price supplied in Stock list 3.",
-    "photoReviewNote": "Product identity/name refined from the photo supplied on 2026-08-22."
+    "photoReviewNote": "Updated/confirmed from audit photo 21.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0030",
@@ -746,20 +752,20 @@ export const products = [
     "category": "shorts",
     "brand": "Colmar",
     "name": {
-      "bg": "Къси панталони",
-      "en": "Shorts"
+      "bg": "Къси спортни панталони",
+      "en": "Sports shorts"
     },
     "description": {
-      "bg": "Colmar — къси панталони, размер М.",
-      "en": "Colmar shorts, size М."
+      "bg": "Colmar — коралови къси спортни панталони, размер M.",
+      "en": "Colmar coral sports shorts, size M."
     },
     "price": 45.99,
     "originalPrice": 179.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0031.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Коралово розови",
+      "en": "Coral pink"
     },
     "sizes": [
       {
@@ -771,30 +777,31 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 23.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0032",
     "slug": "gerpina-0032",
     "audience": "women",
     "kidGender": null,
-    "category": "tops",
+    "category": "sportswear",
     "brand": "ODLO",
     "name": {
-      "bg": "Тениска",
-      "en": "T-shirt"
+      "bg": "Червена спортна тениска",
+      "en": "Red sports top"
     },
     "description": {
-      "bg": "ODLO — тениска, размер XS.",
-      "en": "ODLO t-shirt, size XS."
+      "bg": "ODLO — червена спортна тениска с бял кант, размер XS.",
+      "en": "ODLO red sports top with white trim, size XS."
     },
     "price": 15.99,
     "originalPrice": 84.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0032.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Червена с бяло",
+      "en": "Red and white"
     },
     "sizes": [
       {
@@ -806,7 +813,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 24.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0035",
@@ -816,20 +824,20 @@ export const products = [
     "category": "skirts",
     "brand": "VILA",
     "name": {
-      "bg": "Пола",
-      "en": "Skirt"
+      "bg": "Флорална пола",
+      "en": "Floral skirt"
     },
     "description": {
-      "bg": "VILA — пола, размер XL.",
-      "en": "VILA skirt, size XL."
+      "bg": "VILA — черна пола с розов флорален принт, размер XL.",
+      "en": "VILA black skirt with a pink floral print, size XL."
     },
     "price": 14.99,
     "originalPrice": 34.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0035.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Черна с розови цветя",
+      "en": "Black with pink flowers"
     },
     "sizes": [
       {
@@ -841,7 +849,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 25.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0036",
@@ -883,23 +892,23 @@ export const products = [
     "slug": "gerpina-0037",
     "audience": "women",
     "kidGender": null,
-    "category": "other",
+    "category": "tops",
     "brand": "JDY",
     "name": {
-      "bg": "Карирана блуза",
-      "en": "Checked blouse"
+      "bg": "Черна блуза с фин принт",
+      "en": "Black patterned blouse"
     },
     "description": {
-      "bg": "JDY — карирана блуза, размер XL.",
-      "en": "JDY checked blouse, size XL."
+      "bg": "JDY — черна блуза с фин геометричен принт и връзки на ръкавите, размер XL.",
+      "en": "JDY black blouse with a fine geometric print and tie cuffs, size XL."
     },
     "price": 16.99,
     "originalPrice": 34.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0037.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Черна с фин принт",
+      "en": "Black patterned"
     },
     "sizes": [
       {
@@ -911,7 +920,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 27.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0040",
@@ -921,20 +931,20 @@ export const products = [
     "category": "sweatshirts",
     "brand": "Nike",
     "name": {
-      "bg": "Суитшърт",
-      "en": "Sweatshirt"
+      "bg": "Бежов суитшърт с качулка",
+      "en": "Beige hoodie"
     },
     "description": {
-      "bg": "Nike — суитшърт, размер M.",
-      "en": "Nike sweatshirt, size M."
+      "bg": "Nike — бежов суитшърт с качулка и графичен надпис на гърба, размер M.",
+      "en": "Nike beige hoodie with a graphic back print, size M."
     },
     "price": 29.99,
     "originalPrice": 84.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0040.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Бежов",
+      "en": "Beige"
     },
     "sizes": [
       {
@@ -946,7 +956,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 28.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0041",
@@ -956,20 +967,20 @@ export const products = [
     "category": "dresses",
     "brand": "VILA",
     "name": {
-      "bg": "Рокля",
-      "en": "Dress"
+      "bg": "Розова флорална рокля",
+      "en": "Pink floral dress"
     },
     "description": {
-      "bg": "VILA — рокля, цвят на цветя, размер 42 XL.",
-      "en": "VILA dress, in floral, size 42 XL."
+      "bg": "VILA — светла рокля с розов флорален принт, размер 42 / XL.",
+      "en": "VILA light dress with a pink floral print, size 42 / XL."
     },
     "price": 17.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0041.jpeg",
     "colour": {
-      "bg": "На Цветя",
-      "en": "Floral"
+      "bg": "Бяла с розови цветя",
+      "en": "White with pink flowers"
     },
     "sizes": [
       {
@@ -981,7 +992,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 29.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0042",
@@ -1098,17 +1110,17 @@ export const products = [
     "category": "tops",
     "brand": "JDY",
     "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
+      "bg": "Розова блуза с волан",
+      "en": "Pink peplum blouse"
     },
     "description": {
-      "bg": "JDY — блуза, цвят розова, размер L.",
-      "en": "JDY blouse, in pink, size L."
+      "bg": "JDY — розова блуза с дълъг ръкав и волан в долната част, размер L.",
+      "en": "JDY pink long-sleeve peplum blouse, size L."
     },
     "price": 12.99,
     "originalPrice": 34.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0045.jpeg",
     "colour": {
       "bg": "Розова",
       "en": "Pink"
@@ -1123,7 +1135,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 33.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0046",
@@ -1133,17 +1146,17 @@ export const products = [
     "category": "dresses",
     "brand": "PIECES",
     "name": {
-      "bg": "Рокля",
-      "en": "Dress"
+      "bg": "Зелена рокля тип риза",
+      "en": "Green shirt dress"
     },
     "description": {
-      "bg": "PIECES — рокля, цвят зелена, размер M.",
-      "en": "PIECES dress, in green, size M."
+      "bg": "PIECES — зелена рокля тип риза с волани, размер M.",
+      "en": "PIECES green shirt dress with tiered ruffles, size M."
     },
     "price": 19.99,
     "originalPrice": 49.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0046.jpeg",
     "colour": {
       "bg": "Зелена",
       "en": "Green"
@@ -1158,7 +1171,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 34.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0047",
@@ -1168,20 +1182,20 @@ export const products = [
     "category": "jackets",
     "brand": "DreiMaster",
     "name": {
-      "bg": "Яке",
-      "en": "Jacket"
+      "bg": "Бежово късо яке",
+      "en": "Beige cropped jacket"
     },
     "description": {
-      "bg": "DreiMaster — яке, цвят drei master, размер L.",
-      "en": "DreiMaster jacket, size L."
+      "bg": "DreiMaster — бежово късо яке с яка и предни джобове, размер L.",
+      "en": "DreiMaster beige cropped jacket with a collar and front pockets, size L."
     },
     "price": 45.99,
     "originalPrice": 199.95,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0047.jpeg",
     "colour": {
-      "bg": "Drei Master",
-      "en": "Unspecified"
+      "bg": "Бежово",
+      "en": "Beige"
     },
     "sizes": [
       {
@@ -1193,7 +1207,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 35.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0048",
@@ -1203,20 +1218,20 @@ export const products = [
     "category": "tops",
     "brand": "PIECES",
     "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
+      "bg": "Синя блуза с висока яка",
+      "en": "Blue high-neck blouse"
     },
     "description": {
-      "bg": "PIECES — блуза, цвят синя, размер M.",
-      "en": "PIECES blouse, in blue, size M."
+      "bg": "PIECES — яркосиня блуза с набрана висока яка, размер M.",
+      "en": "PIECES bright blue blouse with a gathered high neckline, size M."
     },
     "price": 14.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0048.jpeg",
     "colour": {
-      "bg": "Синя",
-      "en": "Blue"
+      "bg": "Яркосиня",
+      "en": "Bright blue"
     },
     "sizes": [
       {
@@ -1228,7 +1243,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 36.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0049",
@@ -1271,20 +1287,20 @@ export const products = [
     "slug": "gerpina-0050",
     "audience": "women",
     "kidGender": null,
-    "category": "tops",
+    "category": "dresses",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Туника",
-      "en": "Туника"
+      "bg": "Черна рокля с открити рамене",
+      "en": "Black cut-out shoulder dress"
     },
     "description": {
-      "bg": "Even&Odd — туника, цвят черна, размер XL.",
-      "en": "Even&Odd туника, in black, size XL."
+      "bg": "Even&Odd — черна рипсена рокля с открити рамене, размер XL.",
+      "en": "Even&Odd black ribbed dress with cut-out shoulders, size XL."
     },
     "price": 15.99,
     "originalPrice": 29.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0050.jpeg",
     "colour": {
       "bg": "Черна",
       "en": "Black"
@@ -1299,7 +1315,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 38.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0051",
@@ -1379,20 +1396,20 @@ export const products = [
     "category": "dresses",
     "brand": "Noa Noa",
     "name": {
-      "bg": "Рокля",
-      "en": "Dress"
+      "bg": "Тъмносиня рокля на точки",
+      "en": "Navy dotted dress"
     },
     "description": {
-      "bg": "Noa Noa — рокля, цвят на точки, размер M.",
-      "en": "Noa Noa dress, in polka dot, size M."
+      "bg": "Noa Noa — тъмносиня рокля с фин принт на точки, размер M.",
+      "en": "Noa Noa navy dress with a fine dotted print, size M."
     },
     "price": 29.99,
     "originalPrice": 119.95,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0053.jpeg",
     "colour": {
-      "bg": "На Точки",
-      "en": "Polka dot"
+      "bg": "Тъмносиня на точки",
+      "en": "Navy dotted"
     },
     "sizes": [
       {
@@ -1404,30 +1421,31 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 41.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0054",
     "slug": "gerpina-0054",
     "audience": "women",
     "kidGender": null,
-    "category": "tops",
+    "category": "dresses",
     "brand": "Even&Odd",
     "name": {
-      "bg": "Туника",
-      "en": "Туника"
+      "bg": "Червена флорална рокля",
+      "en": "Red floral dress"
     },
     "description": {
-      "bg": "Even&Odd — туника, цвят черна, размер XL.",
-      "en": "Even&Odd туника, in black, size XL."
+      "bg": "Even&Odd — червена рокля с многоцветен флорален принт и дълъг ръкав, размер XL.",
+      "en": "Even&Odd red long-sleeve dress with a multicolour floral print, size XL."
     },
     "price": 17.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0054.jpeg",
     "colour": {
-      "bg": "Черна",
-      "en": "Black"
+      "bg": "Червена с цветя",
+      "en": "Red floral"
     },
     "sizes": [
       {
@@ -1439,7 +1457,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 42 - same as 38 and both say black.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0055",
@@ -1484,19 +1503,19 @@ export const products = [
     "category": "tops",
     "brand": "ONLY",
     "name": {
-      "bg": "Блуза",
-      "en": "Blouse"
+      "bg": "Черна блуза с буфан ръкави",
+      "en": "Black puff-sleeve blouse"
     },
     "description": {
-      "bg": "ONLY — блуза, цвят черна, размер XXS.",
-      "en": "ONLY blouse, in black, size XXS."
+      "bg": "ONLY — черна блуза с буфан ръкави и набрана талия, размер XXS.",
+      "en": "ONLY black blouse with puff sleeves and a gathered waist, size XXS."
     },
     "price": 14.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0056.jpeg",
     "colour": {
-      "bg": "черна",
+      "bg": "Черна",
       "en": "Black"
     },
     "sizes": [
@@ -1509,7 +1528,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 44.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0058",
@@ -1589,19 +1609,19 @@ export const products = [
     "category": "dresses",
     "brand": "CLOSED",
     "name": {
-      "bg": "Рокля",
-      "en": "Dress"
+      "bg": "Шарена рокля с абстрактен принт",
+      "en": "Colourful abstract-print dress"
     },
     "description": {
-      "bg": "CLOSED — рокля, цвят шарена, размер XXL.",
-      "en": "CLOSED dress, in multicolour, size XXL."
+      "bg": "CLOSED — шарена рокля с ярък абстрактен флорален принт, размер XXL.",
+      "en": "CLOSED colourful dress with a bold abstract floral print, size XXL."
     },
     "price": 19.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0061.jpeg",
     "colour": {
-      "bg": "Шарена",
+      "bg": "Многоцветна",
       "en": "Multicolour"
     },
     "sizes": [
@@ -1614,7 +1634,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 47.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0062",
@@ -1659,20 +1680,20 @@ export const products = [
     "category": "trousers",
     "brand": "Anna Field",
     "name": {
-      "bg": "Панталон",
-      "en": "Trousers"
+      "bg": "Тъмносин панталон с цепки",
+      "en": "Navy split-hem trousers"
     },
     "description": {
-      "bg": "Anna Field — панталон, цвят син, размер M.",
-      "en": "Anna Field trousers, in blue, size M."
+      "bg": "Anna Field — тъмносин панталон с цепки в долната част, размер M.",
+      "en": "Anna Field navy trousers with split hems, size M."
     },
     "price": 15.99,
     "originalPrice": 39.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0063.jpeg",
     "colour": {
-      "bg": "Син",
-      "en": "Blue"
+      "bg": "Тъмносин",
+      "en": "Navy"
     },
     "sizes": [
       {
@@ -1684,7 +1705,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 49.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0065",
@@ -1694,20 +1716,20 @@ export const products = [
     "category": "tops",
     "brand": "NU-IN",
     "name": {
-      "bg": "Бюстие",
-      "en": "Bustier"
+      "bg": "Бежово бюстие",
+      "en": "Beige bustier"
     },
     "description": {
-      "bg": "NU-IN — бюстие, размер M.",
-      "en": "NU-IN bustier, size M."
+      "bg": "NU-IN — бежово плетено бюстие с презрамки, размер M.",
+      "en": "NU-IN beige knit bustier with straps, size M."
     },
     "price": 14.99,
     "originalPrice": 34.99,
     "originalPriceEstimated": false,
-    "image": null,
+    "image": "/images/products/audit-gw-0065.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Бежово",
+      "en": "Beige"
     },
     "sizes": [
       {
@@ -1719,7 +1741,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "brand",
     "originalPriceSource": null,
-    "priceReviewNote": "Original price supplied in Stock list 3."
+    "priceReviewNote": "Original price supplied in Stock list 3.",
+    "photoReviewNote": "Updated/confirmed from audit photo 50.jpeg supplied 2026-08-29."
   },
   {
     "id": "gw-0066",
@@ -4874,6 +4897,897 @@ export const products = [
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/minoti-kids-swimwear?page=2",
     "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match."
+  },
+  {
+    "id": "gw-0162",
+    "slug": "gerpina-0162",
+    "audience": "kids",
+    "kidGender": "unisex",
+    "category": "bodysuits",
+    "brand": "Name It",
+    "name": {
+      "bg": "Комплект ромпъри",
+      "en": "Rompers set"
+    },
+    "description": {
+      "bg": "Name It — комплект ромпъри, размери: 56 см, 1/2 месеца.",
+      "en": "Name It rompers set, sizes: 56 см, 1/2 месеца."
+    },
+    "price": 4.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Неуточнен",
+      "en": "Unspecified"
+    },
+    "sizes": [
+      {
+        "label": "56 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "1/2 месеца",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 3. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "No matching product photo supplied in the 2026-08-29 batch."
+  },
+  {
+    "id": "gw-0163",
+    "slug": "gerpina-0163",
+    "audience": "kids",
+    "kidGender": "boy",
+    "category": "sweatshirts",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Сив суитшърт с цип и качулка",
+      "en": "Grey zip hoodie"
+    },
+    "description": {
+      "bg": "Bonprix — сив суитшърт с цип и качулка, размери: 116/122 см, 6/7 г..",
+      "en": "Bonprix grey zip hoodie, sizes: 116/122 см, 6/7 г.."
+    },
+    "price": 14.99,
+    "originalPrice": 26.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0163.jpeg",
+    "colour": {
+      "bg": "Сив",
+      "en": "Grey"
+    },
+    "sizes": [
+      {
+        "label": "116/122 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "6/7 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original brand price supplied in the 2026-08-29 new-stock sheet.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 4. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.56 PM.jpeg."
+  },
+  {
+    "id": "gw-0164",
+    "slug": "gerpina-0164",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "sets",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Комплект 2 долнища за момиче",
+      "en": "2-pack girls' bottoms"
+    },
+    "description": {
+      "bg": "Bonprix — комплект 2 долнища за момиче, размери: 116/122 см, 6/7 г..",
+      "en": "Bonprix 2-pack girls' bottoms, sizes: 116/122 см, 6/7 г.."
+    },
+    "price": 9.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0164.jpeg",
+    "colour": {
+      "bg": "Тюркоазено и тъмносиньо с принт",
+      "en": "Turquoise and navy print"
+    },
+    "sizes": [
+      {
+        "label": "116/122 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "6/7 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 5. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM (5).jpeg."
+  },
+  {
+    "id": "gw-0165",
+    "slug": "gerpina-0165",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "sets",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Комплект рокля и болеро",
+      "en": "Dress and bolero set"
+    },
+    "description": {
+      "bg": "Bonprix — комплект от рокля с тъмносин принт и тъмносиньо болеро. Наличен в два размера.",
+      "en": "Bonprix dress and navy bolero set, available in two sizes."
+    },
+    "price": 14.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0165.jpeg",
+    "colour": {
+      "bg": "Бяло и тъмносиньо",
+      "en": "White and navy"
+    },
+    "sizes": [
+      {
+        "label": "140 см / 10 г.",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "146 см / 11 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 6 + 9. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM (7).jpeg."
+  },
+  {
+    "id": "gw-0166",
+    "slug": "gerpina-0166",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "trousers",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Черен панталон за момиче",
+      "en": "Black girls' trousers"
+    },
+    "description": {
+      "bg": "Bonprix — черен панталон за момиче, размери: 128 см, 8 г..",
+      "en": "Bonprix black girls' trousers, sizes: 128 см, 8 г.."
+    },
+    "price": 9.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Черен",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "128 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "8 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 7. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "No matching product photo supplied in the 2026-08-29 batch."
+  },
+  {
+    "id": "gw-0167",
+    "slug": "gerpina-0167",
+    "audience": "kids",
+    "kidGender": "boy",
+    "category": "tops",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Бяла блуза Urban Athletics за момче",
+      "en": "White Urban Athletics boys' top"
+    },
+    "description": {
+      "bg": "Bonprix — бяла блуза urban athletics за момче, размери: 164/170 см, 14/15 г..",
+      "en": "Bonprix white urban athletics boys' top, sizes: 164/170 см, 14/15 г.."
+    },
+    "price": 9.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0167.jpeg",
+    "colour": {
+      "bg": "Бяла с черен принт",
+      "en": "White with black print"
+    },
+    "sizes": [
+      {
+        "label": "164/170 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "14/15 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 8. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM (3).jpeg."
+  },
+  {
+    "id": "gw-0168",
+    "slug": "gerpina-0168",
+    "audience": "kids",
+    "kidGender": "boy",
+    "category": "trousers",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Дънки за момче",
+      "en": "Boys' jeans"
+    },
+    "description": {
+      "bg": "Bonprix — сини дънки за момче, размер 128 см / 8 г. Налични 2 броя.",
+      "en": "Bonprix blue boys' jeans, size 128 cm / 8 years. 2 pieces in stock."
+    },
+    "price": 12.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0168.jpeg",
+    "colour": {
+      "bg": "Сини",
+      "en": "Blue"
+    },
+    "sizes": [
+      {
+        "label": "128 см / 8 г.",
+        "available": true,
+        "quantity": 2
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 10. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM (1).jpeg."
+  },
+  {
+    "id": "gw-0169",
+    "slug": "gerpina-0169",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "trousers",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Черни широки панталони за момиче",
+      "en": "Black wide-leg girls' trousers"
+    },
+    "description": {
+      "bg": "Bonprix — черни широки панталони за момиче, размери: 128 см / 8 г..",
+      "en": "Bonprix black wide-leg girls' trousers, sizes: 128 см / 8 г.."
+    },
+    "price": 9.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Черни",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "128 см / 8 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 11. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "No matching product photo supplied in the 2026-08-29 batch."
+  },
+  {
+    "id": "gw-0170",
+    "slug": "gerpina-0170",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "sets",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Комплект 2 клина с дантела",
+      "en": "2-pack lace-trim leggings"
+    },
+    "description": {
+      "bg": "Bonprix — комплект 2 клина с дантела, размери: 128 см / 8 г..",
+      "en": "Bonprix 2-pack lace-trim leggings, sizes: 128 см / 8 г.."
+    },
+    "price": 9.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0170.jpeg",
+    "colour": {
+      "bg": "Черно и бяло",
+      "en": "Black and white"
+    },
+    "sizes": [
+      {
+        "label": "128 см / 8 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 12. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.54 PM (4).jpeg."
+  },
+  {
+    "id": "gw-0171",
+    "slug": "gerpina-0171",
+    "audience": "kids",
+    "kidGender": "unisex",
+    "category": "trousers",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Тъмносини дънки с джобове",
+      "en": "Dark blue pocket jeans"
+    },
+    "description": {
+      "bg": "Bonprix — тъмносини дънки с джобове, размери: 128 см / 8 г..",
+      "en": "Bonprix dark blue pocket jeans, sizes: 128 см / 8 г.."
+    },
+    "price": 9.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0171.jpeg",
+    "colour": {
+      "bg": "Тъмносини",
+      "en": "Dark blue"
+    },
+    "sizes": [
+      {
+        "label": "128 см / 8 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 13. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM (10).jpeg."
+  },
+  {
+    "id": "gw-0172",
+    "slug": "gerpina-0172",
+    "audience": "kids",
+    "kidGender": "boy",
+    "category": "sets",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Комплект тениска и къси панталони за момче",
+      "en": "Boys' T-shirt and shorts set"
+    },
+    "description": {
+      "bg": "Bonprix — комплект тениска и къси панталони за момче, размери: 140/146 см, 10/11 г..",
+      "en": "Bonprix boys' t-shirt and shorts set, sizes: 140/146 см, 10/11 г.."
+    },
+    "price": 9.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0172.jpeg",
+    "colour": {
+      "bg": "Тъмносиньо, зелено и бяло",
+      "en": "Navy, green and white"
+    },
+    "sizes": [
+      {
+        "label": "140/146 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "10/11 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 14. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM (6).jpeg."
+  },
+  {
+    "id": "gw-0173",
+    "slug": "gerpina-0173",
+    "audience": "kids",
+    "kidGender": "unisex",
+    "category": "sportswear",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Черно спортно долнище с бели кантове",
+      "en": "Black track trousers with white side stripes"
+    },
+    "description": {
+      "bg": "Bonprix — черно спортно долнище с бели кантове, размери: 128 см / 8 г..",
+      "en": "Bonprix black track trousers with white side stripes, sizes: 128 см / 8 г.."
+    },
+    "price": 9.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0173.jpeg",
+    "colour": {
+      "bg": "Черно с бяло",
+      "en": "Black and white"
+    },
+    "sizes": [
+      {
+        "label": "128 см / 8 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 15. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM (2).jpeg."
+  },
+  {
+    "id": "gw-0174",
+    "slug": "gerpina-0174",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "sets",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Розов комплект с леопардово долнище",
+      "en": "Pink set with leopard-print bottoms"
+    },
+    "description": {
+      "bg": "Bonprix — розов комплект с леопардово долнище, размери: 152/158 см, 12/13 г..",
+      "en": "Bonprix pink set with leopard-print bottoms, sizes: 152/158 см, 12/13 г.."
+    },
+    "price": 12.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0174.jpeg",
+    "colour": {
+      "bg": "Розово и леопардово",
+      "en": "Pink and leopard print"
+    },
+    "sizes": [
+      {
+        "label": "152/158 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "12/13 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 16. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.56 PM (1).jpeg."
+  },
+  {
+    "id": "gw-0175",
+    "slug": "gerpina-0175",
+    "audience": "kids",
+    "kidGender": "boy",
+    "category": "tops",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Черна поло тениска",
+      "en": "Black polo shirt"
+    },
+    "description": {
+      "bg": "Bonprix — черна поло тениска, размери: 164/170 см / 14/15 г..",
+      "en": "Bonprix black polo shirt, sizes: 164/170 см / 14/15 г.."
+    },
+    "price": 12.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0175.jpeg",
+    "colour": {
+      "bg": "Черна",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "164/170 см / 14/15 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 17. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM (4).jpeg."
+  },
+  {
+    "id": "gw-0176",
+    "slug": "gerpina-0176",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "dresses",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Розова раирана туника с качулка",
+      "en": "Pink striped hooded tunic"
+    },
+    "description": {
+      "bg": "Bonprix — розова раирана туника с качулка, размери: 152/158 см, 12/13 г..",
+      "en": "Bonprix pink striped hooded tunic, sizes: 152/158 см, 12/13 г.."
+    },
+    "price": 12.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0176.jpeg",
+    "colour": {
+      "bg": "Розова и бяла",
+      "en": "Pink and white"
+    },
+    "sizes": [
+      {
+        "label": "152/158 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "12/13 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 18. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.54 PM (2).jpeg."
+  },
+  {
+    "id": "gw-0177",
+    "slug": "gerpina-0177",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "dresses",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Кремава рокля с колан",
+      "en": "Cream belted dress"
+    },
+    "description": {
+      "bg": "Bonprix — кремава рокля с колан, размери: 164 см / 14 г..",
+      "en": "Bonprix cream belted dress, sizes: 164 см / 14 г.."
+    },
+    "price": 19.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0177.jpeg",
+    "colour": {
+      "bg": "Кремава",
+      "en": "Cream"
+    },
+    "sizes": [
+      {
+        "label": "164 см / 14 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 19. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.54 PM (3).jpeg."
+  },
+  {
+    "id": "gw-0178",
+    "slug": "gerpina-0178",
+    "audience": "kids",
+    "kidGender": "boy",
+    "category": "sets",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Комплект риза и панталон",
+      "en": "Shirt and trousers set"
+    },
+    "description": {
+      "bg": "Bonprix — комплект риза и панталон, размери: 152/158 см, 12/13 г..",
+      "en": "Bonprix shirt and trousers set, sizes: 152/158 см, 12/13 г.."
+    },
+    "price": 24.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0178.jpeg",
+    "colour": {
+      "bg": "Бяло и кремаво",
+      "en": "White and cream"
+    },
+    "sizes": [
+      {
+        "label": "152/158 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "12/13 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 20. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM (8).jpeg."
+  },
+  {
+    "id": "gw-0179",
+    "slug": "gerpina-0179",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "trousers",
+    "brand": "Bonprix / John Baner",
+    "name": {
+      "bg": "Сиви дънки с флорален принт",
+      "en": "Grey floral-print jeans"
+    },
+    "description": {
+      "bg": "Bonprix / John Baner — сиви дънки с флорален принт, размери: 158 см / 12/13 г..",
+      "en": "Bonprix / John Baner grey floral-print jeans, sizes: 158 см / 12/13 г.."
+    },
+    "price": 14.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0179.jpeg",
+    "colour": {
+      "bg": "Сиви с бял принт",
+      "en": "Grey with white print"
+    },
+    "sizes": [
+      {
+        "label": "158 см / 12/13 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 21. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.54 PM (1).jpeg."
+  },
+  {
+    "id": "gw-0180",
+    "slug": "gerpina-0180",
+    "audience": "kids",
+    "kidGender": "boy",
+    "category": "sweatshirts",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Черен суитшърт с емотикони",
+      "en": "Black emoji sweatshirt"
+    },
+    "description": {
+      "bg": "Bonprix — черен суитшърт с емотикони, размери: 176/182 см / 16/17 г..",
+      "en": "Bonprix black emoji sweatshirt, sizes: 176/182 см / 16/17 г.."
+    },
+    "price": 11.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0180.jpeg",
+    "colour": {
+      "bg": "Черен с цветен принт",
+      "en": "Black with multicolour print"
+    },
+    "sizes": [
+      {
+        "label": "176/182 см / 16/17 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 22. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.55 PM.jpeg."
+  },
+  {
+    "id": "gw-0181",
+    "slug": "gerpina-0181",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "knitwear",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Розова коледна туника HO HO HO",
+      "en": "Pink HO HO HO Christmas tunic"
+    },
+    "description": {
+      "bg": "Bonprix — розова коледна туника ho ho ho, размери: 152/158 см, 12/13 г..",
+      "en": "Bonprix pink ho ho ho christmas tunic, sizes: 152/158 см, 12/13 г.."
+    },
+    "price": 12.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-gw-0181.jpeg",
+    "colour": {
+      "bg": "Розова и бяла",
+      "en": "Pink and white"
+    },
+    "sizes": [
+      {
+        "label": "152/158 см",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "12/13 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 23. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "Matched to supplied new-stock photo WhatsApp Image 2026-08-29 at 12.33.54 PM.jpeg."
+  },
+  {
+    "id": "gw-0182",
+    "slug": "gerpina-0182",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "dresses",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Синя рокля с бели точки",
+      "en": "Blue dress with white dots"
+    },
+    "description": {
+      "bg": "Bonprix — синя рокля с бели точки, размери: 134 см / 9 г..",
+      "en": "Bonprix blue dress with white dots, sizes: 134 см / 9 г.."
+    },
+    "price": 12.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Синя с бели точки",
+      "en": "Blue with white dots"
+    },
+    "sizes": [
+      {
+        "label": "134 см / 9 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 24. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "No matching product photo supplied in the 2026-08-29 batch."
+  },
+  {
+    "id": "gw-0183",
+    "slug": "gerpina-0183",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "dresses",
+    "brand": "Bonprix",
+    "name": {
+      "bg": "Черна рокля с колан",
+      "en": "Black belted dress"
+    },
+    "description": {
+      "bg": "Bonprix — черна рокля с колан, размери: 134 см / 9 г..",
+      "en": "Bonprix black belted dress, sizes: 134 см / 9 г.."
+    },
+    "price": 12.99,
+    "originalPrice": null,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Черна",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "134 см / 9 г.",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": null,
+    "originalPriceSource": null,
+    "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
+    "stockReviewNote": "New stock 2026-08-29; source row(s): 25. Initial quantity is 1 per size unless explicitly noted otherwise.",
+    "photoReviewNote": "No matching product photo supplied in the 2026-08-29 batch."
   }
 ];
 
@@ -4962,7 +5876,10 @@ export function getDiscountPercent(originalPrice, price) {
 }
 
 export function isProductAvailable(product) {
-  return product.status === 'in_stock' && (!product.sizes?.length || product.sizes.some((size) => size.available));
+  return product.status === 'in_stock' && (
+    !product.sizes?.length ||
+    product.sizes.some((size) => size.available !== false && (size.quantity == null || Number(size.quantity) > 0))
+  );
 }
 
 export function productMatchesAudience(product, audience) {
