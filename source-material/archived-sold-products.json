@@ -734,5 +734,81 @@
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
     "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+  },
+  {
+    "id": "gw-0078",
+    "slug": "gerpina-0078",
+    "audience": "kids",
+    "kidGender": "girl",
+    "category": "jackets",
+    "brand": "Minoti",
+    "name": {
+      "bg": "Яке",
+      "en": "Jacket"
+    },
+    "description": {
+      "bg": "Minoti — яке, цвят бяло с дъгички, размер 18/24 месеца.",
+      "en": "Minoti jacket, in white rainbow print, size 18/24 месеца."
+    },
+    "price": 14.99,
+    "originalPrice": 33.9,
+    "originalPriceEstimated": true,
+    "image": null,
+    "colour": {
+      "bg": "Бяло С Дъгички",
+      "en": "White rainbow print"
+    },
+    "sizes": [
+      {
+        "label": "18/24 месеца",
+        "available": false
+      }
+    ],
+    "status": "sold_out",
+    "stockQuantity": 0,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/nl/collections/baby",
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "stockReviewNote": "Removed from public storefront after physical stock confirmation on 2026-09-06."
+  },
+  {
+    "id": "gw-0092",
+    "slug": "gerpina-0092",
+    "audience": "kids",
+    "kidGender": "boy",
+    "category": "sets",
+    "brand": "Minoti",
+    "name": {
+      "bg": "Комплект",
+      "en": "Set"
+    },
+    "description": {
+      "bg": "Minoti — комплект, цвят шарено синьо, размер 4/5 г. + 7/8 г.",
+      "en": "Minoti set, in multicolour blue, size 4/5 г. + 7/8 г."
+    },
+    "price": 14.99,
+    "originalPrice": 26.9,
+    "originalPriceEstimated": true,
+    "image": null,
+    "colour": {
+      "bg": "Шарено Синьо",
+      "en": "Multicolour blue"
+    },
+    "sizes": [
+      {
+        "label": "4/5 г.",
+        "available": false
+      },
+      {
+        "label": "7/8 г.",
+        "available": false
+      }
+    ],
+    "status": "sold_out",
+    "stockQuantity": 0,
+    "originalPriceType": "reference",
+    "originalPriceSource": "https://minoti.com/collections/baby",
+    "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match.",
+    "stockReviewNote": "Removed from public storefront after physical stock confirmation on 2026-09-06."
   }
 ]

@@ -1797,7 +1797,7 @@ export const products = [
     "price": 24.99,
     "originalPrice": 63.59,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-52-2026-09-06.jpeg",
     "colour": {
       "bg": "Синьо",
       "en": "Blue"
@@ -1812,7 +1812,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://bg.sportsdirect.com/minoti",
-    "priceReviewNote": "Current Minoti winter-jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti winter-jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 52 on 2026-09-06."
   },
   {
     "id": "gw-0068",
@@ -1832,7 +1833,7 @@ export const products = [
     "price": 9.99,
     "originalPrice": 14.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-53-2026-09-06.jpeg",
     "colour": {
       "bg": "Розов",
       "en": "Pink"
@@ -1847,7 +1848,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
-    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 53 on 2026-09-06."
   },
   {
     "id": "gw-0069",
@@ -1867,7 +1869,7 @@ export const products = [
     "price": 13.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-54-2026-09-06.jpeg",
     "colour": {
       "bg": "Сини?",
       "en": "Blue?"
@@ -1882,7 +1884,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://www.ozone.ro/brand-minoti/",
-    "priceReviewNote": "Ozone Minoti jeans SRP/category reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Ozone Minoti jeans SRP/category reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 54 on 2026-09-06."
   },
   {
     "id": "gw-0070",
@@ -1902,7 +1905,7 @@ export const products = [
     "price": 9.99,
     "originalPrice": 14.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-55-2026-09-06.jpeg",
     "colour": {
       "bg": "Сив С Цветя",
       "en": "Grey with flowers"
@@ -1917,7 +1920,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
-    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 55 on 2026-09-06."
   },
   {
     "id": "gw-0071",
@@ -1972,7 +1976,7 @@ export const products = [
     "price": 6.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-57-2026-09-06.jpeg",
     "colour": {
       "bg": "Бяла",
       "en": "White"
@@ -1987,7 +1991,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 57 on 2026-09-06."
   },
   {
     "id": "gw-0073",
@@ -2007,7 +2012,7 @@ export const products = [
     "price": 11.99,
     "originalPrice": 16.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-58-2026-09-06.jpeg",
     "colour": {
       "bg": "Неуточнен",
       "en": "Unspecified"
@@ -2022,7 +2027,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 58 on 2026-09-06."
   },
   {
     "id": "gw-0074",
@@ -2042,7 +2048,7 @@ export const products = [
     "price": 14.99,
     "originalPrice": 26.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-59-2026-09-06.jpeg",
     "colour": {
       "bg": "Кремов",
       "en": "Cream"
@@ -2057,7 +2063,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/baby",
-    "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 59 on 2026-09-06."
   },
   {
     "id": "gw-0076",
@@ -2077,7 +2084,7 @@ export const products = [
     "price": 9.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-60-2026-09-06.jpeg",
     "colour": {
       "bg": "Синя?",
       "en": "Blue"
@@ -2092,7 +2099,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/baby?page=8",
-    "priceReviewNote": "Comparable Minoti denim shirt reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti denim shirt reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 60 on 2026-09-06."
   },
   {
     "id": "gw-0077",
@@ -2112,7 +2120,7 @@ export const products = [
     "price": 12.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-61-2026-09-06.jpeg",
     "colour": {
       "bg": "Розово",
       "en": "Pink"
@@ -2127,42 +2135,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
-  },
-  {
-    "id": "gw-0078",
-    "slug": "gerpina-0078",
-    "audience": "kids",
-    "kidGender": "girl",
-    "category": "jackets",
-    "brand": "Minoti",
-    "name": {
-      "bg": "Яке",
-      "en": "Jacket"
-    },
-    "description": {
-      "bg": "Minoti — яке, цвят бяло с дъгички, размер 18/24 месеца.",
-      "en": "Minoti jacket, in white rainbow print, size 18/24 месеца."
-    },
-    "price": 14.99,
-    "originalPrice": 33.9,
-    "originalPriceEstimated": true,
-    "image": null,
-    "colour": {
-      "bg": "Бяло С Дъгички",
-      "en": "White rainbow print"
-    },
-    "sizes": [
-      {
-        "label": "18/24 месеца",
-        "available": true
-      }
-    ],
-    "status": "in_stock",
-    "stockQuantity": 1,
-    "originalPriceType": "reference",
-    "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 61 on 2026-09-06."
   },
   {
     "id": "gw-0079",
@@ -2182,7 +2156,7 @@ export const products = [
     "price": 15.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-63-2026-09-06.jpeg",
     "colour": {
       "bg": "Зелено С Бели Точки",
       "en": "Green with white dots"
@@ -2197,7 +2171,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 63 on 2026-09-06."
   },
   {
     "id": "gw-0082",
@@ -2217,7 +2192,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 14.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-64-2026-09-06.jpeg",
     "colour": {
       "bg": "Розов с Цветенца",
       "en": "Pink floral"
@@ -2232,7 +2207,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
-    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 64 on 2026-09-06."
   },
   {
     "id": "gw-0083",
@@ -2252,7 +2228,7 @@ export const products = [
     "price": 6.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-65-2026-09-06.jpeg",
     "colour": {
       "bg": "Неуточнен",
       "en": "Unspecified"
@@ -2267,7 +2243,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/minoti-kids-swimwear?page=2",
-    "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 65 on 2026-09-06."
   },
   {
     "id": "gw-0084",
@@ -2322,7 +2299,7 @@ export const products = [
     "price": 14.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-67-2026-09-06.jpeg",
     "colour": {
       "bg": "С Лимони",
       "en": "Lemon print"
@@ -2337,7 +2314,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 67 on 2026-09-06."
   },
   {
     "id": "gw-0086",
@@ -2357,7 +2335,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-68-2026-09-06.jpeg",
     "colour": {
       "bg": "Неуточнен",
       "en": "Unspecified"
@@ -2372,30 +2350,31 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 68 on 2026-09-06."
   },
   {
     "id": "gw-0087",
     "slug": "gerpina-0087",
     "audience": "kids",
     "kidGender": "girl",
-    "category": "tops",
+    "category": "dresses",
     "brand": "Minoti",
     "name": {
-      "bg": "Блузка",
-      "en": "Top"
+      "bg": "Леопардова рокля",
+      "en": "Leopard-print dress"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят леопардова, размер 18/24 месеца.",
-      "en": "Minoti top, in leopard, size 18/24 месеца."
+      "bg": "Minoti — леопардова рокля, размер 18/24 месеца.",
+      "en": "Minoti leopard-print dress, size 18/24 месеца."
     },
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-69-2026-09-06.jpeg",
     "colour": {
-      "bg": "Леопардова",
-      "en": "Leopard"
+      "bg": "Розова с леопардов принт",
+      "en": "Pink leopard print"
     },
     "sizes": [
       {
@@ -2407,7 +2386,9 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 69 on 2026-09-06.",
+    "stockReviewNote": "Product type corrected from top/blouse to dress from physical photo audit row 69, 2026-09-06."
   },
   {
     "id": "gw-0088",
@@ -2427,7 +2408,7 @@ export const products = [
     "price": 9.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-70-2026-09-06.jpeg",
     "colour": {
       "bg": "Сини",
       "en": "Blue"
@@ -2442,7 +2423,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
-    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 70 on 2026-09-06."
   },
   {
     "id": "gw-0089",
@@ -2462,7 +2444,7 @@ export const products = [
     "price": 12.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-71-2026-09-06.jpeg",
     "colour": {
       "bg": "Бели",
       "en": "White"
@@ -2477,7 +2459,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://www.ozone.ro/brand-minoti/",
-    "priceReviewNote": "Ozone Minoti jeans SRP/category reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Ozone Minoti jeans SRP/category reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 71 on 2026-09-06."
   },
   {
     "id": "gw-0090",
@@ -2550,66 +2533,27 @@ export const products = [
     "priceReviewNote": "Ozone Minoti jeans SRP/category reference; comparable retail reference, not an exact SKU match."
   },
   {
-    "id": "gw-0092",
-    "slug": "gerpina-0092",
-    "audience": "kids",
-    "kidGender": "boy",
-    "category": "sets",
-    "brand": "Minoti",
-    "name": {
-      "bg": "Комплект",
-      "en": "Set"
-    },
-    "description": {
-      "bg": "Minoti — комплект, цвят шарено синьо, размер 4/5 г. + 7/8 г.",
-      "en": "Minoti set, in multicolour blue, size 4/5 г. + 7/8 г."
-    },
-    "price": 14.99,
-    "originalPrice": 26.9,
-    "originalPriceEstimated": true,
-    "image": null,
-    "colour": {
-      "bg": "Шарено Синьо",
-      "en": "Multicolour blue"
-    },
-    "sizes": [
-      {
-        "label": "4/5 г.",
-        "available": false
-      },
-      {
-        "label": "7/8 г.",
-        "available": true
-      }
-    ],
-    "status": "in_stock",
-    "stockQuantity": 1,
-    "originalPriceType": "reference",
-    "originalPriceSource": "https://minoti.com/collections/baby",
-    "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match."
-  },
-  {
     "id": "gw-0093",
     "slug": "gerpina-0093",
     "audience": "kids",
     "kidGender": "girl",
-    "category": "tops",
+    "category": "dresses",
     "brand": "Minoti",
     "name": {
-      "bg": "Блузка",
-      "en": "Top"
+      "bg": "Рокля на точки",
+      "en": "Polka-dot dress"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят бяла с черни точки, размер 9/12 месеца.",
-      "en": "Minoti top, in white with black dots, size 9/12 месеца."
+      "bg": "Minoti — рокля на точки, размер 9/12 месеца.",
+      "en": "Minoti polka-dot dress, size 9/12 месеца."
     },
     "price": 9.99,
     "originalPrice": 12.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-75-2026-09-06.jpeg",
     "colour": {
-      "bg": "Бяла С Черни Точки",
-      "en": "White with black dots"
+      "bg": "Кремава с черни точки",
+      "en": "Cream with black dots"
     },
     "sizes": [
       {
@@ -2621,7 +2565,9 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 75 on 2026-09-06.",
+    "stockReviewNote": "Product type corrected from top/blouse to dress from physical photo audit row 75, 2026-09-06."
   },
   {
     "id": "gw-0094",
@@ -2641,7 +2587,7 @@ export const products = [
     "price": 15.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-76-2026-09-06.jpeg",
     "colour": {
       "bg": "Розово",
       "en": "Pink"
@@ -2656,7 +2602,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 76 on 2026-09-06."
   },
   {
     "id": "gw-0095",
@@ -2676,7 +2623,7 @@ export const products = [
     "price": 19.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-77-2026-09-06.jpeg",
     "colour": {
       "bg": "С Лимони",
       "en": "Lemon print"
@@ -2691,7 +2638,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 77 on 2026-09-06."
   },
   {
     "id": "gw-0096",
@@ -2711,7 +2659,7 @@ export const products = [
     "price": 14.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-78-2026-09-06.jpeg",
     "colour": {
       "bg": "Черно Мъжко",
       "en": "Black"
@@ -2726,7 +2674,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 78 on 2026-09-06."
   },
   {
     "id": "gw-0098",
@@ -2746,7 +2695,7 @@ export const products = [
     "price": 9.99,
     "originalPrice": 12.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-79-2026-09-06.jpeg",
     "colour": {
       "bg": "Сива",
       "en": "Grey"
@@ -2761,7 +2710,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 79 on 2026-09-06."
   },
   {
     "id": "gw-0099",
@@ -2771,20 +2721,20 @@ export const products = [
     "category": "tops",
     "brand": "Minoti",
     "name": {
-      "bg": "Блузка",
-      "en": "Top"
+      "bg": "Бяла тениска „Venice Beach“",
+      "en": "White “Venice Beach” T-shirt"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят бяла venice beach, размер 3/4 г.",
-      "en": "Minoti top, in white “venice beach”, size 3/4 г."
+      "bg": "Minoti — бяла тениска „venice beach“, размер 3/4 г..",
+      "en": "Minoti white “venice beach” t-shirt, size 3/4 г.."
     },
     "price": 6.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-80-2026-09-06.jpeg",
     "colour": {
-      "bg": "Бяла Venice Beach",
-      "en": "White “Venice Beach”"
+      "bg": "Бяла с цветен принт",
+      "en": "White with colourful print"
     },
     "sizes": [
       {
@@ -2796,30 +2746,32 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 80 on 2026-09-06.",
+    "stockReviewNote": "Name/photo updated from physical audit row 80, supplied 2026-09-06."
   },
   {
     "id": "gw-0100",
     "slug": "gerpina-0100",
     "audience": "kids",
     "kidGender": "girl",
-    "category": "other",
+    "category": "dresses",
     "brand": "Minoti",
     "name": {
-      "bg": "2 рокли (комплект?)",
-      "en": "2-dress set"
+      "bg": "Комплект 2 рокли със сърца",
+      "en": "2-pack heart-print dresses"
     },
     "description": {
-      "bg": "Minoti — 2 рокли (комплект?), размер 12/18 месеца.",
-      "en": "Minoti 2-dress set, size 12/18 месеца."
+      "bg": "Minoti — комплект 2 рокли със сърца, размер 12/18 месеца.",
+      "en": "Minoti 2-pack heart-print dresses, size 12/18 месеца."
     },
     "price": 9.99,
     "originalPrice": 26.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-81-2026-09-06.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Розова и горчичено жълта",
+      "en": "Pink and mustard yellow"
     },
     "sizes": [
       {
@@ -2831,7 +2783,9 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/multipacks",
-    "priceReviewNote": "Comparable Minoti dress multipack; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti dress multipack; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 81 on 2026-09-06.",
+    "stockReviewNote": "Name/photo updated from physical audit row 81, supplied 2026-09-06."
   },
   {
     "id": "gw-0101",
@@ -2841,20 +2795,20 @@ export const products = [
     "category": "accessories",
     "brand": "Minoti",
     "name": {
-      "bg": "2 шапки (комплект?)",
-      "en": "2-hat set"
+      "bg": "Шапка с цветен принт",
+      "en": "Colourful-print baby hat"
     },
     "description": {
-      "bg": "Minoti — 2 шапки (комплект?), размер 3/6 месеца.",
-      "en": "Minoti 2-hat set, size 3/6 месеца."
+      "bg": "Minoti — шапка с цветен принт, размер 3/6 месеца.",
+      "en": "Minoti colourful-print baby hat, size 3/6 месеца."
     },
     "price": 4.99,
     "originalPrice": 8.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-82-2026-09-06.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Бяла с многоцветен принт",
+      "en": "White with multicolour print"
     },
     "sizes": [
       {
@@ -2866,7 +2820,9 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/baby-accessories",
-    "priceReviewNote": "Comparable Minoti baby hat pack; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti baby hat pack; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 82 on 2026-09-06.",
+    "stockReviewNote": "Name/photo updated from physical audit row 82, supplied 2026-09-06."
   },
   {
     "id": "gw-0102",
@@ -2876,20 +2832,20 @@ export const products = [
     "category": "tops",
     "brand": "Minoti",
     "name": {
-      "bg": "Блузка",
-      "en": "Top"
+      "bg": "Розова тениска „Feeling Happy“",
+      "en": "Pink “Feeling Happy” T-shirt"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят розова feeling happy, размер 3/4 г.",
-      "en": "Minoti top, in pink “feeling happy”, size 3/4 г."
+      "bg": "Minoti — розова тениска „feeling happy“, размер 3/4 г..",
+      "en": "Minoti pink “feeling happy” t-shirt, size 3/4 г.."
     },
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-83-2026-09-06.jpeg",
     "colour": {
-      "bg": "Розова Feeling Happy",
-      "en": "Pink “Feeling Happy”"
+      "bg": "Розова",
+      "en": "Pink"
     },
     "sizes": [
       {
@@ -2901,7 +2857,9 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 83 on 2026-09-06.",
+    "stockReviewNote": "Name/photo updated from physical audit row 83, supplied 2026-09-06."
   },
   {
     "id": "gw-0103",
@@ -2911,20 +2869,20 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Клин",
-      "en": "Leggings"
+      "bg": "Леопардов клин",
+      "en": "Leopard-print leggings"
     },
     "description": {
-      "bg": "Minoti — клин, цвят лилаво леопардово, размер 18/24 месеца.",
-      "en": "Minoti leggings, in purple leopard, size 18/24 месеца."
+      "bg": "Minoti — леопардов клин, размер 18/24 месеца.",
+      "en": "Minoti leopard-print leggings, size 18/24 месеца."
     },
     "price": 4.99,
     "originalPrice": 14.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-84-2026-09-06.jpeg",
     "colour": {
-      "bg": "Лилаво Леопардово",
-      "en": "Purple leopard"
+      "bg": "Бордо с черен леопардов принт",
+      "en": "Burgundy black leopard print"
     },
     "sizes": [
       {
@@ -2936,7 +2894,9 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
-    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 84 on 2026-09-06.",
+    "stockReviewNote": "Name/photo updated from physical audit row 84, supplied 2026-09-06."
   },
   {
     "id": "gw-0104",
@@ -2946,20 +2906,20 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Клин",
-      "en": "Leggings"
+      "bg": "Маслиненозелен клин с цветя",
+      "en": "Olive floral leggings"
     },
     "description": {
-      "bg": "Minoti — клин, цвят зелено с черна точка, размер 2/3 г.",
-      "en": "Minoti leggings, in green with black dot, size 2/3 г."
+      "bg": "Minoti — маслиненозелен клин с цветя, размер 2/3 г..",
+      "en": "Minoti olive floral leggings, size 2/3 г.."
     },
     "price": 4.99,
     "originalPrice": 14.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-row-85-2026-09-06.jpeg",
     "colour": {
-      "bg": "Зелено С Черна Точка",
-      "en": "Green with black dot"
+      "bg": "Маслиненозелен с черни цветя",
+      "en": "Olive green with black flowers"
     },
     "sizes": [
       {
@@ -2971,7 +2931,9 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
-    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Photo supplied for audit row 85 on 2026-09-06.",
+    "stockReviewNote": "Name/photo updated from physical audit row 85, supplied 2026-09-06."
   },
   {
     "id": "gw-0105",
@@ -5788,6 +5750,1569 @@ export const products = [
     "priceReviewNote": "No exact original brand price was supplied for this new-stock item; no discount claim is shown until verified.",
     "stockReviewNote": "New stock 2026-08-29; source row(s): 25. Initial quantity is 1 per size unless explicitly noted otherwise.",
     "photoReviewNote": "No matching product photo supplied in the 2026-08-29 batch."
+  },
+  {
+    "id": "gw-0184",
+    "slug": "gerpina-0184",
+    "audience": "women",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "Tommy Hilfiger",
+    "name": {
+      "bg": "Сини дамски дънки",
+      "en": "Blue women's jeans"
+    },
+    "description": {
+      "bg": "Tommy Hilfiger — сини дамски дънки, размер S.",
+      "en": "Tommy Hilfiger — blue women's jeans, size S."
+    },
+    "price": 49.99,
+    "originalPrice": 129.0,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-01.jpg",
+    "colour": {
+      "bg": "Синьо",
+      "en": "Blue"
+    },
+    "sizes": [
+      {
+        "label": "S",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #1.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #1."
+  },
+  {
+    "id": "gw-0185",
+    "slug": "gerpina-0185",
+    "audience": "men",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "Jack & Jones",
+    "name": {
+      "bg": "Маслиненозелени мъжки дънки",
+      "en": "Olive-green men's jeans"
+    },
+    "description": {
+      "bg": "Jack & Jones — маслиненозелени мъжки дънки.",
+      "en": "Jack & Jones — olive-green men's jeans."
+    },
+    "price": 24.49,
+    "originalPrice": 59.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-02.jpg",
+    "colour": {
+      "bg": "Маслиненозелено",
+      "en": "Olive green"
+    },
+    "sizes": [],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #2.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #2."
+  },
+  {
+    "id": "gw-0186",
+    "slug": "gerpina-0186",
+    "audience": "women",
+    "kidGender": null,
+    "category": "shorts",
+    "brand": "ONLY",
+    "name": {
+      "bg": "Къси червени дънки",
+      "en": "Red denim shorts"
+    },
+    "description": {
+      "bg": "ONLY — къси червени дънки, размер XS.",
+      "en": "ONLY — red denim shorts, size XS."
+    },
+    "price": 14.99,
+    "originalPrice": 29.99,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Червено",
+      "en": "Red"
+    },
+    "sizes": [
+      {
+        "label": "XS",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #3."
+  },
+  {
+    "id": "gw-0187",
+    "slug": "gerpina-0187",
+    "audience": "women",
+    "kidGender": null,
+    "category": "dresses",
+    "brand": "Hechter",
+    "name": {
+      "bg": "Черна рокля на точки",
+      "en": "Black polka-dot dress"
+    },
+    "description": {
+      "bg": "Hechter — черна рокля на точки, размер S.",
+      "en": "Hechter — black polka-dot dress, size S."
+    },
+    "price": 12.99,
+    "originalPrice": 49.99,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Черна с бели точки",
+      "en": "Black with white dots"
+    },
+    "sizes": [
+      {
+        "label": "S",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #4."
+  },
+  {
+    "id": "gw-0188",
+    "slug": "gerpina-0188",
+    "audience": "women",
+    "kidGender": null,
+    "category": "dresses",
+    "brand": "Laura Scott",
+    "name": {
+      "bg": "Кафява рокля",
+      "en": "Brown dress"
+    },
+    "description": {
+      "bg": "Laura Scott — кафява рокля, размер XL.",
+      "en": "Laura Scott — brown dress, size XL."
+    },
+    "price": 19.99,
+    "originalPrice": 44.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-05.jpg",
+    "colour": {
+      "bg": "Кафяво/бежово",
+      "en": "Brown/beige"
+    },
+    "sizes": [
+      {
+        "label": "XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #5.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #5."
+  },
+  {
+    "id": "gw-0189",
+    "slug": "gerpina-0189",
+    "audience": "women",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "Replay",
+    "name": {
+      "bg": "Бели дънки",
+      "en": "White jeans"
+    },
+    "description": {
+      "bg": "Replay — бели дънки, размер M.",
+      "en": "Replay — white jeans, size M."
+    },
+    "price": 39.99,
+    "originalPrice": 149.0,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-06.jpg",
+    "colour": {
+      "bg": "Бяло",
+      "en": "White"
+    },
+    "sizes": [
+      {
+        "label": "M",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #6.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #6."
+  },
+  {
+    "id": "gw-0190",
+    "slug": "gerpina-0190",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Hechter",
+    "name": {
+      "bg": "Кафяв потник с черни ленти",
+      "en": "Brown tank top with black straps"
+    },
+    "description": {
+      "bg": "Hechter — кафяв потник с черни ленти, размер M.",
+      "en": "Hechter — brown tank top with black straps, size M."
+    },
+    "price": 19.99,
+    "originalPrice": 49.99,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Кафяво с черно",
+      "en": "Brown with black"
+    },
+    "sizes": [
+      {
+        "label": "M",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #7."
+  },
+  {
+    "id": "gw-0191",
+    "slug": "gerpina-0191",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Aniston Plus",
+    "name": {
+      "bg": "Зелена блуза с листа",
+      "en": "Green leaf-print top"
+    },
+    "description": {
+      "bg": "Aniston Plus — зелена блуза с листа, размер 3/4 XL.",
+      "en": "Aniston Plus — green leaf-print top, size 3/4 XL."
+    },
+    "price": 12.99,
+    "originalPrice": 29.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-08.jpg",
+    "colour": {
+      "bg": "Зелено с листа",
+      "en": "Green leaf print"
+    },
+    "sizes": [
+      {
+        "label": "3/4 XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #8.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #8."
+  },
+  {
+    "id": "gw-0192",
+    "slug": "gerpina-0192",
+    "audience": "women",
+    "kidGender": null,
+    "category": "knitwear",
+    "brand": "Melrose",
+    "name": {
+      "bg": "Тъмна плетена туника",
+      "en": "Dark knit tunic"
+    },
+    "description": {
+      "bg": "Melrose — тъмна плетена туника, размер S.",
+      "en": "Melrose — dark knit tunic, size S."
+    },
+    "price": 23.99,
+    "originalPrice": 45.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-09.jpg",
+    "colour": {
+      "bg": "Тъмна с ромбов десен",
+      "en": "Dark argyle"
+    },
+    "sizes": [
+      {
+        "label": "S",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #9.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #9."
+  },
+  {
+    "id": "gw-0193",
+    "slug": "gerpina-0193",
+    "audience": "women",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "Tom Tailor",
+    "name": {
+      "bg": "Черни дънки",
+      "en": "Black jeans"
+    },
+    "description": {
+      "bg": "Tom Tailor — черни дънки, размер W26/L32 (XS/S).",
+      "en": "Tom Tailor — black jeans, size W26/L32 (XS/S)."
+    },
+    "price": 29.99,
+    "originalPrice": 59.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-10.jpg",
+    "colour": {
+      "bg": "Черно",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "W26/L32 (XS/S)",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #10.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #10."
+  },
+  {
+    "id": "gw-0194",
+    "slug": "gerpina-0194",
+    "audience": "women",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "Tommy Hilfiger",
+    "name": {
+      "bg": "Сини широки панталони",
+      "en": "Navy wide-leg trousers"
+    },
+    "description": {
+      "bg": "Tommy Hilfiger — сини широки панталони, размер 44 (2XL).",
+      "en": "Tommy Hilfiger — navy wide-leg trousers, size 44 (2XL)."
+    },
+    "price": 21.99,
+    "originalPrice": 99.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-11.jpg",
+    "colour": {
+      "bg": "Тъмносиньо",
+      "en": "Navy"
+    },
+    "sizes": [
+      {
+        "label": "44 (2XL)",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #11.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #11."
+  },
+  {
+    "id": "gw-0195",
+    "slug": "gerpina-0195",
+    "audience": "women",
+    "kidGender": null,
+    "category": "shorts",
+    "brand": "Delmao",
+    "name": {
+      "bg": "Червени къси панталони",
+      "en": "Red shorts"
+    },
+    "description": {
+      "bg": "Delmao — червени къси панталони, размер L.",
+      "en": "Delmao — red shorts, size L."
+    },
+    "price": 19.99,
+    "originalPrice": 44.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-12.jpg",
+    "colour": {
+      "bg": "Червено",
+      "en": "Red"
+    },
+    "sizes": [
+      {
+        "label": "L",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #12.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #12."
+  },
+  {
+    "id": "gw-0196",
+    "slug": "gerpina-0196",
+    "audience": "men",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Tommy Hilfiger",
+    "name": {
+      "bg": "Тъмносиня поло тениска",
+      "en": "Navy polo shirt"
+    },
+    "description": {
+      "bg": "Tommy Hilfiger — тъмносиня поло тениска, размер XS.",
+      "en": "Tommy Hilfiger — navy polo shirt, size XS."
+    },
+    "price": 29.99,
+    "originalPrice": 79.9,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-13.jpg",
+    "colour": {
+      "bg": "Тъмносиньо",
+      "en": "Navy"
+    },
+    "sizes": [
+      {
+        "label": "XS",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #13.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #13."
+  },
+  {
+    "id": "gw-0197",
+    "slug": "gerpina-0197",
+    "audience": "women",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "Tommy Hilfiger",
+    "name": {
+      "bg": "Бели дънки",
+      "en": "White jeans"
+    },
+    "description": {
+      "bg": "Tommy Hilfiger — бели дънки, размер W25/L32 (XS).",
+      "en": "Tommy Hilfiger — white jeans, size W25/L32 (XS)."
+    },
+    "price": 34.9,
+    "originalPrice": 99.9,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-14.jpg",
+    "colour": {
+      "bg": "Бяло",
+      "en": "White"
+    },
+    "sizes": [
+      {
+        "label": "W25/L32 (XS)",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #14.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #14."
+  },
+  {
+    "id": "gw-0198",
+    "slug": "gerpina-0198",
+    "audience": "women",
+    "kidGender": null,
+    "category": "skirts",
+    "brand": "Calvin Klein",
+    "name": {
+      "bg": "Дънкова пола",
+      "en": "Denim skirt"
+    },
+    "description": {
+      "bg": "Calvin Klein — дънкова пола, размер XS/S.",
+      "en": "Calvin Klein — denim skirt, size XS/S."
+    },
+    "price": 24.99,
+    "originalPrice": 69.9,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-15.jpg",
+    "colour": {
+      "bg": "Син деним",
+      "en": "Blue denim"
+    },
+    "sizes": [
+      {
+        "label": "XS/S",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #15.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #15."
+  },
+  {
+    "id": "gw-0199",
+    "slug": "gerpina-0199",
+    "audience": "unisex",
+    "kidGender": null,
+    "category": "sweatshirts",
+    "brand": "Fruit of the Loom",
+    "name": {
+      "bg": "Лилав суитшърт с качулка",
+      "en": "Purple hoodie"
+    },
+    "description": {
+      "bg": "Fruit of the Loom — лилав суитшърт с качулка, размер XXL.",
+      "en": "Fruit of the Loom — purple hoodie, size XXL."
+    },
+    "price": 12.99,
+    "originalPrice": 25.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-16.jpg",
+    "colour": {
+      "bg": "Бордо/лилаво",
+      "en": "Burgundy/purple"
+    },
+    "sizes": [
+      {
+        "label": "XXL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #16.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #16."
+  },
+  {
+    "id": "gw-0200",
+    "slug": "gerpina-0200",
+    "audience": "women",
+    "kidGender": null,
+    "category": "skirts",
+    "brand": "VILA",
+    "name": {
+      "bg": "Черна дънкова пола",
+      "en": "Black denim skirt"
+    },
+    "description": {
+      "bg": "VILA — черна дънкова пола, размер M, L.",
+      "en": "VILA — black denim skirt, size M, L."
+    },
+    "price": 19.99,
+    "originalPrice": 34.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-17.jpg",
+    "colour": {
+      "bg": "Черно",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "M",
+        "available": true,
+        "quantity": 2
+      },
+      {
+        "label": "L",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 3,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #17. Combined with handwritten item #41 because both describe the same VILA black denim skirt model; M quantity 2, L quantity 1.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #17."
+  },
+  {
+    "id": "gw-0201",
+    "slug": "gerpina-0201",
+    "audience": "women",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "MAC",
+    "name": {
+      "bg": "Кафяв панталон",
+      "en": "Brown trousers"
+    },
+    "description": {
+      "bg": "MAC — кафяв панталон, размер 4XL.",
+      "en": "MAC — brown trousers, size 4XL."
+    },
+    "price": 29.99,
+    "originalPrice": 109.95,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-18.jpg",
+    "colour": {
+      "bg": "Кафяво/каки",
+      "en": "Brown/khaki"
+    },
+    "sizes": [
+      {
+        "label": "4XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #18.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #18."
+  },
+  {
+    "id": "gw-0202",
+    "slug": "gerpina-0202",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "ONLY",
+    "name": {
+      "bg": "Шарен потник",
+      "en": "Patterned tank top"
+    },
+    "description": {
+      "bg": "ONLY — шарен потник, размер M.",
+      "en": "ONLY — patterned tank top, size M."
+    },
+    "price": 9.99,
+    "originalPrice": 16.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-19.jpg",
+    "colour": {
+      "bg": "Розово и многоцветно",
+      "en": "Pink multicolour"
+    },
+    "sizes": [
+      {
+        "label": "M",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #19.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #19."
+  },
+  {
+    "id": "gw-0203",
+    "slug": "gerpina-0203",
+    "audience": "unisex",
+    "kidGender": null,
+    "category": "sweatshirts",
+    "brand": "Nike",
+    "name": {
+      "bg": "Черен суитшърт с качулка",
+      "en": "Black hoodie"
+    },
+    "description": {
+      "bg": "Nike — черен суитшърт с качулка, размер S.",
+      "en": "Nike — black hoodie, size S."
+    },
+    "price": 32.99,
+    "originalPrice": 69.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-20.jpg",
+    "colour": {
+      "bg": "Черно",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "S",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #20.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #20."
+  },
+  {
+    "id": "gw-0204",
+    "slug": "gerpina-0204",
+    "audience": "women",
+    "kidGender": null,
+    "category": "other",
+    "brand": "Hechter Paris",
+    "name": {
+      "bg": "Дамска дреха",
+      "en": "Women's garment"
+    },
+    "description": {
+      "bg": "Hechter Paris — дамска дреха, размер XL.",
+      "en": "Hechter Paris — women's garment, size XL."
+    },
+    "price": 23.99,
+    "originalPrice": 60.0,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Неуточнен",
+      "en": "Unspecified"
+    },
+    "sizes": [
+      {
+        "label": "XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06. Garment type remains generic until confirmed from physical stock.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #21."
+  },
+  {
+    "id": "gw-0205",
+    "slug": "gerpina-0205",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Imperial",
+    "name": {
+      "bg": "Сатенена блуза",
+      "en": "Satin blouse"
+    },
+    "description": {
+      "bg": "Imperial — сатенена блуза, размер XS.",
+      "en": "Imperial — satin blouse, size XS."
+    },
+    "price": 29.99,
+    "originalPrice": 74.99,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Неуточнен",
+      "en": "Unspecified"
+    },
+    "sizes": [
+      {
+        "label": "XS",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #22."
+  },
+  {
+    "id": "gw-0206",
+    "slug": "gerpina-0206",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Laura Scott",
+    "name": {
+      "bg": "Туника",
+      "en": "Tunic"
+    },
+    "description": {
+      "bg": "Laura Scott — туника, размер XL.",
+      "en": "Laura Scott — tunic, size XL."
+    },
+    "price": 19.99,
+    "originalPrice": 49.99,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Неуточнен",
+      "en": "Unspecified"
+    },
+    "sizes": [
+      {
+        "label": "XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #23."
+  },
+  {
+    "id": "gw-0207",
+    "slug": "gerpina-0207",
+    "audience": "women",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "ONLY Skinny",
+    "name": {
+      "bg": "Черен панталон",
+      "en": "Black skinny trousers"
+    },
+    "description": {
+      "bg": "ONLY Skinny — черен панталон, размер S.",
+      "en": "ONLY Skinny — black skinny trousers, size S."
+    },
+    "price": 24.99,
+    "originalPrice": 39.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-24.jpg",
+    "colour": {
+      "bg": "Черно",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "S",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #24.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #24."
+  },
+  {
+    "id": "gw-0208",
+    "slug": "gerpina-0208",
+    "audience": "women",
+    "kidGender": null,
+    "category": "dresses",
+    "brand": "Vero Moda",
+    "name": {
+      "bg": "Шарена рокля",
+      "en": "Patterned dress"
+    },
+    "description": {
+      "bg": "Vero Moda — шарена рокля, размер XS.",
+      "en": "Vero Moda — patterned dress, size XS."
+    },
+    "price": 12.99,
+    "originalPrice": 29.99,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Многоцветно",
+      "en": "Multicolour"
+    },
+    "sizes": [
+      {
+        "label": "XS",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #25."
+  },
+  {
+    "id": "gw-0209",
+    "slug": "gerpina-0209",
+    "audience": "women",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "Replay",
+    "name": {
+      "bg": "Зелен панталон",
+      "en": "Green trousers"
+    },
+    "description": {
+      "bg": "Replay — зелен панталон, размер W30/L34 (L/XL).",
+      "en": "Replay — green trousers, size W30/L34 (L/XL)."
+    },
+    "price": 34.99,
+    "originalPrice": 100.0,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Зелено",
+      "en": "Green"
+    },
+    "sizes": [
+      {
+        "label": "W30/L34 (L/XL)",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #26."
+  },
+  {
+    "id": "gw-0210",
+    "slug": "gerpina-0210",
+    "audience": "women",
+    "kidGender": null,
+    "category": "trousers",
+    "brand": "Aniston",
+    "name": {
+      "bg": "Черен панталон с бели точки",
+      "en": "Black polka-dot trousers"
+    },
+    "description": {
+      "bg": "Aniston — черен панталон с бели точки, размер 4XL.",
+      "en": "Aniston — black polka-dot trousers, size 4XL."
+    },
+    "price": 14.99,
+    "originalPrice": 39.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-27.jpg",
+    "colour": {
+      "bg": "Черно с бели точки",
+      "en": "Black with white dots"
+    },
+    "sizes": [
+      {
+        "label": "4XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #27.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #27."
+  },
+  {
+    "id": "gw-0211",
+    "slug": "gerpina-0211",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Hechter Paris",
+    "name": {
+      "bg": "Блуза с кафява шарка",
+      "en": "Brown-pattern blouse"
+    },
+    "description": {
+      "bg": "Hechter Paris — блуза с кафява шарка, размер XS.",
+      "en": "Hechter Paris — brown-pattern blouse, size XS."
+    },
+    "price": 24.99,
+    "originalPrice": 69.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-28.jpg",
+    "colour": {
+      "bg": "Кафяво с шарка",
+      "en": "Brown pattern"
+    },
+    "sizes": [
+      {
+        "label": "XS",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #28.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #28."
+  },
+  {
+    "id": "gw-0212",
+    "slug": "gerpina-0212",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Kangaroos",
+    "name": {
+      "bg": "Туника с качулка",
+      "en": "Hooded tunic"
+    },
+    "description": {
+      "bg": "Kangaroos — туника с качулка, размер XS.",
+      "en": "Kangaroos — hooded tunic, size XS."
+    },
+    "price": 19.99,
+    "originalPrice": 49.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-29.jpg",
+    "colour": {
+      "bg": "Тъмносиньо, бяло и розово",
+      "en": "Navy white pink"
+    },
+    "sizes": [
+      {
+        "label": "XS",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #29.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #29."
+  },
+  {
+    "id": "gw-0213",
+    "slug": "gerpina-0213",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Aniston",
+    "name": {
+      "bg": "Синя блуза",
+      "en": "Blue top"
+    },
+    "description": {
+      "bg": "Aniston — синя блуза, размер 5XL.",
+      "en": "Aniston — blue top, size 5XL."
+    },
+    "price": 11.99,
+    "originalPrice": 29.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-30.jpg",
+    "colour": {
+      "bg": "Синьо",
+      "en": "Blue"
+    },
+    "sizes": [
+      {
+        "label": "5XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #30.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #30."
+  },
+  {
+    "id": "gw-0214",
+    "slug": "gerpina-0214",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Aniston Plus",
+    "name": {
+      "bg": "Черна туника с бели шарки",
+      "en": "Black patterned tunic"
+    },
+    "description": {
+      "bg": "Aniston Plus — черна туника с бели шарки, размер 6XL.",
+      "en": "Aniston Plus — black patterned tunic, size 6XL."
+    },
+    "price": 12.99,
+    "originalPrice": 34.99,
+    "originalPriceEstimated": false,
+    "image": null,
+    "colour": {
+      "bg": "Черно с бяло",
+      "en": "Black with white"
+    },
+    "sizes": [
+      {
+        "label": "6XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #31."
+  },
+  {
+    "id": "gw-0215",
+    "slug": "gerpina-0215",
+    "audience": "women",
+    "kidGender": null,
+    "category": "dresses",
+    "brand": "Aniston Plus",
+    "name": {
+      "bg": "Оранжева рокля с лилави цветя",
+      "en": "Orange floral dress"
+    },
+    "description": {
+      "bg": "Aniston Plus — оранжева рокля с лилави цветя, размер 3XL.",
+      "en": "Aniston Plus — orange floral dress, size 3XL."
+    },
+    "price": 14.99,
+    "originalPrice": 34.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-33.jpg",
+    "colour": {
+      "bg": "Оранжево с лилави цветя",
+      "en": "Orange purple floral"
+    },
+    "sizes": [
+      {
+        "label": "3XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #33.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #33."
+  },
+  {
+    "id": "gw-0216",
+    "slug": "gerpina-0216",
+    "audience": "women",
+    "kidGender": null,
+    "category": "shirts",
+    "brand": "Aniston Plus",
+    "name": {
+      "bg": "Зелена риза с бели линии",
+      "en": "Green striped shirt"
+    },
+    "description": {
+      "bg": "Aniston Plus — зелена риза с бели линии, размер 3XL.",
+      "en": "Aniston Plus — green striped shirt, size 3XL."
+    },
+    "price": 9.99,
+    "originalPrice": 29.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-34.jpg",
+    "colour": {
+      "bg": "Зелено с бели линии",
+      "en": "Green with white stripes"
+    },
+    "sizes": [
+      {
+        "label": "3XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #34.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #34."
+  },
+  {
+    "id": "gw-0217",
+    "slug": "gerpina-0217",
+    "audience": "women",
+    "kidGender": null,
+    "category": "dresses",
+    "brand": "Hechter Paris",
+    "name": {
+      "bg": "Черна рокля с бели точки",
+      "en": "Black polka-dot dress"
+    },
+    "description": {
+      "bg": "Hechter Paris — черна рокля с бели точки, размер S, M.",
+      "en": "Hechter Paris — black polka-dot dress, size S, M."
+    },
+    "price": 19.99,
+    "originalPrice": 49.9,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-36.jpg",
+    "colour": {
+      "bg": "Черно с бели точки",
+      "en": "Black with white dots"
+    },
+    "sizes": [
+      {
+        "label": "S",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "M",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 2,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #36.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #36."
+  },
+  {
+    "id": "gw-0218",
+    "slug": "gerpina-0218",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "s.Oliver",
+    "name": {
+      "bg": "Червена блуза",
+      "en": "Red top"
+    },
+    "description": {
+      "bg": "s.Oliver — червена блуза, размер XS.",
+      "en": "s.Oliver — red top, size XS."
+    },
+    "price": 14.99,
+    "originalPrice": 57.95,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-37.jpg",
+    "colour": {
+      "bg": "Червено",
+      "en": "Red"
+    },
+    "sizes": [
+      {
+        "label": "XS",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #37.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #37."
+  },
+  {
+    "id": "gw-0219",
+    "slug": "gerpina-0219",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Aniston Plus",
+    "name": {
+      "bg": "Зелена блуза с листа",
+      "en": "Green leaf-print top"
+    },
+    "description": {
+      "bg": "Aniston Plus — зелена блуза с листа, размер 3XL.",
+      "en": "Aniston Plus — green leaf-print top, size 3XL."
+    },
+    "price": 13.99,
+    "originalPrice": 39.49,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-38.jpg",
+    "colour": {
+      "bg": "Зелено с листа",
+      "en": "Green leaf print"
+    },
+    "sizes": [
+      {
+        "label": "3XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #38.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #38."
+  },
+  {
+    "id": "gw-0220",
+    "slug": "gerpina-0220",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Laura Scott",
+    "name": {
+      "bg": "Розова тениска",
+      "en": "Pink top"
+    },
+    "description": {
+      "bg": "Laura Scott — розова тениска, размер S, XL, 3XL.",
+      "en": "Laura Scott — pink top, size S, XL, 3XL."
+    },
+    "price": 12.99,
+    "originalPrice": 39.0,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-39.jpg",
+    "colour": {
+      "bg": "Розово",
+      "en": "Pink"
+    },
+    "sizes": [
+      {
+        "label": "S",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "XL",
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "3XL",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 3,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #39.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #39."
+  },
+  {
+    "id": "gw-0221",
+    "slug": "gerpina-0221",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "O'Neill",
+    "name": {
+      "bg": "Черен потник",
+      "en": "Black tank top"
+    },
+    "description": {
+      "bg": "O'Neill — черен потник, размер S.",
+      "en": "O'Neill — black tank top, size S."
+    },
+    "price": 13.99,
+    "originalPrice": 29.9,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-40.jpg",
+    "colour": {
+      "bg": "Черно",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "S",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #40.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #40."
+  },
+  {
+    "id": "gw-0222",
+    "slug": "gerpina-0222",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Tamaris",
+    "name": {
+      "bg": "Черна блуза",
+      "en": "Black top"
+    },
+    "description": {
+      "bg": "Tamaris — черна блуза, размер XS.",
+      "en": "Tamaris — black top, size XS."
+    },
+    "price": 17.99,
+    "originalPrice": 39.95,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-42.jpg",
+    "colour": {
+      "bg": "Черно",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "XS",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #42.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #42."
+  },
+  {
+    "id": "gw-0223",
+    "slug": "gerpina-0223",
+    "audience": "women",
+    "kidGender": null,
+    "category": "skirts",
+    "brand": "Melrose Femme",
+    "name": {
+      "bg": "Черна пола",
+      "en": "Black skirt"
+    },
+    "description": {
+      "bg": "Melrose Femme — черна пола, размер S.",
+      "en": "Melrose Femme — black skirt, size S."
+    },
+    "price": 24.99,
+    "originalPrice": 70.2,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-43.jpg",
+    "colour": {
+      "bg": "Черно",
+      "en": "Black"
+    },
+    "sizes": [
+      {
+        "label": "S",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #43.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #43."
+  },
+  {
+    "id": "gw-0224",
+    "slug": "gerpina-0224",
+    "audience": "women",
+    "kidGender": null,
+    "category": "accessories",
+    "brand": "Bauerfeind",
+    "name": {
+      "bg": "Компресионни чорапи за бягане",
+      "en": "Running compression socks"
+    },
+    "description": {
+      "bg": "Bauerfeind — компресионни чорапи за бягане, размер 43–46.",
+      "en": "Bauerfeind — running compression socks, size 43–46."
+    },
+    "price": 9.99,
+    "originalPrice": 79.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-44.png",
+    "colour": {
+      "bg": "Розово, оранжево и лилаво",
+      "en": "Pink orange purple"
+    },
+    "sizes": [
+      {
+        "label": "43–46",
+        "available": true,
+        "quantity": 1
+      }
+    ],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #44. Corrected product image used; packaging size was edited to match the handwritten/physical stock size 43–46. Original supplied sock image is not used.",
+    "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #44."
   }
 ];
 
