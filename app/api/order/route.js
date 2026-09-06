@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createProductionEcontOrder } from '@/lib/econtOrder';
 import { getServerCart } from '@/lib/econt';
-import { buildOrderEmail, sendOrderEmail } from '@/lib/orderEmail';
+import { buildCustomerOrderEmail, buildOrderEmail, sendOrderEmails } from '@/lib/orderEmail';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -19,8 +19,17 @@ export async function POST(request) {
     const orderNumber = makeOrderNumber();
     const cart = getServerCart(body.items);
     const order = await createProductionEcontOrder(body, orderNumber);
-    const emailContent = buildOrderEmail({ order, body, cart });
-    const email = await sendOrderEmail(emailContent);
+    const internalEmail = buildOrderEmail({ order, body, cart });
+    const customerEmail = buildCustomerOrderEmail({ order, body, cart });
+    const emails = await sendOrderEmails({
+      internalEmail,
+      customerEmail,
+      customerAddress: body.receiver?.email,
+    });
+    const emailWarnings = [
+      !emails.internal.sent ? `Вътрешен имейл: ${emails.internal.reason}` : '',
+      !emails.customer.sent && !emails.customer.skipped ? `Имейл до клиента: ${emails.customer.reason}` : '',
+    ].filter(Boolean);
 
     return NextResponse.json({
       ok: true,
@@ -35,7 +44,11 @@ export async function POST(request) {
       payableOnDelivery: order.payableOnDelivery,
       shipmentWeightKg: order.shipmentWeightKg,
       weightNeedsVerification: order.weightNeedsVerification,
-      emailSent: Boolean(email.sent),
+      emailSent: Boolean(emails.internal.sent),
+      internalEmailSent: Boolean(emails.internal.sent),
+      customerEmailSent: Boolean(emails.customer.sent),
+      customerEmailSkipped: Boolean(emails.customer.skipped),
+      emailWarning: emailWarnings.join(' '),
     });
   } catch (error) {
     return NextResponse.json({

@@ -127,6 +127,8 @@ export default function CheckoutPage() {
     place: 'Завърши поръчката',
     placing: 'Обработване на поръчката…',
     success: 'Поръчката е създадена успешно.',
+    confirmationSent: 'Изпратихме потвърждение на посочения имейл.',
+    confirmationFailed: 'Поръчката е създадена, но имейлът за потвърждение не беше изпратен. Запази номера на поръчката.',
     orderingDisabled: 'Онлайн поръчките временно не са активирани.',
     weightCheck: 'Преди предаване на пратката в Еконт провери реалното тегло и при необходимост коригирай товарителницата.',
     liveConnectionError: 'Връзката с Еконт не е готова. Провери Environment Variables или COD настройките.',
@@ -197,6 +199,8 @@ export default function CheckoutPage() {
     place: 'Place order',
     placing: 'Processing order…',
     success: 'Your order was created successfully.',
+    confirmationSent: 'We sent a confirmation to the email address provided.',
+    confirmationFailed: 'The order was created, but the confirmation email was not sent. Save your order number.',
     orderingDisabled: 'Online ordering is temporarily unavailable.',
     weightCheck: 'Before handing the parcel to Econt, verify the actual weight and correct the waybill if necessary.',
     liveConnectionError: 'The Econt connection is not ready. Check the Environment Variables or COD configuration.',
@@ -705,6 +709,9 @@ export default function CheckoutPage() {
               <b>{copy.success}</b>
               <span>{language === 'bg' ? 'Поръчка' : 'Order'}: {submitState.result.orderNumber}</span>
               <span>{language === 'bg' ? 'Товарителница Еконт' : 'Econt waybill'}: {submitState.result.shipmentNumber}</span>
+              {submitState.result.customerEmailSent && <span>{copy.confirmationSent}</span>}
+              {!submitState.result.customerEmailSent && !submitState.result.customerEmailSkipped && <span><b>{copy.confirmationFailed}</b></span>}
+              {submitState.result.emailWarning && <span>{submitState.result.emailWarning}</span>}
               <span><b>{copy.weightCheck}</b></span>
               {submitState.result.pdfURL && (
                 <a href={submitState.result.pdfURL} target="_blank" rel="noreferrer">
