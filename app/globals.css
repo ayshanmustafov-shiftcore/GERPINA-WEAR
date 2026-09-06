@@ -498,9 +498,9 @@ img { display: block; }
 .checkout-grand-total strong { font-size: 26px; }
 .place-order-button { width: 100%; height: 58px; border: 0; background: #111; color: #fff; font-size: 15px; font-weight: 800; margin-top: 20px; cursor: pointer; }
 .place-order-button:hover { background: #2a2a2a; }
-.checkout-demo-note { margin-top: 16px; background: #f1eadf; border-left: 3px solid var(--gold); padding: 15px; }
-.checkout-demo-note b { color: var(--gold-dark); font-size: 11px; letter-spacing: .09em; }
-.checkout-demo-note p { margin: 6px 0 0; color: #686158; font-size: 11px; line-height: 1.55; }
+.checkout-order-status-note { margin-top: 16px; background: #f1eadf; border-left: 3px solid var(--gold); padding: 15px; }
+.checkout-order-status-note b { color: var(--gold-dark); font-size: 11px; letter-spacing: .09em; }
+.checkout-order-status-note p { margin: 6px 0 0; color: #686158; font-size: 11px; line-height: 1.55; }
 .checkout-submit-notice { margin-top: 12px; border: 1px solid #d6bb84; background: #fffaf0; padding: 13px; font-size: 12px; line-height: 1.5; }
 .checkout-empty { margin-bottom: 40px; }
 
@@ -554,7 +554,7 @@ img { display: block; }
   .place-order-button { font-size: 14px; }
 }
 
-/* 2026-08 ABOUT YOU-inspired header hierarchy + stronger demo sale visibility */
+/* 2026-08 ABOUT YOU-inspired header hierarchy + stronger sale visibility */
 .store-header {
   position: sticky;
   top: 0;
@@ -921,7 +921,7 @@ img { display: block; }
   .active-filter-row { font-size: 11px; }
 }
 
-/* Econt test API checkout */
+/* Econt checkout */
 .econt-heading-row { align-items: flex-start; }
 .econt-live-badge {
   flex: 0 0 auto;
@@ -1045,7 +1045,7 @@ img { display: block; }
 .econt-quote-card small { width: 100%; color: #766f62; font-size: 11px; line-height: 1.45; }
 .checkout-summary-title-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
 .checkout-summary-title-row h2 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 30px; font-weight: 400; }
-.summary-test-pill { min-height: 25px; padding: 0 8px; display: inline-flex; align-items: center; background: #e8ddc4; color: #66501e; font-size: 10px; font-weight: 900; letter-spacing: .08em; }
+.summary-order-pill { min-height: 25px; padding: 0 8px; display: inline-flex; align-items: center; background: #e8ddc4; color: #66501e; font-size: 10px; font-weight: 900; letter-spacing: .08em; }
 .summary-action-text { color: #795d22; font-weight: 800; }
 .checkout-submit-notice.success { border-color: #a8cdb5; background: #f4fbf6; color: #2f6741; }
 .checkout-submit-notice.error { border-color: #e0b5b5; background: #fff7f7; color: #962c2c; }
@@ -1060,7 +1060,7 @@ img { display: block; }
 
 /* Econt production-safe integration */
 .econt-live-badge.production,
-.summary-test-pill.production {
+.summary-order-pill.production {
   border-color: #186a3b;
   background: #eef8f2;
   color: #186a3b;
@@ -1128,28 +1128,28 @@ img { display: block; }
   }
 }
 
-/* Test-order result: DEMO Econt waybill + notification email status. */
-.test-order-result {
+/* Completed-order result and Econt waybill status. */
+.order-result {
   display: flex;
   flex-direction: column;
   gap: 7px;
   font-size: 13px;
 }
-.test-order-result b { font-size: 14px; }
-.test-order-result a {
+.order-result b { font-size: 14px; }
+.order-result a {
   color: inherit;
   font-weight: 800;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.test-email-preview {
+.order-email-preview {
   margin-top: 5px;
   border-top: 1px solid rgba(47, 103, 65, 0.2);
   padding-top: 9px;
 }
-.test-email-preview summary { cursor: pointer; font-weight: 800; }
-.test-email-preview > b { display: block; margin-top: 9px; color: #183d25; }
-.test-email-preview pre {
+.order-email-preview summary { cursor: pointer; font-weight: 800; }
+.order-email-preview > b { display: block; margin-top: 9px; color: #183d25; }
+.order-email-preview pre {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
   font: inherit;
@@ -1416,3 +1416,6 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
   .cookie-banner { max-height: 80vh; overflow-y: auto; }
 }
+
+.order-confirmation-page { max-width: 620px; margin: 26px auto 70px; display: flex; flex-direction: column; gap: 12px; }
+.order-confirmation-page a { width: fit-content; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }

@@ -26,10 +26,10 @@ export default function SiteFooter() {
           <Link href="/delivery-returns">{bg ? 'Доставка и връщане' : 'Delivery & returns'}</Link><Link href="/contact">{bg ? 'Контакти' : 'Contact'}</Link><Link href="/terms">{bg ? 'Общи условия' : 'Terms'}</Link><Link href="/privacy">{bg ? 'Поверителност' : 'Privacy'}</Link><Link href="/cookies">{bg ? 'Бисквитки' : 'Cookies'}</Link><button className="footer-cookie-button" onClick={openCookies}>{bg ? 'Настройки за бисквитки' : 'Cookie settings'}</button>
         </div>
         <div>
-          <h4>GERPINA</h4><Link href="/about">{bg ? 'За нас' : 'About us'}</Link><span>{bg ? 'България' : 'Bulgaria'}</span><span>EUR (€)</span><span>{bg ? 'Не е регистрирана по ДДС' : 'Not VAT registered'}</span>
+          <h4>GERPINA</h4><Link href="/about">{bg ? 'За нас' : 'About us'}</Link><span>{bg ? 'България' : 'Bulgaria'}</span><span>EUR (€)</span>
         </div>
       </div>
-      <div className="footer-bottom page-width"><span>© 2026 GERPINA Wear</span><span>{bg ? 'Тестова версия · реалните поръчки са изключени' : 'Test build · real orders are disabled'}</span></div>
+      <div className="footer-bottom page-width"><span>© 2026 GERPINA Wear</span><span>{bg ? 'Доставка в България с Еконт' : 'Delivery in Bulgaria with Econt'}</span></div>
     </footer>
   );
 }

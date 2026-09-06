@@ -1,16 +1,5 @@
 {
-  "held_handwritten_items": [
-    {
-      "item": 32,
-      "brand": "Vans",
-      "reason": "Do not publish yet; prices still pending confirmation."
-    },
-    {
-      "item": 35,
-      "brand": "Aniston Plus",
-      "reason": "Do not publish yet; prices still pending confirmation."
-    }
-  ],
+  "held_handwritten_items": [],
   "build_date": "2026-09-06",
-  "notes": "New handwritten stock integrated best-effort. High-confidence supplied photos linked; uncertain photo mappings left blank rather than guessed."
+  "notes": "All handwritten stock items 1–44 are now integrated. Items #32 and #35 were added after their prices were confirmed on 2026-09-06. High-confidence supplied photos are linked; uncertain photo mappings remain blank rather than guessed."
 }

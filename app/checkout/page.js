@@ -43,7 +43,7 @@ function formatEcontExpectedDate(value, language) {
 
 export default function CheckoutPage() {
   const { language } = useLanguage();
-  const { cart, cartTotal } = useStore();
+  const { cart, cartTotal, clearCart } = useStore();
   const formRef = useRef(null);
   const [deliveryType, setDeliveryType] = useState('office');
   const [paymentType, setPaymentType] = useState('cod');
@@ -67,7 +67,7 @@ export default function CheckoutPage() {
   const [quoteLoading, setQuoteLoading] = useState(false);
   const [quoteError, setQuoteError] = useState('');
   const [submitState, setSubmitState] = useState({ loading: false, success: false, error: '', result: null });
-  const [econtStatus, setEcontStatus] = useState({ loading: true, mode: null, safeMode: true, ready: false, error: '', profileName: '', clientNumber: '', agreement: '' });
+  const [econtStatus, setEcontStatus] = useState({ loading: true, ready: false, createEnabled: false, error: '' });
 
   const copy = useMemo(() => language === 'bg' ? {
     eyebrow: 'СИГУРНА ПОРЪЧКА',
@@ -80,8 +80,7 @@ export default function CheckoutPage() {
     phone: 'Телефон',
     email: 'Имейл',
     deliveryTitle: '2. Доставка с Еконт',
-    deliveryTextTest: 'Градовете и офисите се зареждат директно от тестовата система на Еконт.',
-    deliveryTextLive: 'Градовете, офисите и цените се зареждат директно от реалната система на Еконт. Създаването на товарителници е изключено.',
+    deliveryText: 'Градовете, офисите и цените се зареждат директно от Еконт.',
     office: 'До офис на Еконт',
     officeSub: 'Избери реален град и офис',
     address: 'До адрес',
@@ -104,8 +103,7 @@ export default function CheckoutPage() {
     recalculating: 'Еконт изчислява доставката…',
     autoCalculated: 'Доставката се изчислява автоматично.',
     autoWaiting: 'Цената ще се появи автоматично след попълване на данните за контакт и доставка.',
-    quoteTest: 'Тестова цена от Еконт',
-    quoteLive: 'Реална цена от Еконт',
+    quote: 'Цена от Еконт',
     paymentTitle: '3. Плащане',
     cod: 'Наложен платеж при получаване',
     codSub: 'Стойността на дрехите се плаща при получаване чрез Еконт.',
@@ -126,18 +124,14 @@ export default function CheckoutPage() {
     itemsTotal: 'Общо продукти',
     payable: 'Общо при получаване',
     qty: 'бр.',
-    place: 'Създай тестова поръчка',
-    placing: 'Създаване на тестова товарителница…',
-    demo: 'ECONT TEST MODE',
-    liveSafe: 'ECONT LIVE · SAFE MODE',
-    demoBody: 'Финалният бутон създава само тестова товарителница в DEMO системата на Еконт. Production e-Econt не се променя и не се заявява куриер.',
-    liveSafeBody: 'Цената се изчислява през реалния e-Econt акаунт, но финалният бутон създава товарителница само в Econt DEMO. Няма код за създаване на production товарителница или заявка за куриер.',
-    successTest: 'Тестовата поръчка и DEMO товарителницата са създадени успешно.',
-    successLive: 'Тестовата поръчка е създадена само в Econt DEMO. Production e-Econt не е променен.',
+    place: 'Завърши поръчката',
+    placing: 'Обработване на поръчката…',
+    success: 'Поръчката е създадена успешно.',
+    orderingDisabled: 'Онлайн поръчките временно не са активирани.',
     weightCheck: 'Преди предаване на пратката в Еконт провери реалното тегло и при необходимост коригирай товарителницата.',
-    liveConnectionError: 'Реалният Econt акаунт не е готов за безопасно валидиране. Провери Environment Variables или COD настройките.',
+    liveConnectionError: 'Връзката с Еконт не е готова. Провери Environment Variables или COD настройките.',
     empty: 'Количката ти е празна',
-    emptyText: 'Добави продукт, за да видиш пълния checkout процес.',
+    emptyText: 'Добави продукт, за да продължиш към поръчка.',
     shop: 'Към магазина',
     required: '* задължително поле',
     chooseCity: 'Първо избери град от Еконт.',
@@ -156,8 +150,7 @@ export default function CheckoutPage() {
     phone: 'Phone',
     email: 'Email',
     deliveryTitle: '2. Econt delivery',
-    deliveryTextTest: 'Cities and offices are loaded directly from Econt’s test environment.',
-    deliveryTextLive: 'Cities, offices and prices are loaded directly from Econt production. Waybill creation is disabled.',
+    deliveryText: 'Cities, offices and delivery prices are loaded directly from Econt.',
     office: 'Econt office',
     officeSub: 'Choose a real city and office',
     address: 'To an address',
@@ -180,8 +173,7 @@ export default function CheckoutPage() {
     recalculating: 'Econt is calculating delivery…',
     autoCalculated: 'Delivery is calculated automatically.',
     autoWaiting: 'The price will appear automatically after the required contact and delivery details are complete.',
-    quoteTest: 'Test price from Econt',
-    quoteLive: 'Live price from Econt',
+    quote: 'Econt delivery price',
     paymentTitle: '3. Payment',
     cod: 'Cash on delivery',
     codSub: 'The merchandise value is paid through Econt when the parcel is received.',
@@ -202,18 +194,14 @@ export default function CheckoutPage() {
     itemsTotal: 'Items total',
     payable: 'Payable on receipt',
     qty: 'pcs',
-    place: 'Create test order',
-    placing: 'Creating DEMO waybill…',
-    demo: 'ECONT TEST MODE',
-    liveSafe: 'ECONT LIVE · SAFE MODE',
-    demoBody: 'The final button creates a waybill only in Econt DEMO. Production e-Econt is untouched and no courier is requested.',
-    liveSafeBody: 'Delivery pricing uses GERPINA’s real e-Econt account, but the final button creates a waybill only in Econt DEMO. There is no production-create or courier-request code in this build.',
-    successTest: 'The test order and DEMO waybill were created successfully.',
-    successLive: 'The test order was created only in Econt DEMO. Production e-Econt was not changed.',
+    place: 'Place order',
+    placing: 'Processing order…',
+    success: 'Your order was created successfully.',
+    orderingDisabled: 'Online ordering is temporarily unavailable.',
     weightCheck: 'Before handing the parcel to Econt, verify the actual weight and correct the waybill if necessary.',
-    liveConnectionError: 'The live Econt account is not ready for safe validation. Check the Environment Variables or COD configuration.',
+    liveConnectionError: 'The Econt connection is not ready. Check the Environment Variables or COD configuration.',
     empty: 'Your bag is empty',
-    emptyText: 'Add a product to preview the complete checkout flow.',
+    emptyText: 'Add a product to continue to checkout.',
     shop: 'Go to shop',
     required: '* required field',
     chooseCity: 'Select a city from Econt first.',
@@ -232,16 +220,12 @@ export default function CheckoutPage() {
         if (cancelled) return;
         setEcontStatus({
           loading: false,
-          mode: data.mode || null,
-          safeMode: data.safeMode !== false,
           ready: Boolean(data.profileLoaded && data.senderReady && data.codReady),
+          createEnabled: Boolean(data.createEnabled),
           error: data.error || '',
-          profileName: data.selectedProfileName || '',
-          clientNumber: data.selectedClientNumber || '',
-          agreement: data.configuredAgreement || '',
         });
       } catch (error) {
-        if (!cancelled) setEcontStatus({ loading: false, mode: null, safeMode: true, ready: false, error: error.message || copy.apiError, profileName: '', clientNumber: '', agreement: '' });
+        if (!cancelled) setEcontStatus({ loading: false, ready: false, createEnabled: false, error: error.message || copy.apiError });
       }
     }
     loadEcontStatus();
@@ -314,12 +298,10 @@ export default function CheckoutPage() {
     setSubmitState({ loading: false, success: false, error: '', result: null });
   }, [deliveryType, selectedCity, officeCode, address, cartTotal, contact.firstName, contact.lastName, contact.phone]);
 
-  // Econt delivery is intentionally automatic. Once the required contact + destination
-  // fields are complete, wait briefly for the user to finish typing and request a safe
-  // calculate-only quote. No shipment can be created by this effect.
+  // Econt delivery is calculated automatically once the required contact and destination fields are complete.
   useEffect(() => {
     if (!cart.length || econtStatus.loading) return;
-    if (econtStatus.mode === 'production' && !econtStatus.ready) return;
+    if (!econtStatus.ready) return;
 
     const receiverReady = Boolean(
       contact.firstName.trim() &&
@@ -342,7 +324,6 @@ export default function CheckoutPage() {
     cart.length,
     cartTotal,
     econtStatus.loading,
-    econtStatus.mode,
     econtStatus.ready,
     contact.firstName,
     contact.lastName,
@@ -352,6 +333,30 @@ export default function CheckoutPage() {
     officeCode,
     address,
   ]);
+
+  if (submitState.success && submitState.result) {
+    return (
+      <main className="checkout-page page-width">
+        <div className="plain-heading checkout-heading">
+          <span>{copy.eyebrow}</span>
+          <h1>{copy.success}</h1>
+        </div>
+        <div className="checkout-submit-notice success order-result order-confirmation-page" role="status">
+          <span>{language === 'bg' ? 'Поръчка' : 'Order'}: <b>{submitState.result.orderNumber}</b></span>
+          <span>{language === 'bg' ? 'Товарителница Еконт' : 'Econt waybill'}: <b>{submitState.result.shipmentNumber}</b></span>
+          {formatEcontExpectedDate(submitState.result.expectedDeliveryDate, language) && (
+            <span>{language === 'bg' ? 'Очаквана доставка' : 'Expected delivery'}: {formatEcontExpectedDate(submitState.result.expectedDeliveryDate, language)}</span>
+          )}
+          {submitState.result.pdfURL && (
+            <a href={submitState.result.pdfURL} target="_blank" rel="noreferrer">
+              {language === 'bg' ? 'Отвори товарителницата' : 'Open waybill'}
+            </a>
+          )}
+          <Link href="/shop">{language === 'bg' ? 'Продължи към магазина' : 'Continue shopping'}</Link>
+        </div>
+      </main>
+    );
+  }
 
   if (!cart.length) {
     return (
@@ -445,7 +450,7 @@ export default function CheckoutPage() {
     }
   }
 
-  async function submitTest(event) {
+  async function submitOrder(event) {
     event.preventDefault();
     setSubmitState({ loading: false, success: false, error: '', result: null });
 
@@ -475,6 +480,7 @@ export default function CheckoutPage() {
       const data = await response.json();
       if (!response.ok || !data.ok) throw new Error(data.error || copy.apiError);
       setSubmitState({ loading: false, success: true, error: '', result: data });
+      clearCart();
     } catch (error) {
       setSubmitState({ loading: false, success: false, error: error.message || copy.apiError, result: null });
     }
@@ -495,7 +501,7 @@ export default function CheckoutPage() {
         <Link href="/cart" className="checkout-back">← {copy.back}</Link>
       </div>
 
-      <form ref={formRef} className="checkout-layout" onSubmit={submitTest}>
+      <form ref={formRef} className="checkout-layout" onSubmit={submitOrder}>
         <div className="checkout-form-column">
           <section className="checkout-section">
             <div className="checkout-section-heading">
@@ -529,15 +535,14 @@ export default function CheckoutPage() {
             <div className="checkout-section-heading econt-heading-row">
               <div>
                 <h2>{copy.deliveryTitle}</h2>
-                <p>{econtStatus.mode === 'production' ? copy.deliveryTextLive : copy.deliveryTextTest}</p>
+                <p>{copy.deliveryText}</p>
               </div>
-              <span className={`econt-live-badge ${econtStatus.mode === 'production' ? 'production' : ''}`}>{econtStatus.mode === 'production' ? 'ECONT · LIVE SAFE' : 'ECONT · TEST API'}</span>
             </div>
 
-            {econtStatus.ready && econtStatus.mode === 'production' && (
+            {econtStatus.ready && (
               <div className="econt-profile-confirmation">
-                <b>{language === 'bg' ? 'Свързан Econt профил' : 'Connected Econt profile'}</b>
-                <span>{language === 'bg' ? 'GERPINA WEAR · активна връзка' : 'GERPINA WEAR · connection active'}</span>
+                <b>{language === 'bg' ? 'Еконт е свързан' : 'Econt connected'}</b>
+                <span>{language === 'bg' ? 'Доставката и товарителницата се обработват директно през Еконт.' : 'Delivery and waybill processing are connected directly to Econt.'}</span>
               </div>
             )}
 
@@ -631,7 +636,7 @@ export default function CheckoutPage() {
             {quote && (
               <div className="econt-quote-card" role="status">
                 <div>
-                  <span>{econtStatus.mode === 'production' ? copy.quoteLive : copy.quoteTest}</span>
+                  <span>{copy.quote}</span>
                   <strong>€{quote.shippingPrice.toFixed(2)}</strong>
                 </div>
                 {formatEcontExpectedDate(quote.expectedDeliveryDate, language) && (
@@ -660,7 +665,6 @@ export default function CheckoutPage() {
         <aside className="checkout-summary">
           <div className="checkout-summary-title-row">
             <h2>{copy.summary}</h2>
-            <span className={`summary-test-pill ${econtStatus.mode === 'production' ? 'production' : ''}`}>TEST ORDER</span>
           </div>
           <div className="checkout-order-items">
             {cart.map((item) => (
@@ -687,38 +691,25 @@ export default function CheckoutPage() {
 
           <label className="checkout-legal-consent"><input type="checkbox" checked={legalAccepted} onChange={(event) => setLegalAccepted(event.target.checked)} /><span>{language === 'bg' ? 'Прочетох и приемам ' : 'I have read and accept '}<Link href="/terms" target="_blank">{language === 'bg' ? 'Общите условия' : 'Terms & Conditions'}</Link>{language === 'bg' ? ' и ' : ' and '}<Link href="/privacy" target="_blank">{language === 'bg' ? 'Политиката за поверителност' : 'Privacy Policy'}</Link>.</span></label>
 
-          <button className="place-order-button" type="submit" disabled={submitState.loading || (econtStatus.mode === 'production' && !econtStatus.ready)}>
+          <button className="place-order-button" type="submit" disabled={submitState.loading || econtStatus.loading || !econtStatus.ready || !econtStatus.createEnabled}>
             {submitState.loading ? copy.placing : copy.place}
           </button>
-          <div className="checkout-demo-note">
-            <b>{econtStatus.mode === 'production' ? copy.liveSafe : copy.demo}</b>
-            <p>{econtStatus.mode === 'production' ? copy.liveSafeBody : copy.demoBody}</p>
-            {econtStatus.mode === 'production' && !econtStatus.loading && !econtStatus.ready && (
-              <p className="checkout-econt-warning">{econtStatus.error || copy.liveConnectionError}</p>
-            )}
-          </div>
+          {!econtStatus.loading && (!econtStatus.ready || !econtStatus.createEnabled) && (
+            <div className="checkout-order-status-note">
+              <b>{!econtStatus.ready ? copy.liveConnectionError : copy.orderingDisabled}</b>
+              {econtStatus.error && <p className="checkout-econt-warning">{econtStatus.error}</p>}
+            </div>
+          )}
           {submitState.success && submitState.result && (
-            <div className="checkout-submit-notice success test-order-result" role="status">
-              <b>{econtStatus.mode === 'production' ? copy.successLive : copy.successTest}</b>
+            <div className="checkout-submit-notice success order-result" role="status">
+              <b>{copy.success}</b>
               <span>{language === 'bg' ? 'Поръчка' : 'Order'}: {submitState.result.orderNumber}</span>
-              <span>{language === 'bg' ? 'Тестова товарителница' : 'DEMO waybill'}: {submitState.result.shipmentNumber}</span>
+              <span>{language === 'bg' ? 'Товарителница Еконт' : 'Econt waybill'}: {submitState.result.shipmentNumber}</span>
               <span><b>{copy.weightCheck}</b></span>
               {submitState.result.pdfURL && (
                 <a href={submitState.result.pdfURL} target="_blank" rel="noreferrer">
-                  {language === 'bg' ? 'Отвори тестовата товарителница' : 'Open DEMO waybill'}
+                  {language === 'bg' ? 'Отвори товарителницата' : 'Open waybill'}
                 </a>
-              )}
-              <span>
-                {submitState.result.email?.sent
-                  ? (language === 'bg' ? 'Тестовият имейл е изпратен.' : 'Test order email was sent.')
-                  : (language === 'bg' ? 'Имейлът е подготвен като preview, но не е изпратен (липсват email ENV настройки).' : 'The email was prepared as a preview but not sent (email ENV settings are missing).')}
-              </span>
-              {submitState.result.email?.preview?.text && (
-                <details className="test-email-preview">
-                  <summary>{language === 'bg' ? 'Преглед на тестовия имейл' : 'Preview test email'}</summary>
-                  <b>{submitState.result.email.preview.subject}</b>
-                  <pre>{submitState.result.email.preview.text}</pre>
-                </details>
               )}
             </div>
           )}

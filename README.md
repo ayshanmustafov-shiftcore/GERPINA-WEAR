@@ -1,49 +1,30 @@
 # GERPINA Wear
 
-Next.js storefront for GERPINA Wear.
+Next.js storefront for GERPINA Wear, Bulgaria.
 
-## Current build
+## Current order flow
 
-- Stock List 3 integrated: 160 catalogue entries (Pepe Jeans floral shorts removed after stock confirmation).
-- GERPINA selling prices come from the cleaned Stock List 3 workbook.
-- Supplied brand/original prices are shown as `Цена на марката`.
-- Where the exact kids SKU could not be verified, comparable current Minoti retail examples are shown as `Референтна цена на марката` rather than being presented as GERPINA's previous price.
-- Sold/taken items remain visible as sold out and cannot be added to cart.
-- Econt production is used for live office/address data and delivery calculation.
-- Final waybill creation remains hard-wired to Econt DEMO in this test build.
-- Resend test-order email support is included.
+- Product, size and quantity inventory is validated server-side before an order is created.
+- Econt production API is used for cities, offices, delivery calculation, validation and waybill creation.
+- Real waybill creation is protected by `ECONT_CREATE_ENABLED`.
+- Cash on delivery is configured through the authenticated GERPINA Econt company profile and the configured COD agreement.
+- Printed shipment description is intentionally generic: `Дрехи`.
+- Exact product, size and quantity details are kept in the digital packing list and the internal GERPINA order email.
+- The receiver pays the courier charge.
+- `Преглед и тест` is enabled where accepted by Econt.
+- No courier pickup is requested by the website; parcels are dropped off at the configured sender office.
+- Provisional waybill weight is 1 kg. The sender must verify and correct the physical parcel weight before handoff when needed.
 
-## Vercel
+## Production safety gate
 
-The project is designed to deploy directly from the repository root on Vercel.
+Set `ECONT_CREATE_ENABLED=false` while reviewing the site. Econt prices and office/address validation can still be used, but the checkout cannot create a real shipment.
 
-Environment variables used by the current setup include:
+For a controlled real production validation, set `ECONT_CREATE_ENABLED=true`, deploy, place one controlled order, verify the waybill in e-Econt and the internal order email, then decide whether to leave ordering enabled.
 
-```env
-ECONT_ENV=production
-ECONT_USERNAME=...
-ECONT_PASSWORD=...
-ECONT_CD_AGREEMENT=CD270387
-ECONT_SENDER_AGENT_NAME=...
-ORDER_TO_EMAIL=...
-ORDER_FROM_EMAIL=orders@gerpina-wear.com
-RESEND_API_KEY=...
-```
+## Required environment variables
 
-Do not commit production credentials to Git.
+See `.env.example`. Never commit API passwords or email API keys.
 
-## Safety
+## Important inventory note
 
-This is still a test-order build. `mode: create` exists only in the Econt DEMO module. The production Econt account is not used to create waybills or courier requests.
-
-- 2026-08-22 photo pass: GAP dress, NG ORDER trousers, VILA floral blouse, ONLY floral shorts, Even&Odd skirt, NA-KD blazer and PIECES jacket mapped/refined from supplied photos.
-
-## 2026-08-27 stock + mobile cleanup
-- Sold/taken products are archived under `source-material/archived-sold-products.json` and are not rendered on the storefront.
-- Cart/favorites are revalidated against the current active catalogue; removed products cannot remain in a stale mobile cart.
-- Mobile header now keeps Women / Men / Kids directly accessible and hides the oversized desktop category row.
-- Shop filters collapse into a mobile-friendly filter panel.
-- Cart layout has been simplified for unique/one-piece stock and narrow screens.
-- Homepage Women / Men / Kids are separate swipeable collection slides.
-- Existing Levi's photo `IMG-20260809-WA0002.jpg` was confidently linked to `gw-0003`.
-- Three image files remain unlinked and are listed in the photo-audit workbook for manual confirmation.
+The product catalogue is file-based. A successfully created shipment does not automatically write stock back to a database. Before opening the store to normal traffic, either keep manual stock updates very tight or add persistent order/inventory storage to prevent two customers ordering the same one-off item at nearly the same time.

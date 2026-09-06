@@ -19,7 +19,6 @@ export default function TermsPage() {
         <p><b>{siteConfig.company.name[language]}</b>, {bg ? 'ЕИК' : 'UIC'}: <b>{siteConfig.company.eik}</b>.</p>
         <p>{bg ? 'Адрес по регистрация' : 'Registered address'}: {siteConfig.company.registeredAddress[language]}.</p>
         <p>{bg ? 'Телефон' : 'Phone'}: <a href={`tel:${siteConfig.contact.phone}`}>{siteConfig.contact.phone}</a> · {bg ? 'Имейл' : 'Email'}: <a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a>.</p>
-        <p>{bg ? 'Дружеството не е регистрирано по ДДС.' : 'The company is not VAT registered.'}</p>
       </section>
 
       <section>
@@ -30,14 +29,14 @@ export default function TermsPage() {
 
       <section>
         <h2>3. {bg ? 'Продукти и цени' : 'Products and prices'}</h2>
-        <p>{bg ? 'Основните характеристики, наличност, размери и продажна цена се показват на страницата на съответния продукт. Всички крайни цени са в евро (EUR). Дружеството не е регистрирано по ДДС.' : 'Key characteristics, availability, sizes and selling price are shown on each product page. Final prices are displayed in euro (EUR). The company is not VAT registered.'}</p>
+        <p>{bg ? 'Основните характеристики, наличност, размери и продажна цена се показват на страницата на съответния продукт. Всички крайни цени са в евро (EUR).' : 'Key characteristics, availability, sizes and selling price are shown on each product page. Final prices are displayed in euro (EUR).'}</p>
         <p>{bg ? 'Когато е показана „Цена на марката“, това е цена, предоставена за съответния артикул. Когато е показана „Референтна цена на марката“, тя е сравнителна цена на сходен артикул от същата марка, използвана когато точният SKU не може да бъде потвърден. Тези сравнителни цени не представляват предходна цена, прилагана от ГЕРПИНА, освен ако изрично не е посочено друго.' : 'Where a “Brand price” is shown, it is a price supplied for that item. Where a “Reference brand price” is shown, it is a comparison price for a comparable item from the same brand, used when the exact SKU cannot be verified. These comparison prices are not a previous price charged by GERPINA unless explicitly stated otherwise.'}</p>
       </section>
 
       <section>
         <h2>4. {bg ? 'Поръчка и сключване на договор' : 'Orders and contract formation'}</h2>
         <p>{bg ? 'Потребителят избира продукт, размер и количество, попълва данните за доставка и потвърждава поръчката. Преди окончателното потвърждение се показват продуктите, продажната цена, цената за доставка и общата сума.' : 'The customer selects the product, size and quantity, enters delivery details and confirms the order. Before final confirmation, the products, selling price, delivery cost and total are displayed.'}</p>
-        <p>{bg ? 'В тестовата версия създадените товарителници са само в тестовата среда на Еконт и не представляват реална поръчка. При активиране на магазина реалната поръчка ще бъде потвърдена чрез съобщение на сайта и/или имейл.' : 'In the test version, waybills are created only in Econt DEMO and do not constitute a real order. When the store is activated, a real order will be confirmed on-screen and/or by email.'}</p>
+        <p>{bg ? 'След успешно потвърждаване на поръчката системата създава товарителница на Еконт и показва номер на поръчката и пратката. Ако поръчката не може да бъде обработена, клиентът получава съобщение на екрана.' : 'After successful order confirmation, the system creates an Econt waybill and displays the order and shipment numbers. If the order cannot be processed, the customer is shown an on-screen message.'}</p>
       </section>
 
       <section>

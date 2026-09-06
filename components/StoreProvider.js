@@ -118,6 +118,9 @@ export function StoreProvider({ children }) {
     removeFromCart(cartKey) {
       setCart((current) => current.filter((item) => item.cartKey !== cartKey));
     },
+    clearCart() {
+      setCart([]);
+    },
     toggleFavorite(id) {
       if (!PRODUCT_MAP.has(id)) return;
       setFavorites((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]);

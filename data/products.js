@@ -2943,20 +2943,20 @@ export const products = [
     "category": "swimwear",
     "brand": "Minoti",
     "name": {
-      "bg": "Бански",
-      "en": "Swimwear"
+      "bg": "Бански шорти със звезди",
+      "en": "Star-print swim shorts"
     },
     "description": {
-      "bg": "Minoti — бански, цвят америка, размер 18/24 месеца.",
-      "en": "Minoti swimwear, in usa print, size 18/24 месеца."
+      "bg": "Minoti — сини бански шорти със звезди, размер 18/24 месеца.",
+      "en": "Minoti blue star-print swim shorts, size 18–24 months."
     },
     "price": 4.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0105.jpeg",
     "colour": {
-      "bg": "Америка",
-      "en": "USA print"
+      "bg": "Синьо, бяло и червено",
+      "en": "Blue, white and red"
     },
     "sizes": [
       {
@@ -2968,7 +2968,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/minoti-kids-swimwear?page=2",
-    "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti swimsuit regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 86, supplied 2026-09-06."
   },
   {
     "id": "gw-0106",
@@ -2978,20 +2979,20 @@ export const products = [
     "category": "underwear",
     "brand": "Minoti",
     "name": {
-      "bg": "Пликчета",
-      "en": "Underwear"
+      "bg": "Комплект 10 слипа",
+      "en": "10-pack briefs"
     },
     "description": {
-      "bg": "Minoti — пликчета, размер 10/11 г.",
-      "en": "Minoti underwear, size 10/11 г."
+      "bg": "Minoti — комплект от 10 детски слипа, размер 10/11 г.",
+      "en": "Minoti 10-pack kids' briefs, size 10–11 years."
     },
     "price": 9.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0106.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Синьо-бели десени",
+      "en": "Blue and white patterns"
     },
     "sizes": [
       {
@@ -3003,7 +3004,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/pack-3",
-    "priceReviewNote": "Comparable Minoti underwear multipack; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti underwear multipack; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 87, supplied 2026-09-06."
   },
   {
     "id": "gw-0107",
@@ -3013,20 +3015,20 @@ export const products = [
     "category": "bodysuits",
     "brand": "Minoti",
     "name": {
-      "bg": "Комплект от 4 ромпъра",
-      "en": "4-pack rompers"
+      "bg": "Комплект от 3 ромпъра",
+      "en": "3-pack rompers"
     },
     "description": {
-      "bg": "Minoti — комплект от 4 ромпъра, размер Новородено 50см.",
-      "en": "Minoti 4-pack rompers, size Новородено 50см."
+      "bg": "Minoti — комплект от 3 ромпъра с динозавърски десени, размер новородено 50 см.",
+      "en": "Minoti 3-pack rompers with dinosaur prints, newborn size 50 cm."
     },
     "price": 9.99,
     "originalPrice": 28.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0107.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Синьо, бяло и червено",
+      "en": "Blue, white and red"
     },
     "sizes": [
       {
@@ -3038,7 +3040,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/baby",
-    "priceReviewNote": "Comparable Minoti baby multipack; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti baby multipack; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 88, supplied 2026-09-06."
   },
   {
     "id": "gw-0108",
@@ -3048,24 +3051,24 @@ export const products = [
     "category": "accessories",
     "brand": "Minoti",
     "name": {
-      "bg": "Комплект от 2 шапки",
-      "en": "2-pack hats"
+      "bg": "Лигавник за хранене с джоб",
+      "en": "Feeding bib with pocket"
     },
     "description": {
-      "bg": "Minoti — комплект от 2 шапки, размер 0/3 месеца.",
-      "en": "Minoti 2-pack hats, size 0/3 месеца."
+      "bg": "Лигавник за хранене с преден джоб, един размер 6+ месеца.",
+      "en": "Feeding bib with front pocket, one size 6+ months."
     },
     "price": 4.99,
     "originalPrice": 8.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0108.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Розов с многоцветен принт",
+      "en": "Pink multicolour print"
     },
     "sizes": [
       {
-        "label": "0/3 месеца",
+        "label": "Един размер · 6+ месеца",
         "available": true
       }
     ],
@@ -3073,30 +3076,31 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/baby-accessories",
-    "priceReviewNote": "Comparable Minoti baby hat pack; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti baby hat pack; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 89, supplied 2026-09-06."
   },
   {
     "id": "gw-0110",
     "slug": "gerpina-0110",
     "audience": "kids",
     "kidGender": "girl",
-    "category": "skirts",
+    "category": "dresses",
     "brand": "Minoti",
     "name": {
-      "bg": "Поличка",
-      "en": "Skirt"
+      "bg": "Дънков сукман",
+      "en": "Denim pinafore dress"
     },
     "description": {
-      "bg": "Minoti — поличка, цвят дънкова, размер 18/24 месеца.",
-      "en": "Minoti skirt, in denim, size 18/24 месеца."
+      "bg": "Minoti — детски дънков сукман, размер 18/24 месеца.",
+      "en": "Minoti denim pinafore dress, size 18–24 months."
     },
     "price": 8.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0110.jpeg",
     "colour": {
-      "bg": "Дънкова",
-      "en": "Denim"
+      "bg": "Син деним",
+      "en": "Blue denim"
     },
     "sizes": [
       {
@@ -3108,7 +3112,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
-    "priceReviewNote": "Current Minoti skirt/shorts price band; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti skirt/shorts price band; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 90, supplied 2026-09-06."
   },
   {
     "id": "gw-0111",
@@ -3118,20 +3123,20 @@ export const products = [
     "category": "underwear",
     "brand": "Minoti",
     "name": {
-      "bg": "Комплект от 5 пликчета",
-      "en": "5-pack underwear"
+      "bg": "Комплект 5 слипа",
+      "en": "5-pack briefs"
     },
     "description": {
-      "bg": "Minoti — комплект от 5 пликчета, цвят комплект, размер 2/3 г.",
-      "en": "Minoti 5-pack underwear, in комплект, size 2/3 г."
+      "bg": "Minoti — комплект от 5 детски слипа, размер 2/3 г.",
+      "en": "Minoti 5-pack kids' briefs, size 2–3 years."
     },
     "price": 6.99,
     "originalPrice": 28.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0111.jpeg",
     "colour": {
-      "bg": "комплект",
-      "en": "Комплект"
+      "bg": "Многоцветен комплект",
+      "en": "Multicolour set"
     },
     "sizes": [
       {
@@ -3143,7 +3148,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/multipacks",
-    "priceReviewNote": "Comparable Minoti underwear multipack; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti underwear multipack; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 91, supplied 2026-09-06."
   },
   {
     "id": "gw-0112",
@@ -3163,7 +3169,7 @@ export const products = [
     "price": 6.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0112.jpeg",
     "colour": {
       "bg": "Неуточнен",
       "en": "Unspecified"
@@ -3178,7 +3184,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 92, supplied 2026-09-06."
   },
   {
     "id": "gw-0113",
@@ -3188,20 +3195,20 @@ export const products = [
     "category": "bodysuits",
     "brand": "Minoti",
     "name": {
-      "bg": "Комплект бодита",
-      "en": "Bodysuit set"
+      "bg": "Комплект 3 бодита",
+      "en": "3-pack bodysuits"
     },
     "description": {
-      "bg": "Minoti — комплект бодита, размер 6/9 месеца.",
-      "en": "Minoti bodysuit set, size 6/9 месеца."
+      "bg": "Minoti Baby — комплект от 3 бодита, размер 6/9 месеца.",
+      "en": "Minoti Baby 3-pack bodysuits, size 6–9 months."
     },
     "price": 8.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0113.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Розово и светли десени",
+      "en": "Pink and light prints"
     },
     "sizes": [
       {
@@ -3213,7 +3220,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/multipacks",
-    "priceReviewNote": "Minoti 3-pack bodysuit reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Minoti 3-pack bodysuit reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 93, supplied 2026-09-06."
   },
   {
     "id": "gw-0114",
@@ -3258,20 +3266,20 @@ export const products = [
     "category": "accessories",
     "brand": "Minoti",
     "name": {
-      "bg": "Чорапи",
-      "en": "Socks"
+      "bg": "Комплект 9 чифта чорапи",
+      "en": "9-pack socks"
     },
     "description": {
-      "bg": "Minoti — чорапи, размер 1/2 г.",
-      "en": "Minoti socks, size 1/2 г."
+      "bg": "Minoti — комплект от 9 чифта чорапи, размер 1/2 г.",
+      "en": "Minoti 9-pack socks, size 1–2 years."
     },
     "price": 4.99,
     "originalPrice": 6.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0115.jpeg",
     "colour": {
-      "bg": "Неуточнен",
-      "en": "Unspecified"
+      "bg": "Синьо, бяло и многоцветно",
+      "en": "Blue, white and multicolour"
     },
     "sizes": [
       {
@@ -3283,7 +3291,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/products/boys-cotton-socks-blue-13sock3",
-    "priceReviewNote": "Comparable Minoti socks pack; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti socks pack; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 95, supplied 2026-09-06."
   },
   {
     "id": "gw-0116",
@@ -3328,20 +3337,20 @@ export const products = [
     "category": "dresses",
     "brand": "Minoti",
     "name": {
-      "bg": "Лятна Рокля",
-      "en": "Summer dress"
+      "bg": "Синя лятна рокля с малки цветя",
+      "en": "Blue summer dress with small flowers"
     },
     "description": {
-      "bg": "Minoti — лятна рокля, цвят синя с цветя, размер 9/12 месеца.",
-      "en": "Minoti summer dress, in blue with flowers, size 9/12 месеца."
+      "bg": "Minoti — синя лятна рокля с тънки презрамки и малки цветни мотиви, размер 9/12 месеца.",
+      "en": "Minoti blue summer dress with tie straps and small floral details, size 9–12 months."
     },
     "price": 7.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0117.jpeg",
     "colour": {
-      "bg": "Синя С Цветя",
-      "en": "Blue with flowers"
+      "bg": "Синя с малки цветни мотиви",
+      "en": "Blue with small multicolour details"
     },
     "sizes": [
       {
@@ -3353,7 +3362,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti casual dress reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti casual dress reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 97, supplied 2026-09-06."
   },
   {
     "id": "gw-0118",
@@ -3398,17 +3408,17 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Долнище",
-      "en": "Joggers"
+      "bg": "Розово спортно долнище",
+      "en": "Pink joggers"
     },
     "description": {
-      "bg": "Minoti — долнище, цвят розово, размер 11/12 г.",
-      "en": "Minoti joggers, in pink, size 11/12 г."
+      "bg": "Minoti — розово спортно долнище, налично в размери 11/12 г. и 13/14 г.",
+      "en": "Minoti pink joggers, available in sizes 11–12 years and 13–14 years."
     },
     "price": 9.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0119.jpeg",
     "colour": {
       "bg": "Розово",
       "en": "Pink"
@@ -3416,14 +3426,21 @@ export const products = [
     "sizes": [
       {
         "label": "11/12 г.",
-        "available": true
+        "available": true,
+        "quantity": 1
+      },
+      {
+        "label": "13/14 г.",
+        "available": true,
+        "quantity": 1
       }
     ],
     "status": "in_stock",
-    "stockQuantity": 1,
+    "stockQuantity": 2,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 99, supplied 2026-09-06."
   },
   {
     "id": "gw-0120",
@@ -3443,7 +3460,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 6.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0120.jpeg",
     "colour": {
       "bg": "Неуточнен",
       "en": "Unspecified"
@@ -3458,7 +3475,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/products/boys-cotton-socks-blue-13sock3",
-    "priceReviewNote": "3-pack socks regular price reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "3-pack socks regular price reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 100, supplied 2026-09-06."
   },
   {
     "id": "gw-0121",
@@ -3513,7 +3531,7 @@ export const products = [
     "price": 5.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0122.jpeg",
     "colour": {
       "bg": "Сини",
       "en": "Blue"
@@ -3528,7 +3546,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
-    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 102, supplied 2026-09-06."
   },
   {
     "id": "gw-0123",
@@ -3548,7 +3567,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0123.jpeg",
     "colour": {
       "bg": "Розова GOOD VIBE",
       "en": "Pink “GOOD VIBE”"
@@ -3563,7 +3582,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 103, supplied 2026-09-06."
   },
   {
     "id": "gw-0124",
@@ -3573,20 +3593,20 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Долнище",
-      "en": "Joggers"
+      "bg": "Розово спортно долнище със сърце",
+      "en": "Pink heart-detail joggers"
     },
     "description": {
-      "bg": "Minoti — долнище, цвят розово, размер 18/24 месеца.",
-      "en": "Minoti joggers, in pink, size 18/24 месеца."
+      "bg": "Minoti — розово спортно долнище със златист детайл сърце, размер 18/24 месеца.",
+      "en": "Minoti pink joggers with gold heart detail, size 18–24 months."
     },
     "price": 5.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0124.jpeg",
     "colour": {
-      "bg": "Розово",
-      "en": "Pink"
+      "bg": "Розово със златист детайл",
+      "en": "Pink with gold detail"
     },
     "sizes": [
       {
@@ -3598,7 +3618,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 104, supplied 2026-09-06."
   },
   {
     "id": "gw-0125",
@@ -3618,7 +3639,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0125.jpeg",
     "colour": {
       "bg": "Сини",
       "en": "Blue"
@@ -3633,7 +3654,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
-    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 105, supplied 2026-09-06."
   },
   {
     "id": "gw-0126",
@@ -3653,7 +3675,7 @@ export const products = [
     "price": 15.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0126.jpeg",
     "colour": {
       "bg": "Войнишка Шарка",
       "en": "Camouflage"
@@ -3668,7 +3690,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 106, supplied 2026-09-06."
   },
   {
     "id": "gw-0127",
@@ -3723,7 +3746,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0129.jpeg",
     "colour": {
       "bg": "Розова GOOD VIBE",
       "en": "Pink “GOOD VIBE”"
@@ -3738,7 +3761,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 108, supplied 2026-09-06."
   },
   {
     "id": "gw-0130",
@@ -3758,7 +3782,7 @@ export const products = [
     "price": 6.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0130.jpeg",
     "colour": {
       "bg": "Дънкови",
       "en": "Denim"
@@ -3773,7 +3797,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
-    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti shorts regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 109, supplied 2026-09-06."
   },
   {
     "id": "gw-0131",
@@ -3793,7 +3818,7 @@ export const products = [
     "price": 11.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0131.jpeg",
     "colour": {
       "bg": "Червено",
       "en": "Red"
@@ -3808,7 +3833,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 110, supplied 2026-09-06."
   },
   {
     "id": "gw-0132",
@@ -3818,20 +3844,20 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Долнище",
-      "en": "Joggers"
+      "bg": "Черно спортно долнище Rule Breaker",
+      "en": "Black Rule Breaker joggers"
     },
     "description": {
-      "bg": "Minoti — долнище, цвят черно, размер 18/24 месеца.",
-      "en": "Minoti joggers, in black, size 18/24 месеца."
+      "bg": "Minoti — черно спортно долнище с бял надпис Rule Breaker, размер 18/24 месеца.",
+      "en": "Minoti black joggers with white Rule Breaker lettering, size 18–24 months."
     },
     "price": 8.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0132.jpeg",
     "colour": {
-      "bg": "Черно",
-      "en": "Black"
+      "bg": "Черно с бял надпис",
+      "en": "Black with white lettering"
     },
     "sizes": [
       {
@@ -3843,7 +3869,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 111, supplied 2026-09-06."
   },
   {
     "id": "gw-0133",
@@ -3968,7 +3995,7 @@ export const products = [
     "price": 14.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0136.jpeg",
     "colour": {
       "bg": "Сиво",
       "en": "Grey"
@@ -3983,7 +4010,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 115, supplied 2026-09-06."
   },
   {
     "id": "gw-0137",
@@ -4003,7 +4031,7 @@ export const products = [
     "price": 9.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0137.jpeg",
     "colour": {
       "bg": "Синьо",
       "en": "Blue"
@@ -4018,7 +4046,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 116, supplied 2026-09-06."
   },
   {
     "id": "gw-0138",
@@ -4038,7 +4067,7 @@ export const products = [
     "price": 5.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0138.jpeg",
     "colour": {
       "bg": "Сива С Бели Точки",
       "en": "Grey with white dots"
@@ -4053,7 +4082,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 117, supplied 2026-09-06."
   },
   {
     "id": "gw-0139",
@@ -4063,20 +4093,20 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Долнище",
-      "en": "Joggers"
+      "bg": "Тъмносиньо спортно долнище SPORT",
+      "en": "Navy SPORT joggers"
     },
     "description": {
-      "bg": "Minoti — долнище, цвят черно с бели надписи, размер 18/24 месеца.",
-      "en": "Minoti joggers, in black with white lettering, size 18/24 месеца."
+      "bg": "Minoti — тъмносиньо спортно долнище с бял SPORT принт, размер 18/24 месеца.",
+      "en": "Minoti navy joggers with white SPORT print, size 18–24 months."
     },
     "price": 7.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0139.jpeg",
     "colour": {
-      "bg": "Черно С Бели Надписи",
-      "en": "Black with white lettering"
+      "bg": "Тъмносиньо с бял принт",
+      "en": "Navy with white print"
     },
     "sizes": [
       {
@@ -4088,7 +4118,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 118, supplied 2026-09-06."
   },
   {
     "id": "gw-0140",
@@ -4143,7 +4174,7 @@ export const products = [
     "price": 12.99,
     "originalPrice": 33.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0141.jpeg",
     "colour": {
       "bg": "Зелено С Шарки",
       "en": "Green patterned"
@@ -4158,7 +4189,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti light/softshell jacket regular price example; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 120, supplied 2026-09-06."
   },
   {
     "id": "gw-0142",
@@ -4178,7 +4210,7 @@ export const products = [
     "price": 8.99,
     "originalPrice": 26.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0142.jpeg",
     "colour": {
       "bg": "Зелен",
       "en": "Green"
@@ -4193,7 +4225,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/baby",
-    "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti matching set; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 121, supplied 2026-09-06."
   },
   {
     "id": "gw-0143",
@@ -4213,7 +4246,7 @@ export const products = [
     "price": 2.99,
     "originalPrice": 6.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0143.jpeg",
     "colour": {
       "bg": "Неуточнен",
       "en": "Unspecified"
@@ -4228,7 +4261,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/products/boys-cotton-socks-blue-13sock3",
-    "priceReviewNote": "3-pack socks regular price reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "3-pack socks regular price reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 122, supplied 2026-09-06."
   },
   {
     "id": "gw-0144",
@@ -4248,7 +4282,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0144.jpeg",
     "colour": {
       "bg": "Сива С Бели Точки",
       "en": "Grey with white dots"
@@ -4263,30 +4297,31 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 123, supplied 2026-09-06."
   },
   {
     "id": "gw-0145",
     "slug": "gerpina-0145",
     "audience": "kids",
     "kidGender": "girl",
-    "category": "dresses",
+    "category": "tops",
     "brand": "Minoti",
     "name": {
-      "bg": "Рокля",
-      "en": "Dress"
+      "bg": "Раиран потник тип бюстие",
+      "en": "Striped cropped tank top"
     },
     "description": {
-      "bg": "Minoti — рокля, цвят синьо-бяла, размер 4/5 г.",
-      "en": "Minoti dress, in blue/white, size 4/5 г."
+      "bg": "Minoti — синьо-бял раиран потник тип бюстие с копчета, размер 4/5 г.",
+      "en": "Minoti blue-and-white striped cropped tank top with buttons, size 4–5 years."
     },
     "price": 4.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0145.jpeg",
     "colour": {
-      "bg": "Синьо-Бяла",
-      "en": "Blue/white"
+      "bg": "Синьо-бяло райе",
+      "en": "Blue and white stripes"
     },
     "sizes": [
       {
@@ -4298,7 +4333,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti casual dress reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti casual dress reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 124, supplied 2026-09-06."
   },
   {
     "id": "gw-0146",
@@ -4318,7 +4354,7 @@ export const products = [
     "price": 2.99,
     "originalPrice": 6.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0146.jpeg",
     "colour": {
       "bg": "Неуточнен",
       "en": "Unspecified"
@@ -4333,7 +4369,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/products/boys-cotton-socks-blue-13sock3",
-    "priceReviewNote": "3-pack socks regular price reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "3-pack socks regular price reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 125, supplied 2026-09-06."
   },
   {
     "id": "gw-0147",
@@ -4353,7 +4390,7 @@ export const products = [
     "price": 6.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0147.jpeg",
     "colour": {
       "bg": "Синя С Тигър",
       "en": "Blue с тигър"
@@ -4368,7 +4405,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 126, supplied 2026-09-06."
   },
   {
     "id": "gw-0148",
@@ -4388,7 +4426,7 @@ export const products = [
     "price": 12.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0148.jpeg",
     "colour": {
       "bg": "Синьо-Бял",
       "en": "Blue/white"
@@ -4403,30 +4441,31 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
-    "priceReviewNote": "Comparable Minoti sweatshirt/hoodie reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti sweatshirt/hoodie reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 127, supplied 2026-09-06."
   },
   {
     "id": "gw-0149",
     "slug": "gerpina-0149",
     "audience": "kids",
     "kidGender": "girl",
-    "category": "tops",
+    "category": "knitwear",
     "brand": "Minoti",
     "name": {
-      "bg": "Блузка",
-      "en": "Top"
+      "bg": "Сив пуловер Sweet Thing",
+      "en": "Grey Sweet Thing sweater"
     },
     "description": {
-      "bg": "Minoti — блузка, цвят сива с розова ябълка, размер 12/18 месеца.",
-      "en": "Minoti top, in grey with pink apple, size 12/18 месеца."
+      "bg": "Minoti — сив пуловер с розов контур на ябълка и надпис Sweet Thing, размер 12/18 месеца.",
+      "en": "Minoti grey sweater with pink apple outline and Sweet Thing lettering, size 12–18 months."
     },
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0149.jpeg",
     "colour": {
-      "bg": "Сива С Розова Ябълка",
-      "en": "Grey with pink apple"
+      "bg": "Сиво с розов и син детайл",
+      "en": "Grey with pink and blue detail"
     },
     "sizes": [
       {
@@ -4438,7 +4477,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 128, supplied 2026-09-06."
   },
   {
     "id": "gw-0150",
@@ -4458,7 +4498,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 14.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0150.jpeg",
     "colour": {
       "bg": "Лилаво Леопардов",
       "en": "Purple leopard"
@@ -4473,7 +4513,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=7",
-    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti leggings regular-price range; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 129, supplied 2026-09-06."
   },
   {
     "id": "gw-0151",
@@ -4493,7 +4534,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0151.jpeg",
     "colour": {
       "bg": "Бяла Adventure",
       "en": "White “Adventure”"
@@ -4508,7 +4549,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 130, supplied 2026-09-06."
   },
   {
     "id": "gw-0152",
@@ -4563,7 +4605,7 @@ export const products = [
     "price": 6.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0153.jpeg",
     "colour": {
       "bg": "Черна С Бяло Сърце",
       "en": "Black with white heart"
@@ -4578,7 +4620,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 132, supplied 2026-09-06."
   },
   {
     "id": "gw-0154",
@@ -4623,20 +4666,20 @@ export const products = [
     "category": "trousers",
     "brand": "Minoti",
     "name": {
-      "bg": "Долнище",
-      "en": "Joggers"
+      "bg": "Сиво карго долнище с червени връзки",
+      "en": "Grey cargo joggers with red drawstrings"
     },
     "description": {
-      "bg": "Minoti — долнище, цвят черно с червени връзки, размер 2/3 г.",
-      "en": "Minoti joggers, in black with red ties, size 2/3 г."
+      "bg": "Minoti — сиво карго долнище с черен колан и червени връзки, размер 2/3 г.",
+      "en": "Minoti grey cargo joggers with black waistband and red drawstrings, size 2–3 years."
     },
     "price": 9.99,
     "originalPrice": 23.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0155.jpeg",
     "colour": {
-      "bg": "Черно С Червени Връзки",
-      "en": "Black with red ties"
+      "bg": "Сиво, черно и червено",
+      "en": "Grey, black and red"
     },
     "sizes": [
       {
@@ -4648,7 +4691,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti trousers/joggers reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 134, supplied 2026-09-06."
   },
   {
     "id": "gw-0156",
@@ -4668,7 +4712,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0156.jpeg",
     "colour": {
       "bg": "Бяла Adventure",
       "en": "White “Adventure”"
@@ -4683,7 +4727,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 135, supplied 2026-09-06."
   },
   {
     "id": "gw-0157",
@@ -4738,7 +4783,7 @@ export const products = [
     "price": 9.99,
     "originalPrice": 18.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0158.jpeg",
     "colour": {
       "bg": "Червено",
       "en": "Red"
@@ -4753,7 +4798,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/kids-clothing-2-8-years?page=29",
-    "priceReviewNote": "Comparable Minoti sweatshirt/hoodie reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Comparable Minoti sweatshirt/hoodie reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 137, supplied 2026-09-06."
   },
   {
     "id": "gw-0159",
@@ -4773,7 +4819,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0159.jpeg",
     "colour": {
       "bg": "Неуточнен",
       "en": "Unspecified"
@@ -4788,7 +4834,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/collections/baby-accessories",
-    "priceReviewNote": "5-pack socks reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "5-pack socks reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 138, supplied 2026-09-06."
   },
   {
     "id": "gw-0160",
@@ -4808,7 +4855,7 @@ export const products = [
     "price": 4.99,
     "originalPrice": 11.9,
     "originalPriceEstimated": true,
-    "image": null,
+    "image": "/images/products/audit-2026-09-06-gw-0160.jpeg",
     "colour": {
       "bg": "Сива С Бели Точки",
       "en": "Grey with white dots"
@@ -4823,7 +4870,8 @@ export const products = [
     "stockQuantity": 1,
     "originalPriceType": "reference",
     "originalPriceSource": "https://minoti.com/nl/collections/baby",
-    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match."
+    "priceReviewNote": "Current Minoti single T-shirt/top reference; comparable retail reference, not an exact SKU match.",
+    "photoReviewNote": "Updated from audit photo row 139, supplied 2026-09-06."
   },
   {
     "id": "gw-0161",
@@ -7313,9 +7361,55 @@ export const products = [
     "priceReviewNote": "Original price supplied in handwritten stock list dated 2026-09-06.",
     "stockReviewNote": "New stock 2026-09-06; handwritten item #44. Corrected product image used; packaging size was edited to match the handwritten/physical stock size 43–46. Original supplied sock image is not used.",
     "photoReviewNote": "Matched to supplied new-stock photo for handwritten item #44."
+  },
+
+  {
+    "id": "gw-0225",
+    "slug": "gerpina-0225",
+    "audience": "women",
+    "kidGender": null,
+    "category": "tops",
+    "brand": "Vans",
+    "name": {"bg": "Черен потник", "en": "Black tank top"},
+    "description": {"bg": "Vans — черен потник, размер XL.", "en": "Vans — black tank top, size XL."},
+    "price": 9.99,
+    "originalPrice": 19.99,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-32.jpg",
+    "colour": {"bg": "Черно", "en": "Black"},
+    "sizes": [{"label": "XL", "available": true, "quantity": 1}],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "GERPINA price €9.99 and original price €19.99 confirmed by user on 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #32. Size follows the handwritten stock list (XL).",
+    "photoReviewNote": "Matched to the supplied Vans black tank-top photo. The visible photo label appears to show M, so the physical size should be rechecked before fulfilment if needed."
+  },
+  {
+    "id": "gw-0226",
+    "slug": "gerpina-0226",
+    "audience": "women",
+    "kidGender": null,
+    "category": "jackets",
+    "brand": "Aniston Plus",
+    "name": {"bg": "Зелено сако", "en": "Green blazer"},
+    "description": {"bg": "Aniston Plus — зелено сако, размер 3XL.", "en": "Aniston Plus — green blazer, size 3XL."},
+    "price": 24.99,
+    "originalPrice": 69.9,
+    "originalPriceEstimated": false,
+    "image": "/images/products/new-2026-09-06-35.jpg",
+    "colour": {"bg": "Зелено", "en": "Green"},
+    "sizes": [{"label": "3XL", "available": true, "quantity": 1}],
+    "status": "in_stock",
+    "stockQuantity": 1,
+    "originalPriceType": "brand",
+    "originalPriceSource": null,
+    "priceReviewNote": "GERPINA price €24.99 and original price €69.90 confirmed by user on 2026-09-06.",
+    "stockReviewNote": "New stock 2026-09-06; handwritten item #35.",
+    "photoReviewNote": "Matched to the supplied green blazer photo for handwritten item #35."
   }
 ];
-
 export const categoryLabels = {
   "dresses": {
     "bg": "Рокли",

@@ -6,7 +6,6 @@ export const siteConfig = {
   company: {
     name: { bg: 'ГЕРПИНА УЕЪР ЕООД', en: 'GERPINA WEAR EOOD' },
     eik: '208888327',
-    vatRegistered: false,
     registeredAddress: {
       bg: 'гр. Велико Търново, п.к. 5000, ул. „Константин Паница“ №7, вх. А, ет. 3, ап. 7',
       en: '7 Konstantin Panitsa St., entrance A, floor 3, apt. 7, 5000 Veliko Tarnovo, Bulgaria',
