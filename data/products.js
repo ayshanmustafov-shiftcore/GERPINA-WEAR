@@ -1,4 +1,4 @@
-export const products = [
+const productCatalogue = [
   {
     "id": "gw-0001",
     "slug": "gerpina-0001",
@@ -7410,6 +7410,113 @@ export const products = [
     "photoReviewNote": "Matched to the supplied green blazer photo for handwritten item #35."
   }
 ];
+
+// Final physical-stock reconciliation, 7 September 2026.
+// Products marked offline_stock remain physically available but are intentionally hidden
+// until a confirmed product photo is available. Sold/removed products are also retained
+// here so the GW number remains traceable in the master stock register.
+const finalStockOverrides = {
+  "gw-0014": { status: "removed", stockQuantity: 0 },
+  "gw-0028": {
+    image: "/images/products/stock-2026-09-07-gw-0028.jpeg",
+    colour: { bg: "Лилаво, черно и златисто", en: "Purple, black and gold" },
+  },
+  "gw-0066": { status: "offline_stock" },
+  "gw-0071": { status: "offline_stock" },
+  "gw-0084": {
+    image: "/images/products/stock-2026-09-07-gw-0084.jpeg",
+    colour: { bg: "Многоцветни райета", en: "Multicolour stripes" },
+  },
+  "gw-0090": {
+    category: "knitwear",
+    name: { bg: "Сив пуловер на бели точки", en: "Grey polka-dot sweater" },
+    description: {
+      bg: "Minoti — сив плетен пуловер на бели точки, размер 5/6 г.",
+      en: "Minoti grey knitted sweater with white polka dots, size 5/6 years.",
+    },
+    image: "/images/products/stock-2026-09-07-gw-0090.jpeg",
+    colour: { bg: "Сиво с бели точки", en: "Grey with white polka dots" },
+  },
+  "gw-0091": { status: "sold_out", stockQuantity: 0 },
+  "gw-0114": { image: "/images/products/stock-2026-09-07-gw-0114.jpeg" },
+  "gw-0116": {
+    image: "/images/products/stock-2026-09-07-gw-0116.jpeg",
+    colour: { bg: "Синьо, бяло и сиво", en: "Blue, white and grey" },
+  },
+  "gw-0118": {
+    image: "/images/products/stock-2026-09-07-gw-0118.jpeg",
+    colour: { bg: "Тъмносиньо", en: "Navy" },
+  },
+  "gw-0121": {
+    image: "/images/products/stock-2026-09-07-gw-0121.jpeg",
+    colour: { bg: "Тъмносиньо", en: "Navy" },
+  },
+  "gw-0127": { image: "/images/products/stock-2026-09-07-gw-0127.jpeg" },
+  "gw-0133": { status: "offline_stock" },
+  "gw-0134": { image: "/images/products/stock-2026-09-07-gw-0134.jpeg" },
+  "gw-0135": { image: "/images/products/stock-2026-09-07-gw-0135.jpeg" },
+  "gw-0140": { image: "/images/products/stock-2026-09-07-gw-0140.jpeg" },
+  "gw-0152": { status: "offline_stock" },
+  "gw-0154": { image: "/images/products/stock-2026-09-07-gw-0154.jpeg" },
+  "gw-0157": { image: "/images/products/stock-2026-09-07-gw-0157.jpeg" },
+  "gw-0161": { status: "offline_stock" },
+  "gw-0162": {
+    image: "/images/products/stock-2026-09-07-gw-0162.jpeg",
+    colour: { bg: "Светлосиньо и бяло с принт", en: "Light blue and white print" },
+    sizes: [{ label: "56 см / 1–2 месеца", available: true, quantity: 1 }],
+    stockQuantity: 1,
+  },
+  "gw-0166": {
+    image: "/images/products/stock-2026-09-07-gw-0166.jpeg",
+    name: { bg: "Черен панталон с бели странични ленти", en: "Black trousers with white side stripes" },
+    description: {
+      bg: "Bonprix — черен панталон с бели странични ленти, размер 128/134 см / 8–9 г.",
+      en: "Bonprix black trousers with white side stripes, size 128/134 cm / 8–9 years.",
+    },
+    colour: { bg: "Черно с бели ленти", en: "Black with white stripes" },
+    sizes: [{ label: "128/134 см / 8–9 г.", available: true, quantity: 1 }],
+    stockQuantity: 1,
+  },
+  "gw-0169": {
+    image: "/images/products/stock-2026-09-07-gw-0169.jpeg",
+    sizes: [{ label: "128 см / 8 г.", available: true, quantity: 4 }],
+    stockQuantity: 4,
+  },
+  "gw-0182": { status: "removed", stockQuantity: 0 },
+  "gw-0183": { status: "removed", stockQuantity: 0 },
+  "gw-0186": { status: "removed", stockQuantity: 0 },
+  "gw-0187": { image: "/images/products/stock-2026-09-07-gw-0187.jpeg" },
+  "gw-0190": { image: "/images/products/stock-2026-09-07-gw-0190.jpeg" },
+  "gw-0204": {
+    category: "dresses",
+    name: { bg: "Зелена флорална рокля", en: "Green floral dress" },
+    description: {
+      bg: "Hechter Paris — зелена флорална рокля с черни странични панели, размер XL.",
+      en: "Hechter Paris green floral dress with black side panels, size XL.",
+    },
+    image: "/images/products/stock-2026-09-07-gw-0204.jpeg",
+    colour: { bg: "Зелено, бяло и черно", en: "Green, white and black" },
+  },
+  "gw-0205": {
+    brand: "VILA",
+    name: { bg: "Кафява сатенена блуза", en: "Brown satin blouse" },
+    description: {
+      bg: "VILA — кафява сатенена блуза, размер XS.",
+      en: "VILA brown satin blouse, size XS.",
+    },
+    image: "/images/products/stock-2026-09-07-gw-0205.jpeg",
+    colour: { bg: "Тъмнокафяво", en: "Dark brown" },
+  },
+  "gw-0206": { status: "offline_stock" },
+  "gw-0208": { image: "/images/products/stock-2026-09-07-gw-0208.jpeg" },
+  "gw-0209": { image: "/images/products/stock-2026-09-07-gw-0209.jpeg" },
+  "gw-0214": { image: "/images/products/stock-2026-09-07-gw-0214.jpeg" },
+};
+
+export const products = productCatalogue.map((product) => ({
+  ...product,
+  ...(finalStockOverrides[product.id] || {}),
+}));
 export const categoryLabels = {
   "dresses": {
     "bg": "Рокли",
@@ -7511,4 +7618,3 @@ export function productMatchesAudience(product, audience) {
 export function getProductBySlug(slug) {
   return products.find((product) => product.slug === slug && isProductAvailable(product));
 }
-
