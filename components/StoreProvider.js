@@ -5,7 +5,9 @@ import { products } from '@/data/products';
 
 const StoreContext = createContext(null);
 const VALID_AUDIENCES = ['women', 'men', 'kids'];
-const PRODUCT_MAP = new Map(products.map((product) => [product.id, product]));
+const PRODUCT_MAP = new Map(products.flatMap((product) =>
+  (product.inventoryIds || [product.id]).map((inventoryId) => [inventoryId, product])
+));
 
 function getVariantStock(product, selectedSize = null) {
   if (selectedSize && product.sizes?.length) {
@@ -54,7 +56,9 @@ export function StoreProvider({ children }) {
       const storedCart = JSON.parse(localStorage.getItem('gerpina-cart-stock5-v1') || localStorage.getItem('gerpina-cart-stock4-v1') || localStorage.getItem('gerpina-cart-stock3-v1') || '[]');
       setCart(normaliseCart(storedCart));
       const storedFavorites = JSON.parse(localStorage.getItem('gerpina-favorites-inventory-v1') || '[]');
-      setFavorites(Array.isArray(storedFavorites) ? storedFavorites.filter((id) => PRODUCT_MAP.has(id)) : []);
+      setFavorites(Array.isArray(storedFavorites)
+        ? [...new Set(storedFavorites.map((id) => PRODUCT_MAP.get(id)?.id).filter(Boolean))]
+        : []);
       const savedAudience = localStorage.getItem('gerpina-active-audience-v1');
       if (VALID_AUDIENCES.includes(savedAudience)) setActiveAudienceState(savedAudience);
     } catch {}

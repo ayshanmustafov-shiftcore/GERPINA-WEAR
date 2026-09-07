@@ -7513,10 +7513,58 @@ const finalStockOverrides = {
   "gw-0214": { image: "/images/products/stock-2026-09-07-gw-0214.jpeg" },
 };
 
-export const products = productCatalogue.map((product) => ({
+export const inventoryProducts = productCatalogue.map((product) => ({
   ...product,
   ...(finalStockOverrides[product.id] || {}),
 }));
+
+// Only merge records that are confirmed to be the same article and have the same
+// public price/category. Every selectable size keeps the physical GW number(s)
+// needed for fulfilment and stock removal after an order.
+const variantMergeGroups = [
+  ["gw-0103", "gw-0150"],
+  ["gw-0119", "gw-0134"],
+  ["gw-0123", "gw-0129"],
+  ["gw-0151", "gw-0156"],
+];
+
+function mergeInventoryGroup(group) {
+  const primary = group[0];
+  const sizeMap = new Map();
+
+  group.forEach((product) => {
+    (product.sizes || []).forEach((size) => {
+      const quantity = size.quantity == null ? 1 : Math.max(0, Number(size.quantity) || 0);
+      const existing = sizeMap.get(size.label) || {
+        label: size.label,
+        available: false,
+        quantity: 0,
+        inventoryIds: [],
+      };
+      existing.available = existing.available || (size.available !== false && quantity > 0);
+      existing.quantity += quantity;
+      if (quantity > 0) existing.inventoryIds.push(...Array(quantity).fill(product.id));
+      sizeMap.set(size.label, existing);
+    });
+  });
+
+  return {
+    ...primary,
+    inventoryIds: group.map((product) => product.id),
+    sizes: [...sizeMap.values()],
+    stockQuantity: group.reduce((sum, product) => sum + Math.max(0, Number(product.stockQuantity) || 0), 0),
+  };
+}
+
+const mergedInventoryIds = new Set(variantMergeGroups.flat());
+const mergedProducts = variantMergeGroups.map((ids) => mergeInventoryGroup(
+  ids.map((id) => inventoryProducts.find((product) => product.id === id)).filter(Boolean),
+));
+
+export const products = [
+  ...inventoryProducts.filter((product) => !mergedInventoryIds.has(product.id)),
+  ...mergedProducts,
+].sort((a, b) => Number(a.id.slice(3)) - Number(b.id.slice(3)));
 export const categoryLabels = {
   "dresses": {
     "bg": "Рокли",

@@ -9,7 +9,11 @@ import { TruckIcon } from '@/components/Icons';
 import { siteConfig } from '@/data/site';
 
 function cartPayload(cart) {
-  return cart.map((item) => ({ id: item.id, quantity: item.quantity, selectedSize: item.selectedSize || null }));
+  return cart.map((item) => ({
+    id: item.id,
+    quantity: item.quantity,
+    selectedSize: item.selectedSize || null,
+  }));
 }
 
 function formatEcontExpectedDate(value, language) {
