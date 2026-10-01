@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
-import { products } from '@/data/products';
+import { getVariantPrice, products } from '@/data/products';
 
 const StoreContext = createContext(null);
 const VALID_AUDIENCES = ['women', 'men', 'kids'];
@@ -41,7 +41,7 @@ function normaliseCart(items) {
       name: product.name,
       brand: product.brand,
       image: product.image,
-      price: product.price,
+      price: getVariantPrice(product, selectedSize),
       originalPrice: product.originalPrice,
       selectedSize,
       stockQuantity,
@@ -113,7 +113,7 @@ export function StoreProvider({ children }) {
           name: product.name,
           brand: product.brand,
           image: product.image,
-          price: product.price,
+          price: getVariantPrice(product, selectedSize),
           originalPrice: product.originalPrice,
           selectedSize,
           stockQuantity: max,

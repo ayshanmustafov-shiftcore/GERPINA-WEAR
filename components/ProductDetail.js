@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { HeartIcon, TruckIcon } from '@/components/Icons';
-import { categoryLabels, getDiscountPercent, isProductAvailable } from '@/data/products';
+import { categoryLabels, getDiscountPercent, getVariantPrice, isProductAvailable } from '@/data/products';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useStore } from '@/components/StoreProvider';
 import { getProductSwatches } from '@/lib/productColours';
@@ -18,7 +18,8 @@ export default function ProductDetail({ product }) {
   const [selectedSize, setSelectedSize] = useState(availableSizes[0]?.label || '');
   const [added, setAdded] = useState(false);
   const favorite = favorites.includes(product.id);
-  const discount = getDiscountPercent(product.originalPrice, product.price);
+  const price = getVariantPrice(product, selectedSize);
+  const discount = getDiscountPercent(product.originalPrice, price);
   const available = isProductAvailable(product);
   const colourSwatches = useMemo(() => getProductSwatches(product, language), [product, language]);
 
@@ -66,7 +67,7 @@ export default function ProductDetail({ product }) {
             )}
             <div className="detail-price">
               <span className="detail-gerpina-label">GERPINA</span>
-              <strong>€{product.price.toFixed(2)}</strong>
+              <strong>€{price.toFixed(2)}</strong>
               {discount && <b>-{discount}%</b>}
             </div>
           </div>

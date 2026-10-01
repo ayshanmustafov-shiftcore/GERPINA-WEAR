@@ -7417,6 +7417,10 @@ const productCatalogue = [
 // here so the GW number remains traceable in the master stock register.
 const finalStockOverrides = {
   "gw-0014": { status: "removed", stockQuantity: 0 },
+  "gw-0054": {
+    image: "/images/products/IMG-20260809-WA0013.jpg",
+    photoReviewNote: "The same Even&Odd floral dress as gw-0043; use the clearer original photo for both sizes.",
+  },
   "gw-0028": {
     image: "/images/products/stock-2026-09-07-gw-0028.jpeg",
     colour: { bg: "Лилаво, черно и златисто", en: "Purple, black and gold" },
@@ -7522,6 +7526,7 @@ export const inventoryProducts = productCatalogue.map((product) => ({
 // public price/category. Every selectable size keeps the physical GW number(s)
 // needed for fulfilment and stock removal after an order.
 const variantMergeGroups = [
+  ["gw-0054", "gw-0043"],
   ["gw-0103", "gw-0150"],
   ["gw-0119", "gw-0134"],
   ["gw-0123", "gw-0129"],
@@ -7540,6 +7545,8 @@ function mergeInventoryGroup(group) {
         available: false,
         quantity: 0,
         inventoryIds: [],
+        price: product.price,
+        originalPrice: product.originalPrice,
       };
       existing.available = existing.available || (size.available !== false && quantity > 0);
       existing.quantity += quantity;
@@ -7550,6 +7557,8 @@ function mergeInventoryGroup(group) {
 
   return {
     ...primary,
+    price: Math.min(...group.map((product) => product.price)),
+    priceRange: group.some((product) => product.price !== primary.price),
     inventoryIds: group.map((product) => product.id),
     sizes: [...sizeMap.values()],
     description: {
@@ -7651,6 +7660,10 @@ export const kidGenderLabels = {
 export function getDiscountPercent(originalPrice, price) {
   if (!originalPrice || !price || price >= originalPrice) return null;
   return Math.round(((originalPrice - price) / originalPrice) * 100);
+}
+
+export function getVariantPrice(product, selectedSize) {
+  return product.sizes?.find((size) => size.label === selectedSize)?.price ?? product.price;
 }
 
 export function isProductAvailable(product) {

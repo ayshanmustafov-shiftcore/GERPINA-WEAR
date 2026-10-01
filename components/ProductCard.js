@@ -48,7 +48,7 @@ export default function ProductCard({ product }) {
           )}
           <span className="gerpina-price-wrap">
             <small>GERPINA</small>
-            <strong>€{product.price.toFixed(2)}</strong>
+            <strong>{product.priceRange ? (language === 'bg' ? 'От ' : 'From ') : ''}€{product.price.toFixed(2)}</strong>
           </span>
         </div>
         {discount && <span className="price-comparison-caption">{language === 'bg' ? `-${discount}% спрямо ${product.originalPriceType === 'reference' ? 'референтната цена' : 'цената на марката'}` : `-${discount}% vs ${product.originalPriceType === 'reference' ? 'reference price' : 'brand price'}`}</span>}
