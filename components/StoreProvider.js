@@ -21,17 +21,22 @@ function getVariantStock(product, selectedSize = null) {
 function normaliseCart(items) {
   if (!Array.isArray(items)) return [];
 
-  return items.flatMap((item) => {
+  const normalised = new Map();
+  items.forEach((item) => {
     const product = PRODUCT_MAP.get(item.id);
-    if (!product || product.status !== 'in_stock') return [];
+    if (!product || product.status !== 'in_stock') return;
 
     const selectedSize = item.selectedSize || null;
+    if (product.sizes?.length && !selectedSize) return;
     const stockQuantity = getVariantStock(product, selectedSize);
-    if (stockQuantity <= 0) return [];
+    if (stockQuantity <= 0) return;
 
-    return [{
+    const cartKey = `${product.id}::${selectedSize || 'default'}`;
+    const existing = normalised.get(cartKey);
+    const quantity = Math.min((existing?.quantity || 0) + Math.max(1, Number(item.quantity) || 1), stockQuantity);
+    normalised.set(cartKey, {
       id: product.id,
-      cartKey: `${product.id}::${selectedSize || 'default'}`,
+      cartKey,
       slug: product.slug,
       name: product.name,
       brand: product.brand,
@@ -40,9 +45,10 @@ function normaliseCart(items) {
       originalPrice: product.originalPrice,
       selectedSize,
       stockQuantity,
-      quantity: Math.min(Math.max(1, Number(item.quantity) || 1), stockQuantity),
-    }];
+      quantity,
+    });
   });
+  return [...normalised.values()];
 }
 
 export function StoreProvider({ children }) {

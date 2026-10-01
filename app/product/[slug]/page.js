@@ -1,10 +1,10 @@
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import ProductDetail from '@/components/ProductDetail';
-import { getProductBySlug, products, isProductAvailable } from '@/data/products';
+import { getProductBySlug, inventoryProducts, isProductAvailable } from '@/data/products';
 import { siteConfig } from '@/data/site';
 
 export function generateStaticParams() {
-  return products.map((product) => ({ slug: product.slug }));
+  return inventoryProducts.filter(isProductAvailable).map((product) => ({ slug: product.slug }));
 }
 
 export async function generateMetadata({ params }) {
@@ -36,6 +36,7 @@ export default async function ProductPage({ params }) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) notFound();
+  if (slug !== product.slug) permanentRedirect(`/product/${product.slug}`);
 
   const structuredData = {
     '@context': 'https://schema.org',

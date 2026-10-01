@@ -7552,6 +7552,10 @@ function mergeInventoryGroup(group) {
     ...primary,
     inventoryIds: group.map((product) => product.id),
     sizes: [...sizeMap.values()],
+    description: {
+      bg: `${primary.brand} — ${primary.name.bg.toLowerCase()}, размери: ${[...sizeMap.keys()].join(', ')}.`,
+      en: `${primary.brand} ${primary.name.en.toLowerCase()}, sizes: ${[...sizeMap.keys()].join(', ')}.`,
+    },
     stockQuantity: group.reduce((sum, product) => sum + Math.max(0, Number(product.stockQuantity) || 0), 0),
   };
 }
@@ -7664,5 +7668,9 @@ export function productMatchesAudience(product, audience) {
 }
 
 export function getProductBySlug(slug) {
-  return products.find((product) => product.slug === slug && isProductAvailable(product));
+  const inventoryItem = inventoryProducts.find((product) => product.slug === slug);
+  if (!inventoryItem) return undefined;
+  return products.find((product) =>
+    (product.inventoryIds || [product.id]).includes(inventoryItem.id) && isProductAvailable(product)
+  );
 }
